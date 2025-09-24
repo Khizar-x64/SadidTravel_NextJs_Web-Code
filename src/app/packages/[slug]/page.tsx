@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { packages } from "@/lib/data";
-import { CheckCircle, Calendar, Clock, DollarSign, ArrowRight } from "lucide-react";
+import { CheckCircle, Clock, DollarSign, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -29,6 +29,22 @@ export async function generateStaticParams() {
     slug: pkg.slug,
   }));
 }
+
+export function generateMetadata({ params }: PackageDetailPageProps) {
+  const pkg = packages.find((p) => p.slug === params.slug);
+
+  if (!pkg) {
+    return {
+      title: "Package Not Found",
+    };
+  }
+
+  return {
+    title: pkg.title,
+    description: pkg.description,
+  };
+}
+
 
 export default function PackageDetailPage({ params }: PackageDetailPageProps) {
   const pkg = packages.find((p) => p.slug === params.slug);

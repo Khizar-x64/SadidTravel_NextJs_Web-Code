@@ -2,6 +2,7 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const headerImage = PlaceHolderImages.find(p => p.id === 'islamic-architecture');
+const lastUpdatedDate = "June 1, 2024";
 
 export default function PrivacyPage() {
   return (
@@ -32,7 +33,7 @@ export default function PrivacyPage() {
       <section className="py-12 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl">
             <div className="prose prose-lg max-w-none dark:prose-invert text-foreground">
-                <p>Last updated: {new Date().toLocaleDateString()}</p>
+                <p>Last updated: {lastUpdatedDate}</p>
                 
                 <h2>1. Introduction</h2>
                 <p>Welcome to Sadid Travels. We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us.</p>

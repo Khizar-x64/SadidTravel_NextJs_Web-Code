@@ -70,10 +70,17 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
-              <div className="bg-card h-64 rounded-lg shadow-lg">
-                 <div className="w-full h-full rounded-lg bg-muted flex items-center justify-center">
-                    <p className="text-muted-foreground">Map will be here</p>
-                 </div>
+              <div className="bg-card h-80 rounded-lg shadow-lg overflow-hidden">
+                 <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435521.6888241414!2d74.05419435697395!3d31.48263513337956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1758699999999!5m2!1sen!2sus"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen={false}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Lahore, Pakistan Map"
+                 ></iframe>
               </div>
             </div>
           </div>

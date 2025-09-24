@@ -9,14 +9,27 @@ type BlogDetailPageProps = {
   };
 };
 
-// This function allows Next.js to generate static pages for each blog post at build time
 export async function generateStaticParams() {
   return blogs.map((post) => ({
     slug: post.slug,
   }));
 }
 
-// This component renders the individual blog page
+export function generateMetadata({ params }: BlogDetailPageProps) {
+  const post = blogs.find((p) => p.slug === params.slug);
+
+  if (!post) {
+    return {
+      title: "Blog Post Not Found",
+    };
+  }
+
+  return {
+    title: post.title,
+    description: post.excerpt,
+  };
+}
+
 export default function BlogDetailPage({ params }: BlogDetailPageProps) {
   const post = blogs.find((p) => p.slug === params.slug);
 
@@ -24,23 +37,48 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
     notFound();
   }
 
-  // Simple markdown parsing for bold text, paragraphs and unordered lists
   const formatContent = (text: string) => {
-    return text.split('\n').map((paragraph, index) => {
+    // Split by newline and process each paragraph
+    const paragraphs = text.split('\n').map((paragraph, index) => {
       if (paragraph.trim() === '') return null;
+
+      // Handle simple markdown for bolding and list items
+      const bolded = paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
       
-      // A simple regex to replace **bold** text with <strong> tags
-      let formattedParagraph = paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-      
-      // Handle unordered lists
-      if (formattedParagraph.trim().startsWith('* ')) {
-          return (
-              <li key={index} className="ml-5 list-disc" dangerouslySetInnerHTML={{ __html: formattedParagraph.substring(2) }} />
-          );
+      if (bolded.trim().startsWith('* ')) {
+        // Unordered list item
+        return (
+          <li key={index} className="ml-5 list-disc" dangerouslySetInnerHTML={{ __html: bolded.substring(2) }} />
+        );
       }
       
-      return <p key={index} dangerouslySetInnerHTML={{ __html: formattedParagraph }} />;
-    });
+      // Regular paragraph
+      return (
+        <p key={index} className="mb-4" dangerouslySetInnerHTML={{ __html: bolded }} />
+      );
+    }).filter(Boolean); // remove null entries
+
+    // Group list items into a <ul>
+    const content = [];
+    let listItems: JSX.Element[] = [];
+
+    for (let i = 0; i < paragraphs.length; i++) {
+        const p = paragraphs[i];
+        if (p.type === 'li') {
+            listItems.push(p);
+        } else {
+            if (listItems.length > 0) {
+                content.push(<ul key={`ul-${i-listItems.length}`} className="mb-4 space-y-2">{listItems}</ul>);
+                listItems = [];
+            }
+            content.push(p);
+        }
+    }
+    if (listItems.length > 0) {
+        content.push(<ul key={`ul-last`} className="mb-4 space-y-2">{listItems}</ul>);
+    }
+    
+    return content;
   };
 
   return (

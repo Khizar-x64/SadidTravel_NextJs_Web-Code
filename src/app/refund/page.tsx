@@ -2,6 +2,7 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const headerImage = PlaceHolderImages.find(p => p.id === 'islamic-architecture');
+const lastUpdatedDate = "June 1, 2024";
 
 export default function RefundPage() {
   return (
@@ -32,7 +33,7 @@ export default function RefundPage() {
       <section className="py-12 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl">
             <div className="prose prose-lg max-w-none dark:prose-invert text-foreground">
-                <p>Last updated: {new Date().toLocaleDateString()}</p>
+                <p>Last updated: {lastUpdatedDate}</p>
                 
                 <h2>1. General Policy</h2>
                 <p>Our refund policy is designed to be fair to our customers while accounting for the costs we incur in planning and booking your travel. The possibility of a refund and the amount depends on how far in advance you cancel your booking.</p>
