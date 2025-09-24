@@ -13,7 +13,7 @@ Welcome to the Sadid Travels website project! This is a modern, responsive, and 
 
 ## Running the Project Locally
 
-To run this project on your local machine, you'll need to have [Node.js](https://nodejs.org/en/download/) (which includes npm) installed. These instructions are for Windows, but the steps are very similar for macOS and Linux.
+To run this project on your local machine, you'll need to have [Bun](https://bun.sh/) installed.
 
 1.  **Download the Code**: Download the project files as a ZIP from your workspace and unzip them in a folder on your computer.
 
@@ -24,14 +24,14 @@ To run this project on your local machine, you'll need to have [Node.js](https:/
     cd path\to\your\project
     ```
 
-3.  **Install Dependencies**: Run the following command to install all the necessary packages defined in `package.json`.
+3.  **Install Dependencies**: Run the following command to install all the necessary packages.
     ```bash
-    npm install
+    bun install
     ```
 
 4.  **Run the Development Server**: Once the installation is complete, start the Next.js development server.
     ```bash
-    npm run dev
+    bun run dev
     ```
 
 5.  **View Your Website**: Open your web browser and go to [http://localhost:9002](http://localhost:9002). You should see your Sadid Travels website running!
