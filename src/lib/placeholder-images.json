@@ -1,3 +1,82 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "kaaba-hero",
+      "description": "A wide shot of the Kaaba in Mecca, surrounded by pilgrims, under a clear sky.",
+      "imageUrl": "https://images.unsplash.com/photo-1751040138846-560876e08259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxLYWFiYSUyME1lY2NhfGVufDB8fHx8MTc1ODcwMjk4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Kaaba Mecca"
+    },
+    {
+      "id": "madinah-mosque",
+      "description": "The green dome of the Prophet's Mosque in Madinah at sunset.",
+      "imageUrl": "https://images.unsplash.com/photo-1677835238946-20fc43ab0533?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxQcm9waGV0JTI3cyUyME1vc3F1ZXxlbnwwfHx8fDE3NTg3MDI5ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Prophet's Mosque"
+    },
+    {
+      "id": "al-aqsa-dome",
+      "description": "The Dome of the Rock in Jerusalem with its golden dome shining.",
+      "imageUrl": "https://images.unsplash.com/photo-1595134223849-05fbcc6aa429?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxEb21lJTIwUm9ja3xlbnwwfHx8fDE3NTg3MDI5ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Dome Rock"
+    },
+    {
+      "id": "istanbul-mosque",
+      "description": "A grand mosque in Istanbul at dusk with lights illuminating its architecture.",
+      "imageUrl": "https://images.unsplash.com/photo-1623439844752-524658b16ce6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxJc3RhbmJ1bCUyMG1vc3F1ZXxlbnwwfHx8fDE3NTg3MDI5ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Istanbul mosque"
+    },
+    {
+      "id": "pilgrims-praying",
+      "description": "A group of pilgrims praying together in white ihram clothing.",
+      "imageUrl": "https://images.unsplash.com/photo-1578008086519-8e0e73b57e9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwaWxncmltcyUyMHByYXlpbmd8ZW58MHx8fHwxNzU4NjI3MDk1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pilgrims praying"
+    },
+    {
+      "id": "desert-caravan",
+      "description": "Camels walking in a line across a vast desert landscape.",
+      "imageUrl": "https://images.unsplash.com/photo-1559292689-3c2399e50048?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXNlcnQlMjBjYXJhdmFufGVufDB8fHx8MTc1ODY1NDg2MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "desert caravan"
+    },
+    {
+      "id": "islamic-architecture",
+      "description": "Intricate geometric patterns on the wall of a historic Islamic building.",
+      "imageUrl": "https://images.unsplash.com/photo-1606981693736-62d6c4954ba5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpc2xhbWljJTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc1ODYxNTQ5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "islamic architecture"
+    },
+    {
+      "id": "blog-travel-tips",
+      "description": "A flat lay of travel essentials like a passport, map, and compass on a wooden table.",
+      "imageUrl": "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0cmF2ZWwlMjBlc3NlbnRpYWxzfGVufDB8fHx8MTc1ODcwMjk4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "travel essentials"
+    },
+    {
+      "id": "blog-spiritual-journey",
+      "description": "A person reading a Quran with a soft light.",
+      "imageUrl": "https://images.unsplash.com/photo-1575645513913-c002ea3b2e01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyZWFkaW5nJTIwcXVyYW58ZW58MHx8fHwxNzU4NzAyOTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "reading quran"
+    },
+    {
+      "id": "contact-banner",
+      "description": "An elegant desk with a notebook, pen, and a small plant.",
+      "imageUrl": "https://images.unsplash.com/photo-1590212151175-e58edd96185b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkZXNrJTIwc2V0dXB8ZW58MHx8fHwxNzU4Njk0NTU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "desk setup"
+    },
+    {
+      "id": "avatar1",
+      "description": "Avatar of a man",
+      "imageUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzU4NjkxNjE0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "avatar2",
+      "description": "Avatar of a woman",
+      "imageUrl": "https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODY0MDczOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "avatar3",
+      "description": "Avatar of a person",
+      "imageUrl": "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c21pbGluZyUyMHBlcnNvbnxlbnwwfHx8fDE3NTg2OTk5ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smiling person"
+    }
+  ]
 }
