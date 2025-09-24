@@ -1,6 +1,9 @@
 import { SiteConfig, Package, Testimonial, FAQ, Blog } from "@/lib/types";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import packagesData from './packages.json';
+import blogsData from './blogs.json';
+import testimonialsData from './testimonials.json';
+
 
 const findImage = (id: string) => {
   const image = PlaceHolderImages.find((img) => img.id === id);
@@ -35,29 +38,11 @@ export const packages: Package[] = packagesData.map(pkg => ({
     image: findImage(pkg.imageId),
 }));
 
-export const testimonials: Testimonial[] = [
-  {
-    id: "1",
-    name: "Ahmed & Fatima Khan",
-    location: "Toronto, Canada",
-    quote: "Sadid Travels made our Umrah journey seamless and spiritually enriching. The hotels were excellent, and our guide was incredibly knowledgeable. Highly recommended!",
-    avatarUrl: findImage('avatar1').imageUrl,
-  },
-  {
-    id: "2",
-    name: "Aisha Yusuf",
-    location: "London, UK",
-    quote: "My Hajj experience was beyond words. Every detail was meticulously planned by Sadid Travels. I could focus entirely on my Ibadah. JazakAllah Khair!",
-    avatarUrl: findImage('avatar2').imageUrl,
-  },
-  {
-    id: "3",
-    name: "Ibrahim Mohammed",
-    location: "New York, USA",
-    quote: "The Jerusalem tour was a life-changing experience. Praying at Al-Aqsa was a dream come true. Thank you, Sadid Travels, for the amazing arrangements.",
-    avatarUrl: findImage('avatar3').imageUrl,
-  },
-];
+export const testimonials: Testimonial[] = testimonialsData.map(t => ({
+  ...t,
+  avatarUrl: findImage(t.avatarImageId).imageUrl,
+}));
+
 
 export const faqs: FAQ[] = [
     {
@@ -82,25 +67,8 @@ export const faqs: FAQ[] = [
     },
 ];
 
-export const blogs: Blog[] = [
-    {
-      id: "1",
-      slug: "preparing-for-your-first-umrah",
-      title: "Preparing for Your First Umrah: A Spiritual and Practical Guide",
-      author: "Admin",
-      date: "2024-05-15",
-      excerpt: "Embarking on your first Umrah is a momentous occasion. This guide covers the essential spiritual and practical preparations to ensure a smooth and meaningful journey.",
-      content: "...",
-      image: findImage('pilgrims-praying'),
-    },
-    {
-      id: "2",
-      slug: "top-5-ziyarat-sites-in-madinah",
-      title: "Top 5 Ziyarat Sites in Madinah You Shouldn't Miss",
-      author: "Admin",
-      date: "2024-05-10",
-      excerpt: "Madinah is rich with Islamic history. Discover the five most significant Ziyarat locations that will connect you deeply with the life of the Prophet (PBUH) and his companions.",
-      content: "...",
-      image: findImage('madinah-mosque'),
-    }
-]
+export const blogs: Blog[] = blogsData.map(blog => ({
+    ...blog,
+    content: "...", // placeholder content
+    image: findImage(blog.imageId)
+}));

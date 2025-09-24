@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Ahmed & Fatima Khan",
+    "location": "Toronto, Canada",
+    "quote": "Sadid Travels made our Umrah journey seamless and spiritually enriching. The hotels were excellent, and our guide was incredibly knowledgeable. Highly recommended!",
+    "avatarImageId": "avatar1"
+  },
+  {
+    "id": "2",
+    "name": "Aisha Yusuf",
+    "location": "London, UK",
+    "quote": "My Hajj experience was beyond words. Every detail was meticulously planned by Sadid Travels. I could focus entirely on my Ibadah. JazakAllah Khair!",
+    "avatarImageId": "avatar2"
+  },
+  {
+    "id": "3",
+    "name": "Ibrahim Mohammed",
+    "location": "New York, USA",
+    "quote": "The Jerusalem tour was a life-changing experience. Praying at Al-Aqsa was a dream come true. Thank you, Sadid Travels, for the amazing arrangements.",
+    "avatarImageId": "avatar3"
+  }
+]

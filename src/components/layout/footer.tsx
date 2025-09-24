@@ -4,7 +4,6 @@ import { Facebook, Twitter, Instagram } from "lucide-react";
 import { siteConfig } from "@/lib/data";
 import { Icons } from "@/components/icons";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 
 export function Footer() {
   const footerNav = [
@@ -75,17 +74,6 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
-
-          <div className="md:col-span-4 lg:col-span-1">
-             <h3 className="font-headline font-semibold">Newsletter</h3>
-             <p className="mt-4 text-muted-foreground">
-               Stay updated with our latest packages and offers.
-             </p>
-             <form className="mt-4 flex gap-2">
-               <Input type="email" placeholder="Enter your email" className="bg-background"/>
-               <Button type="submit">Subscribe</Button>
-             </form>
           </div>
         </div>
       </div>
