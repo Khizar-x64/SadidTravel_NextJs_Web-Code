@@ -1,10 +1,8 @@
 "use client";
 
-import { useState, useTransition } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Loader2, Sparkles } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -25,7 +23,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
-import { assistQuestionAction } from "@/app/actions";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -37,7 +34,6 @@ const formSchema = z.object({
 type FormData = z.infer<typeof formSchema>;
 
 export function ContactForm() {
-  const [isPending, startTransition] = useTransition();
   const { toast } = useToast();
 
   const form = useForm<FormData>({
@@ -57,37 +53,6 @@ export function ContactForm() {
       description: "Thank you for contacting us. We will get back to you shortly.",
     });
     form.reset();
-  };
-
-  const handleAssistQuestion = () => {
-    const question = form.getValues("question");
-    const category = form.getValues("category");
-
-    if (!question || question.length < 10) {
-      toast({
-        variant: "destructive",
-        title: "Error",
-        description: "Please write a question of at least 10 characters before using the AI assistant.",
-      });
-      return;
-    }
-    
-    startTransition(async () => {
-        const result = await assistQuestionAction({ question, category });
-        if (result.success && result.data) {
-          form.setValue("question", result.data.refinedQuestion, { shouldValidate: true });
-          toast({
-            title: "Question Refined!",
-            description: "Your question has been enhanced by our AI assistant.",
-          });
-        } else {
-            toast({
-                variant: "destructive",
-                title: "AI Assistant Error",
-                description: result.error || "Could not refine the question at this time.",
-            });
-        }
-    });
   };
 
   return (
@@ -151,21 +116,6 @@ export function ContactForm() {
             <FormItem>
               <div className="flex justify-between items-center">
                 <FormLabel>Your Question</FormLabel>
-                <Button
-                    type="button"
-                    variant="ghost"
-                    size="sm"
-                    onClick={handleAssistQuestion}
-                    disabled={isPending}
-                    className="text-primary hover:text-primary"
-                >
-                    {isPending ? (
-                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    ) : (
-                        <Sparkles className="mr-2 h-4 w-4" />
-                    )}
-                    Refine with AI
-                </Button>
               </div>
               <FormControl>
                 <Textarea

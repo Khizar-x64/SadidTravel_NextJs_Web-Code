@@ -22,6 +22,7 @@ import { Badge } from "@/components/ui/badge";
 import { PackageCard } from "@/components/package-card";
 import { packages, testimonials } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { ContactPopup } from "@/components/contact-popup";
 
 const heroImage = PlaceHolderImages.find(p => p.id === 'kaaba-hero');
 
@@ -53,6 +54,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
+      <ContactPopup />
       <section className="relative w-full h-[70vh] md:h-[80vh]">
         {heroImage && (
             <Image
@@ -75,6 +77,9 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tight leading-tight text-shadow-lg">
             Experience the Holiest Journeys with Sadid Travels
           </h1>
+          <h2 className="text-3xl md:text-5xl font-arabic font-bold mt-2">
+            سديد للسفريات
+          </h2>
           <p className="mt-4 max-w-2xl text-lg md:text-xl text-primary-foreground/90">
             Discover our premium Hajj and Umrah packages, designed for a
             profoundly moving and comfortable pilgrimage.
