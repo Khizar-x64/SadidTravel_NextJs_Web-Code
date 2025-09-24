@@ -34,7 +34,7 @@ export type Package = {
     imageHint: string;
   };
   includes: string[];
-  itinerary: { day: number; title: string; description: string }[];
+  itinerary: { day: number | string; title: string; description: string }[];
 };
 
 export type Blog = {

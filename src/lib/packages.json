@@ -1,0 +1,76 @@
+
+[
+  {
+    "id": "umrah-deluxe-10",
+    "slug": "umrah-deluxe-10-days",
+    "title": "10-Day Deluxe Umrah Package",
+    "description": "Experience a spiritually uplifting Umrah journey with stays in 5-star hotels in Makkah and Madinah.",
+    "price": 1999,
+    "duration": "10 Days, 9 Nights",
+    "imageId": "madinah-mosque",
+    "includes": ["5-Star Hotels", "Private Transport", "Guided Ziyarat", "Visa Processing"],
+    "itinerary": [
+      { "day": 1, "title": "Arrival in Jeddah & Transfer to Makkah", "description": "Arrive at King Abdulaziz International Airport, meet our representative, and transfer to your hotel in Makkah to perform Umrah." },
+      { "day": 2, "title": "Jumu'ah & Ibadah in Makkah", "description": "Perform Jumu'ah prayer at Masjid al-Haram and spend the day in personal worship." },
+      { "day": 3, "title": "Ziyarat in Makkah", "description": "Guided tour to historical Islamic sites around Makkah like Jabal al-Nour, Jabal Thawr, and Arafat." },
+      { "day": 4, "title": "Free Day in Makkah", "description": "A day for personal Ibadah and exploration around the Grand Mosque." },
+      { "day": 5, "title": "Travel to Madinah", "description": "Check out from your Makkah hotel and travel to Madinah by high-speed train. Check into your hotel near Masjid an-Nabawi." },
+      { "day": 6, "title": "Ibadah in Madinah", "description": "Spend the day in prayer and contemplation at the Prophet's Mosque and visit Riyadhul Jannah." },
+      { "day": 7, "title": "Ziyarat in Madinah", "description": "Guided tour to significant sites in Madinah, including Masjid Quba, Masjid al-Qiblatayn, and the site of the Battle of Uhud." },
+      { "day": 8, "title": "Free Day in Madinah", "description": "Another day for personal worship and reflection in the city of the Prophet (PBUH)." },
+      { "day": 9, "title": "Preparation for Departure", "description": "Enjoy a final day in Madinah, shopping for souvenirs and preparing for your journey home." },
+      { "day": 10, "title": "Departure from Madinah", "description": "Transfer to Prince Mohammad bin Abdulaziz Airport for your departure." }
+    ]
+  },
+  {
+    "id": "hajj-premium-14",
+    "slug": "hajj-premium-14-days",
+    "title": "14-Day Premium Hajj Package",
+    "description": "Fulfill the pillar of Islam with our premium Hajj package, offering comfort and guidance throughout the rituals.",
+    "price": 7999,
+    "duration": "14 Days",
+    "imageId": "kaaba-hero",
+    "includes": ["5-Star Hotels near Haram", "Mina Tents (Category A)", "Full Board Meals", "Dedicated Hajj Guide"],
+    "itinerary": [
+        { "day": 1, "title": "Arrival in Makkah & Pre-Hajj Rituals", "description": "Arrive in Makkah, perform initial Umrah, and prepare for the rites of Hajj with guidance from our scholars." },
+        { "day": 5, "title": "The Days of Hajj", "description": "Move to Mina, spend the day in Arafat, travel to Muzdalifah, and perform the rituals of stoning, sacrifice, and Tawaf al-Ifadah." },
+        { "day": 10, "title": "Post-Hajj in Makkah", "description": "Spend the days of Tashreeq in Mina and Makkah, completing all Hajj rituals." },
+        { "day": 13, "title": "Travel to Madinah & Departure", "description": "Travel to Madinah to visit the Prophet's Mosque before departing from Madinah airport." }
+    ]
+  },
+  {
+    "id": "islamic-jerusalem-tour-7",
+    "slug": "islamic-jerusalem-tour-7-days",
+    "title": "7-Day Islamic Jerusalem Tour",
+    "description": "Journey to the third holiest site in Islam. Pray at Masjid Al-Aqsa and explore the rich Islamic history of Jerusalem.",
+    "price": 1499,
+    "duration": "7 Days, 6 Nights",
+    "imageId": "al-aqsa-dome",
+    "includes": ["4-Star Hotel", "Daily Breakfast", "Guided Tours of Al-Aqsa & Old City", "Airport Transfers"],
+    "itinerary": [
+        { "day": 1, "title": "Arrival in Jerusalem", "description": "Arrive at the airport and transfer to your hotel in Jerusalem." },
+        { "day": 2, "title": "Al-Aqsa Compound", "description": "Full-day tour of the Al-Aqsa compound, including prayers at the mosque and visiting the Dome of the Rock." },
+        { "day": 3, "title": "Old City Exploration", "description": "Walk through the historic quarters of the Old City, visiting Islamic landmarks and markets." },
+        { "day": 4, "title": "Bethlehem & Hebron", "description": "Day trip to visit the birthplace of Prophet Isa (AS) in Bethlehem and the Ibrahimi Mosque in Hebron." },
+        { "day": 5, "title": "Free Day", "description": "A day for personal exploration, shopping, or additional prayers." },
+        { "day": 6, "title": "Historical Sites", "description": "Visit other historical sites around Jerusalem." },
+        { "day": 7, "title": "Departure", "description": "Transfer to the airport for your flight home." }
+    ]
+  },
+  {
+    "id": "istanbul-bursa-tour-8",
+    "slug": "istanbul-bursa-tour-8-days",
+    "title": "8-Day Istanbul & Bursa Tour",
+    "description": "Explore the legacy of the Ottoman Empire, from the magnificent mosques of Istanbul to the historic capital of Bursa.",
+    "price": 1299,
+    "duration": "8 Days, 7 Nights",
+    "imageId": "istanbul-mosque",
+    "includes": ["Boutique Hotels", "Bosphorus Cruise", "Guided City Tours", "All Transfers"],
+    "itinerary": [
+        { "day": 1, "title": "Discovering Istanbul", "description": "Visit the Blue Mosque, Hagia Sophia, Topkapi Palace, and enjoy a cruise on the Bosphorus." },
+        { "day": 5, "title": "Journey to Bursa", "description": "Travel to Bursa, visit the Grand Mosque (Ulu Cami), Green Mosque, and the historic Silk Market." },
+        { "day": 7, "title": "Return to Istanbul", "description": "Return to Istanbul for a final day of shopping and exploration." },
+        { "day": 8, "title": "Departure", "description": "Transfer to Istanbul airport for your departure." }
+    ]
+  }
+]
