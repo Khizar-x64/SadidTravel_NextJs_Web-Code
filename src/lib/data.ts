@@ -69,6 +69,5 @@ export const faqs: FAQ[] = [
 
 export const blogs: Blog[] = blogsData.map(blog => ({
     ...blog,
-    content: "...", // placeholder content
     image: findImage(blog.imageId)
 }));

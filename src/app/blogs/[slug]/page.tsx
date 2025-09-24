@@ -24,14 +24,23 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
     notFound();
   }
 
-  // Simple markdown parsing for bold text and paragraphs
+  // Simple markdown parsing for bold text, paragraphs and unordered lists
   const formatContent = (text: string) => {
-      return text.split('\n').map((paragraph, index) => {
-          if (paragraph.trim() === '') return null;
-          // A simple regex to replace **bold** text with <strong> tags
-          const bolded = paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-          return <p key={index} dangerouslySetInnerHTML={{ __html: bolded }} />;
-      });
+    return text.split('\n').map((paragraph, index) => {
+      if (paragraph.trim() === '') return null;
+      
+      // A simple regex to replace **bold** text with <strong> tags
+      let formattedParagraph = paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+      
+      // Handle unordered lists
+      if (formattedParagraph.trim().startsWith('* ')) {
+          return (
+              <li key={index} className="ml-5 list-disc" dangerouslySetInnerHTML={{ __html: formattedParagraph.substring(2) }} />
+          );
+      }
+      
+      return <p key={index} dangerouslySetInnerHTML={{ __html: formattedParagraph }} />;
+    });
   };
 
   return (
@@ -60,7 +69,7 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
       </section>
 
       <article className="container mx-auto py-12 px-4 max-w-4xl">
-        <div className="prose prose-lg max-w-none dark:prose-invert text-foreground">
+        <div className="prose prose-lg max-w-none dark:prose-invert text-foreground space-y-4">
             {formatContent(post.content)}
         </div>
       </article>
