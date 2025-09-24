@@ -1,3 +1,4 @@
+
 [
   {
     "id": "1",
@@ -19,5 +20,19 @@
     "location": "New York, USA",
     "quote": "The Jerusalem tour was a life-changing experience. Praying at Al-Aqsa was a dream come true. Thank you, Sadid Travels, for the amazing arrangements.",
     "avatarImageId": "avatar3"
+  },
+  {
+    "id": "4",
+    "name": "Zainab Ali",
+    "location": "Sydney, Australia",
+    "quote": "The 10-day Umrah package was perfect for my family. The hotels were just a few steps from the Haram, which was a huge blessing. The Ziyarat tours were very informative.",
+    "avatarImageId": "avatar2"
+  },
+  {
+    "id": "5",
+    "name": "Omar Abdullah",
+    "location": "Dubai, UAE",
+    "quote": "From the moment we landed until we departed, the Sadid Travels team took care of everything. Professional, courteous, and genuinely caring. Will definitely travel with them again.",
+    "avatarImageId": "avatar1"
   }
 ]

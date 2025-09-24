@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { blogs } from "@/lib/data";
 import { Badge } from "@/components/ui/badge";
-import { generateBlogPostAction } from "@/app/actions";
 
 type BlogDetailPageProps = {
   params: {
@@ -18,65 +17,22 @@ export async function generateStaticParams() {
 }
 
 // This component renders the individual blog page
-export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
+export default function BlogDetailPage({ params }: BlogDetailPageProps) {
   const post = blogs.find((p) => p.slug === params.slug);
 
   if (!post) {
     notFound();
   }
 
-  // Generate the blog post content using our AI action
-  const generationResult = await generateBlogPostAction({ title: post.title, excerpt: post.excerpt });
-
-  let postContent: React.ReactNode = (
-    <p className="text-destructive">
-      Could not generate blog content. Please try again later.
-    </p>
-  );
-
-  // Safely handle the response from the AI action
-  if (generationResult.success && generationResult.data) {
-    const { content, citations } = generationResult.data;
-    
-    // Simple markdown parsing for bold text and paragraphs
-    const formatContent = (text: string) => {
-        return text.split('\n').map((paragraph, index) => {
-            if (paragraph.trim() === '') return null;
-            // A simple regex to replace **bold** text with <strong> tags
-            const bolded = paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-            return <p key={index} dangerouslySetInnerHTML={{ __html: bolded }} />;
-        });
-    };
-
-    postContent = (
-      <>
-        <div className="prose prose-lg max-w-none dark:prose-invert text-foreground">
-            {formatContent(content)}
-        </div>
-        {citations && citations.length > 0 && (
-          <div className="mt-12">
-            <h3 className="text-2xl font-headline font-bold mb-4">Citations</h3>
-            <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
-              {citations.map((citation, index) => (
-                <li key={index}>
-                  <a
-                    href={citation.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-primary hover:underline"
-                  >
-                    {citation.source}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </>
-    );
-  } else if (generationResult.error) {
-    console.error("AI generation failed:", generationResult.error);
-  }
+  // Simple markdown parsing for bold text and paragraphs
+  const formatContent = (text: string) => {
+      return text.split('\n').map((paragraph, index) => {
+          if (paragraph.trim() === '') return null;
+          // A simple regex to replace **bold** text with <strong> tags
+          const bolded = paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+          return <p key={index} dangerouslySetInnerHTML={{ __html: bolded }} />;
+      });
+  };
 
   return (
     <div className="bg-background">
@@ -104,7 +60,9 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
       </section>
 
       <article className="container mx-auto py-12 px-4 max-w-4xl">
-        {postContent}
+        <div className="prose prose-lg max-w-none dark:prose-invert text-foreground">
+            {formatContent(post.content)}
+        </div>
       </article>
     </div>
   );
