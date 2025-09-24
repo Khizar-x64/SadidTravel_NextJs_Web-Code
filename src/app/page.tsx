@@ -1,57 +1,31 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-  ArrowRight,
-  Star,
-  ShieldCheck,
-  Compass,
-  Heart,
-  MessageSquare,
+  ArrowRight
 } from "lucide-react";
+import dynamic from "next/dynamic";
 
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { PackageCard } from "@/components/package-card";
-import { packages, testimonials } from "@/lib/data";
+import { packages } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { ContactPopup } from "@/components/contact-popup";
+import WhyUs from "@/components/why-us";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const heroImage = PlaceHolderImages.find(p => p.id === 'kaaba-hero');
+const featuredPackages = packages.slice(0, 3);
 
-const whyUsFeatures = [
-  {
-    icon: <ShieldCheck className="h-10 w-10 text-primary" />,
-    title: "Trusted & Verified",
-    description: "We are a licensed and certified travel agency, ensuring your peace of mind.",
-  },
-  {
-    icon: <Compass className="h-10 w-10 text-primary" />,
-    title: "Expert Guidance",
-    description: "Our experienced guides will be with you every step of your spiritual journey.",
-  },
-  {
-    icon: <Heart className="h-10 w-10 text-primary" />,
-    title: "Tailored for You",
-    description: "We offer customized packages to meet your specific needs and preferences.",
-  },
-  {
-    icon: <Star className="h-10 w-10 text-primary" />,
-    title: "Premium Service",
-    description: "Experience luxury and comfort with our top-rated accommodations and services.",
-  },
-];
+// Lazy load components that are not immediately visible
+const TestimonialsSection = dynamic(() => import('@/components/testimonials'), {
+  loading: () => <Skeleton className="h-96 w-full" />,
+  ssr: false
+});
+const ContactPopup = dynamic(() => import('@/components/contact-popup'), {
+  ssr: false
+});
 
 export default function Home() {
-  const featuredPackages = packages.slice(0, 3);
-
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <ContactPopup />
@@ -123,71 +97,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-12 md:py-24 bg-secondary">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold text-secondary-foreground">
-              Why Choose Sadid Travels?
-            </h2>
-            <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
-              We are dedicated to providing a seamless and spiritually fulfilling
-              journey.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {whyUsFeatures.map((feature) => (
-              <div key={feature.title} className="text-center p-6">
-                <div className="flex justify-center mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-bold font-headline">{feature.title}</h3>
-                <p className="mt-2 text-muted-foreground">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <WhyUs />
 
-      <section className="py-12 md:py-24 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">
-              What Our Pilgrims Say
-            </h2>
-            <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
-              Stories from those who have journeyed with us.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial) => (
-              <Card key={testimonial.id} className="bg-card shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardHeader className="flex flex-row items-center gap-4">
-                  <Avatar className="h-14 w-14">
-                    <AvatarImage
-                      src={testimonial.avatarUrl}
-                      alt={testimonial.name}
-                    />
-                    <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                  </Avatar>
-                  <div>
-                    <CardTitle className="font-bold">{testimonial.name}</CardTitle>
-                    <CardDescription>{testimonial.location}</CardDescription>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-center mb-2">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-accent text-accent" />
-                    ))}
-                  </div>
-                  <p className="text-muted-foreground italic">
-                    <MessageSquare className="inline-block h-4 w-4 mr-2" />
-                    {testimonial.quote}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection />
     </div>
   );
 }

@@ -6,13 +6,13 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Mail, Phone } from "lucide-react";
 import Link from 'next/link';
 
-export function ContactPopup() {
+export default function ContactPopup() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 2000); // Open after 2 seconds
+    }, 5000); // Open after 5 seconds to not impact initial load
 
     return () => clearTimeout(timer);
   }, []);
