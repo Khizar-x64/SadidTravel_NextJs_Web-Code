@@ -12,18 +12,11 @@ import { packages } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import WhyUs from "@/components/why-us";
 import { Skeleton } from "@/components/ui/skeleton";
+import TestimonialsSection from "@/components/testimonials";
+import ContactPopup from "@/components/contact-popup";
 
 const heroImage = PlaceHolderImages.find(p => p.id === 'kaaba-hero');
 const featuredPackages = packages.slice(0, 3);
-
-// Lazy load components that are not immediately visible
-const TestimonialsSection = dynamic(() => import('@/components/testimonials'), {
-  loading: () => <Skeleton className="h-96 w-full" />,
-  ssr: false
-});
-const ContactPopup = dynamic(() => import('@/components/contact-popup'), {
-  ssr: false
-});
 
 export default function Home() {
   return (
