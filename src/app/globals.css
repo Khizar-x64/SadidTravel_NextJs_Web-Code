@@ -43,19 +43,19 @@
 
   .dark {
     --background: 150 10% 10%;
-    --foreground: 60 30% 96%;
+    --foreground: 0 0% 98%;
 
     --card: 150 10% 13%;
-    --card-foreground: 60 30% 96%;
+    --card-foreground: 0 0% 98%;
 
     --popover: 150 10% 10%;
-    --popover-foreground: 60 30% 96%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 147 40% 60%;
+    --primary: 147 40% 65%;
     --primary-foreground: 147 46% 10%;
 
     --secondary: 150 10% 20%;
-    --secondary-foreground: 60 30% 96%;
+    --secondary-foreground: 0 0% 98%;
 
     --muted: 150 10% 15%;
     --muted-foreground: 60 20% 65%;
@@ -68,7 +68,7 @@
 
     --border: 150 10% 20%;
     --input: 150 10% 20%;
-    --ring: 147 40% 60%;
+    --ring: 147 40% 65%;
   }
 }
 
