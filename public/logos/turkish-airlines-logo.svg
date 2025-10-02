@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50"><text x="100" y="35" font-family="Arial, sans-serif" font-size="22" fill="#C70A25" text-anchor="middle" font-weight="bold">TURKISH AIRLINES</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" width="200" height="40" role="img" aria-labelledby="turkish-title">
+  <title id="turkish-title">Turkish Airlines Logo</title>
+  <style>
+    .turkish-text { font: bold 18px 'Helvetica', sans-serif; fill: #231F20; }
+    .turkish-symbol { fill: #C8102E; }
+  </style>
+  <text x="5" y="28" class="turkish-text">TURKISH AIRLINES</text>
+  <g transform="translate(180, 20)">
+    <circle cx="0" cy="0" r="10" class="turkish-symbol"/>
+    <circle cx="0" cy="0" r="8" fill="white"/>
+    <circle cx="0" cy="0" r="3" class="turkish-symbol"/>
+  </g>
+</svg>

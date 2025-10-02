@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40" role="img" aria-labelledby="flyadeal-title">
+    <title id="flyadeal-title">flyadeal Logo</title>
+    <style>
+      .flyadeal-text { font: bold 22px 'Helvetica Neue', Arial, sans-serif; fill: #4B0082; }
+      .flyadeal-text-2 { font: italic 22px 'Helvetica Neue', Arial, sans-serif; fill: #9370DB; }
+    </style>
+    <text x="5" y="28" class="flyadeal-text">flya</text>
+    <text x="50" y="28" class="flyadeal-text-2">deal</text>
+</svg>

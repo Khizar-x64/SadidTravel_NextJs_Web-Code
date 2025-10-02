@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40" role="img" aria-labelledby="saudia-title">
+    <title id="saudia-title">Saudia Logo</title>
+    <style>
+      .saudia-text { font: bold 24px 'Arial', sans-serif; fill: #004D26; }
+      .saudia-symbol { fill: #00684D; }
+    </style>
+    <text x="5" y="28" class="saudia-text">SAUDIA</text>
+    <g transform="translate(100, 20)">
+        <path class="saudia-symbol" d="M0 -15 L10 0 L0 15 L-10 0 Z" />
+        <path class="saudia-symbol" d="M-5 -10 L5 -10 L5 10 L-5 10 Z" transform="rotate(45)" />
+    </g>
+</svg>

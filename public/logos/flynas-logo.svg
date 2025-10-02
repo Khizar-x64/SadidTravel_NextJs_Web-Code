@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40" width="100" height="40" role="img" aria-labelledby="flynas-title">
+  <title id="flynas-title">Flynas Logo</title>
+  <style>
+    .flynas-text {
+      font-family: 'Arial Black', Gadget, sans-serif;
+      font-size: 24px;
+      fill: #2C3E50;
+    }
+    .flynas-swoosh {
+      fill: #3498DB;
+    }
+  </style>
+  <text x="5" y="28" class="flynas-text">flynas</text>
+  <path d="M 80 15 a 20 20 0 0 1 0 10" stroke="#3498DB" stroke-width="4" fill="none" />
+</svg>

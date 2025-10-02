@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50"><text x="100" y="35" font-family="Arial, sans-serif" font-size="28" fill="#A8002F" text-anchor="middle" font-weight="bold">MÖVENPICK</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 40" width="150" height="40" role="img" aria-labelledby="movenpick-title">
+  <title id="movenpick-title">Mövenpick Logo</title>
+  <style>
+    .movenpick-text { font: 22px 'Verdana', sans-serif; fill: #A40000; }
+    .movenpick-bird { stroke: #A40000; stroke-width: 2; fill: none; }
+  </style>
+  <text x="5" y="28" class="movenpick-text">MÖVENPICK</text>
+  <path d="M 125 15 C 130 10, 135 10, 140 15" class="movenpick-bird" />
+</svg>

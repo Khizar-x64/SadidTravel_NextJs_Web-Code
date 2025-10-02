@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40" width="100" height="40" role="img" aria-labelledby="dur-title">
+  <title id="dur-title">Dur Hospitality Logo</title>
+  <style>
+    .dur-text {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      fill: #333;
+    }
+  </style>
+  <text x="5" y="28" class="dur-text" font-size="20">DUR</text>
+  <path d="M45 10 L55 20 L45 30 Z" fill="#D4AF37"/>
+</svg>

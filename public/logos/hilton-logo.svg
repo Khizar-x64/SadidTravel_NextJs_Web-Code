@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50"><text x="100" y="35" font-family="Arial, sans-serif" font-size="30" fill="#0072B8" text-anchor="middle" font-weight="bold">Hilton</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40" role="img" aria-labelledby="hilton-title">
+  <title id="hilton-title">Hilton Logo</title>
+  <style>
+    .hilton-text { font: bold 24px 'Times New Roman', serif; fill: #1C3C5A; letter-spacing: 1px; }
+  </style>
+  <path d="M 5 15 C 10 5, 20 5, 25 15 L 25 30 C 20 40, 10 40, 5 30 Z" fill="#1C3C5A"/>
+  <text x="35" y="28" class="hilton-text">Hilton</text>
+</svg>

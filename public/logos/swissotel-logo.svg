@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50"><text x="100" y="35" font-family="Arial, sans-serif" font-size="30" fill="#E60000" text-anchor="middle" font-weight="bold">Swissôtel</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 40" width="140" height="40" role="img" aria-labelledby="swissotel-title">
+  <title id="swissotel-title">Swissôtel Logo</title>
+  <style>
+    .swissotel-text { font: 22px 'Helvetica', sans-serif; fill: #333; }
+    .swissotel-plus { fill: #D80027; }
+  </style>
+  <text x="5" y="28" class="swissotel-text">swissôtel</text>
+  <g transform="translate(120, 20)">
+    <rect x="-8" y="-1.5" width="16" height="3" class="swissotel-plus" />
+    <rect x="-1.5" y="-8" width="3" height="16" class="swissotel-plus" />
+  </g>
+</svg>

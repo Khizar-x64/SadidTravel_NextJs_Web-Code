@@ -77,10 +77,13 @@ export const destinations: Destination[] = destinationsData.map(dest => ({
 }));
 
 export const partners: Partner[] = [
+  { id: 'saudia', name: 'Saudia', logoUrl: '/logos/saudia-logo.svg', website: 'https://www.saudia.com' },
+  { id: 'flynas', name: 'Flynas', logoUrl: '/logos/flynas-logo.svg', website: 'https://www.flynas.com' },
+  { id: 'dur-hospitality', name: 'Dur Hospitality', logoUrl: '/logos/dur-logo.svg', website: 'https://www.dur.sa' },
   { id: 'qatar-airways', name: 'Qatar Airways', logoUrl: '/logos/qatar-airways-logo.svg', website: 'https://www.qatarairways.com' },
   { id: 'turkish-airlines', name: 'Turkish Airlines', logoUrl: '/logos/turkish-airlines-logo.svg', website: 'https://www.turkishairlines.com' },
-  { id: 'emirates', name: 'Emirates', logoUrl: '/logos/emirates-logo.svg', website: 'https://www.emirates.com' },
-  { id: 'swissotel', name: 'Swissôtel', logoUrl: '/logos/swissotel-logo.svg', website: 'https://www.swissotel.com' },
-  { id: 'movenpick', name: 'Mövenpick', logoUrl: '/logos/movenpick-logo.svg', website: 'https://www.movenpick.com' },
   { id: 'hilton', name: 'Hilton', logoUrl: '/logos/hilton-logo.svg', website: 'https://www.hilton.com' },
+  { id: 'movenpick', name: 'Mövenpick', logoUrl: '/logos/movenpick-logo.svg', website: 'https://www.movenpick.com' },
+  { id: 'flyadeal', name: 'flyadeal', logoUrl: '/logos/flyadeal-logo.svg', website: 'https://www.flyadeal.com' },
+  { id: 'swissotel', name: 'Swissôtel', logoUrl: '/logos/swissotel-logo.svg', website: 'https://www.swissotel.com' },
 ];
