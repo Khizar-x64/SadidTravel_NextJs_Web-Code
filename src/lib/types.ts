@@ -67,3 +67,26 @@ export type FAQ = {
   question: string;
   answer: string;
 };
+
+export type Destination = {
+    id: string;
+    slug: string;
+    name: string;
+    short_description: string;
+    long_description: string;
+    image: {
+        id: string;
+        imageUrl: string;
+        description: string;
+        imageHint: string;
+    };
+    related_blogs: string[];
+    related_packages: string[];
+};
+
+export type Partner = {
+  id: string;
+  name: string;
+  logoUrl: string;
+  website: string;
+};

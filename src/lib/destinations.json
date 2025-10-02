@@ -1,0 +1,63 @@
+
+[
+  {
+    "id": "jordan",
+    "slug": "jordan",
+    "name": "Jordan",
+    "imageId": "petra-jordan",
+    "short_description": "Discover the blessed lands of Jordan, home to the ancient city of Petra and sites connected to numerous prophets.",
+    "long_description": "Jordan holds a special place in Islamic history as a land traversed by many prophets. It is home to the ancient city of Petra, one of the Seven Wonders of the World, and numerous sacred sites, including the tombs of several companions of the Prophet Muhammad (PBUH) like Zayd ibn Harithah. The blessed tree where the Prophet (PBUH) is said to have rested as a child is also located here. A journey through Jordan is a journey through the annals of early Islamic and pre-Islamic history, offering deep spiritual reflection.",
+    "related_blogs": ["best-places-to-visit-in-jordan"],
+    "related_packages": []
+  },
+  {
+    "id": "egypt",
+    "slug": "egypt",
+    "name": "Egypt",
+    "imageId": "pyramids-egypt",
+    "short_description": "Explore the land of the Pharaohs, where Prophet Musa (AS) confronted tyranny and where Islamic civilization flourished for centuries.",
+    "long_description": "Egypt, the 'Gift of the Nile,' is a land rich with history that predates and includes Islam. It is the land where Prophet Musa (Moses) was raised and confronted the Pharaoh. Later, under Islamic rule, Cairo became a major center of learning and culture, earning the title 'The City of a Thousand Minarets.' Its Al-Azhar University is one of the oldest and most prestigious institutions of Islamic learning in the world. From the majestic Pyramids of Giza to the historic mosques and markets of Islamic Cairo, Egypt offers a captivating blend of ancient and Islamic heritage.",
+    "related_blogs": [],
+    "related_packages": []
+  },
+  {
+    "id": "turkey",
+    "slug": "turkey",
+    "name": "Turkey",
+    "imageId": "istanbul-mosque",
+    "short_description": "Walk through the legacy of the Ottoman Caliphate in Istanbul, a city where continents and cultures meet.",
+    "long_description": "Turkey, particularly Istanbul, was the heart of the Islamic world for centuries as the seat of the Ottoman Caliphate. The city is a treasure trove of Islamic art and architecture, from the majestic Hagia Sophia Grand Mosque and the elegant Blue Mosque to the opulent Topkapi Palace, which houses sacred relics of the Prophet Muhammad (PBUH). A journey here is a journey through the heights of Islamic power, art, and civilization. The city's vibrant bazaars, Bosphorus cruises, and culinary delights make it an unforgettable destination.",
+    "related_blogs": ["the-rich-history-of-istanbul"],
+    "related_packages": ["istanbul-bursa-tour-8-days"]
+  },
+  {
+    "id": "uae",
+    "slug": "uae",
+    "name": "Dubai, UAE",
+    "imageId": "sheikh-zayed-mosque",
+    "short_description": "Experience the blend of modern marvels and Islamic tradition in the UAE, from Dubai's skyscrapers to Abu Dhabi's Grand Mosque.",
+    "long_description": "The United Arab Emirates offers a unique look at a modern nation deeply rooted in its Islamic traditions. While Dubai is known for its futuristic skyline and luxury, it also offers a rich cultural experience. Neighboring Abu Dhabi is home to the Sheikh Zayed Grand Mosque, a breathtaking masterpiece of modern Islamic architecture and a symbol of tolerance and beauty. The UAE provides a fascinating study in how faith and modernity can coexist and flourish together, offering comfort, luxury, and spiritual sights.",
+    "related_blogs": [],
+    "related_packages": []
+  },
+  {
+    "id": "morocco",
+    "slug": "morocco",
+    "name": "Morocco",
+    "imageId": "morocco-blue-city",
+    "short_description": "Immerse yourself in the vibrant culture and deep Islamic heritage of Morocco, from Fes to Marrakech.",
+    "long_description": "Morocco is a land of vibrant colors, intricate designs, and profound Islamic history. The ancient city of Fes is home to the University of Al-Qarawiyyin, the oldest continuously operating university in the world, founded by a Muslim woman, Fatima al-Fihri. Marrakech, with its bustling Jemaa el-Fnaa square, and the tranquil blue city of Chefchaouen offer unique cultural experiences. Moroccan architecture, with its detailed zellij tilework and grand riads, is a testament to the country's rich artistic and Islamic heritage.",
+    "related_blogs": ["top-islamic-heritage-in-morocco"],
+    "related_packages": []
+  },
+  {
+    "id": "thailand",
+    "slug": "thailand",
+    "name": "Thailand",
+    "imageId": "thailand-boats",
+    "short_description": "Discover the surprising halal travel gems in Thailand, from serene mosques in Bangkok to beautiful southern islands.",
+    "long_description": "While not a traditionally Islamic country, Thailand is an increasingly popular destination for Muslim travelers. The southern regions have a significant Muslim population, and the country has made great strides in providing halal-friendly options. From finding delicious halal Thai food in Bangkok's street markets to enjoying the stunning beaches of Krabi and Phuket with family-friendly and private resorts, Thailand offers a unique and welcoming experience for Muslim tourists seeking natural beauty and adventure.",
+    "related_blogs": ["halal-food-in-thailand"],
+    "related_packages": []
+  }
+]

@@ -1,14 +1,13 @@
-import { SiteConfig, Package, Testimonial, FAQ, Blog } from "@/lib/types";
+import { SiteConfig, Package, Testimonial, FAQ, Blog, Destination, Partner } from "@/lib/types";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import packagesData from './packages.json';
 import blogsData from './blogs.json';
 import testimonialsData from './testimonials.json';
-
+import destinationsData from './destinations.json';
 
 const findImage = (id: string) => {
   const image = PlaceHolderImages.find((img) => img.id === id);
   if (!image) {
-    // Return a default/fallback image object if not found
     const defaultImage = PlaceHolderImages.find((img) => img.id === 'islamic-architecture');
     return defaultImage || { id: 'default', imageUrl: 'https://picsum.photos/seed/7/600/400', description: 'Default fallback image', imageHint: 'architecture pattern' };
   }
@@ -28,6 +27,7 @@ export const siteConfig: SiteConfig = {
     { title: "Home", href: "/" },
     { title: "About", href: "/about" },
     { title: "Packages", href: "/packages" },
+    { title: "Destinations", href: "/destinations" },
     { title: "Blogs", href: "/blogs" },
     { title: "Contact", href: "/contact" },
   ],
@@ -42,7 +42,6 @@ export const testimonials: Testimonial[] = testimonialsData.map(t => ({
   ...t,
   avatarUrl: findImage(t.avatarImageId).imageUrl,
 }));
-
 
 export const faqs: FAQ[] = [
     {
@@ -71,3 +70,17 @@ export const blogs: Blog[] = blogsData.map(blog => ({
     ...blog,
     image: findImage(blog.imageId)
 }));
+
+export const destinations: Destination[] = destinationsData.map(dest => ({
+    ...dest,
+    image: findImage(dest.imageId),
+}));
+
+export const partners: Partner[] = [
+  { id: 'qatar-airways', name: 'Qatar Airways', logoUrl: '/logos/qatar-airways-logo.svg', website: 'https://www.qatarairways.com' },
+  { id: 'turkish-airlines', name: 'Turkish Airlines', logoUrl: '/logos/turkish-airlines-logo.svg', website: 'https://www.turkishairlines.com' },
+  { id: 'emirates', name: 'Emirates', logoUrl: '/logos/emirates-logo.svg', website: 'https://www.emirates.com' },
+  { id: 'swissotel', name: 'Swissôtel', logoUrl: '/logos/swissotel-logo.svg', website: 'https://www.swissotel.com' },
+  { id: 'movenpick', name: 'Mövenpick', logoUrl: '/logos/movenpick-logo.svg', website: 'https://www.movenpick.com' },
+  { id: 'hilton', name: 'Hilton', logoUrl: '/logos/hilton-logo.svg', website: 'https://www.hilton.com' },
+];

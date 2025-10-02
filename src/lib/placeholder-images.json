@@ -77,6 +77,36 @@
       "description": "Avatar of a person",
       "imageUrl": "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c21pbGluZyUyMHBlcnNvbnxlbnwwfHx8fDE3NTg2OTk5ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "smiling person"
+    },
+    {
+      "id": "petra-jordan",
+      "description": "The Treasury building in Petra, Jordan, carved into a sandstone cliff face.",
+      "imageUrl": "https://images.unsplash.com/photo-1590132338426-370c915c67d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxQZXRyYSUyMEpvcmRhbnxlbnwwfHx8fDE3NTkwNDIwNzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Petra Jordan"
+    },
+    {
+      "id": "pyramids-egypt",
+      "description": "The great pyramids of Giza in Egypt with camels in the foreground.",
+      "imageUrl": "https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcmF5aW1pZHMlMjBlZ3lwdHxlbnwwfHx8fDE3NTkwNDIxNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pyramids egypt"
+    },
+    {
+      "id": "sheikh-zayed-mosque",
+      "description": "The Sheikh Zayed Grand Mosque in Abu Dhabi, UAE, with its white marble domes and minarets.",
+      "imageUrl": "https://images.unsplash.com/photo-1579401546285-a74a1d401a88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaGVpa2glMjB6YXllZCUyMG1vc3F1ZXxlbnwwfHx8fDE3NTkwNDIxODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "grand mosque"
+    },
+    {
+      "id": "morocco-blue-city",
+      "description": "The iconic blue-washed walls and streets of Chefchaouen, Morocco.",
+      "imageUrl": "https://images.unsplash.com/photo-1559922463-ea688323c68a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3JvY2NvJTIwYmx1ZSUyMGNpdHl8ZW58MHx8fHwxNzU5MDQyMjA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blue city"
+    },
+    {
+      "id": "thailand-boats",
+      "description": "Long-tail boats on a turquoise beach in Thailand with limestone cliffs in the background.",
+      "imageUrl": "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0aGFpbGFuZCUyMGJlYWNofGVufDB8fHx8MTc1OTA0MjI0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "thailand beach"
     }
   ]
 }

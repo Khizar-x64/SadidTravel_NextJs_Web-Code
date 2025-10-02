@@ -14,6 +14,7 @@ import WhyUs from "@/components/why-us";
 import { Skeleton } from "@/components/ui/skeleton";
 import TestimonialsSection from "@/components/testimonials";
 import ContactPopup from "@/components/contact-popup";
+import PartnersSection from "@/components/partners";
 
 const heroImage = PlaceHolderImages.find(p => p.id === 'kaaba-hero');
 const featuredPackages = packages.slice(0, 3);
@@ -48,7 +49,7 @@ export default function Home() {
             سديد للسفريات
           </h2>
           <p className="mt-4 max-w-2xl text-lg md:text-xl text-primary-foreground/90">
-            Discover our premium Hajj and Umrah packages, designed for a
+            Discover our premium Hajj, Umrah, and global Islamic tour packages, designed for a
             profoundly moving and comfortable pilgrimage.
           </p>
           <div className="mt-8 flex flex-wrap gap-4 justify-center">
@@ -93,6 +94,8 @@ export default function Home() {
       <WhyUs />
 
       <TestimonialsSection />
+      
+      <PartnersSection />
     </div>
   );
 }
