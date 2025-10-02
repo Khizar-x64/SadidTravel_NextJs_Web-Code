@@ -35,7 +35,7 @@ export default function PartnersSection() {
                     <div className="overflow-hidden" ref={emblaRef}>
                         <div className="flex">
                             {partners.map((partner) => (
-                                <div key={partner.id} className="flex-shrink-0 flex-grow-0 basis-1/3 md:basis-1/5 lg:basis-1/6 p-4">
+                                <div key={partner.id} className="flex-shrink-0 flex-grow-0 basis-1/2 sm:basis-1/3 md:basis-1/5 lg:basis-1/6 p-4">
                                     <Link href={partner.website} target="_blank" rel="noopener noreferrer" className="flex justify-center items-center h-20 p-2 bg-white/70 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 grayscale hover:grayscale-0 opacity-80 hover:opacity-100">
                                         <div className="relative w-full h-full">
                                             <Image
@@ -54,7 +54,7 @@ export default function PartnersSection() {
                      <Button
                         variant="outline"
                         size="icon"
-                        className="absolute left-0 top-1/2 -translate-y-1/2 transform rounded-full h-10 w-10 z-10 hidden md:flex"
+                        className="absolute left-[-10px] sm:left-0 top-1/2 -translate-y-1/2 transform rounded-full h-10 w-10 z-10 flex"
                         onClick={scrollPrev}
                     >
                         <ArrowLeft className="h-5 w-5" />
@@ -62,7 +62,7 @@ export default function PartnersSection() {
                     <Button
                         variant="outline"
                         size="icon"
-                        className="absolute right-0 top-1/2 -translate-y-1/2 transform rounded-full h-10 w-10 z-10 hidden md:flex"
+                        className="absolute right-[-10px] sm:right-0 top-1/2 -translate-y-1/2 transform rounded-full h-10 w-10 z-10 flex"
                         onClick={scrollNext}
                     >
                         <ArrowRight className="h-5 w-5" />
