@@ -33,6 +33,64 @@ export function generateMetadata({ params }: DestinationDetailPageProps) {
   };
 }
 
+const formatContent = (text: string) => {
+  const content = text.split('\n').map((paragraph, index) => {
+    if (paragraph.trim() === '') return null;
+
+    // This is a simple parser. A more robust solution would use a markdown library.
+    if (paragraph.startsWith('## ')) {
+      return (
+        <h2 key={index} className="text-2xl font-bold mt-8 mb-4 font-headline">
+          {paragraph.substring(3)}
+        </h2>
+      );
+    }
+    if (paragraph.startsWith('### ')) {
+      return (
+        <h3 key={index} className="text-xl font-bold mt-6 mb-3 font-headline">
+          {paragraph.substring(4)}
+        </h3>
+      );
+    }
+    if (paragraph.trim().startsWith('* ')) {
+      return (
+        <li key={index} className="list-disc ml-5 mb-2">
+          {paragraph.substring(2)}
+        </li>
+      );
+    }
+    return (
+      <p key={index} className="mb-4">
+        {paragraph}
+      </p>
+    );
+  }).filter(Boolean); // Remove empty paragraphs
+
+  // Group list items
+  const finalContent: (JSX.Element | JSX.Element[])[] = [];
+  let listItems: JSX.Element[] = [];
+
+  for (const item of content) {
+    if (item && item.type === 'li') {
+      listItems.push(item);
+    } else {
+      if (listItems.length > 0) {
+        finalContent.push(<ul key={`ul-${finalContent.length}`} className="mb-4">{listItems}</ul>);
+        listItems = [];
+      }
+      if(item) {
+        finalContent.push(item);
+      }
+    }
+  }
+
+  if (listItems.length > 0) {
+    finalContent.push(<ul key="ul-last" className="mb-4">{listItems}</ul>);
+  }
+
+  return finalContent;
+};
+
 export default function DestinationDetailPage({ params }: DestinationDetailPageProps) {
   const dest = destinations.find((d) => d.slug === params.slug);
 
@@ -72,7 +130,7 @@ export default function DestinationDetailPage({ params }: DestinationDetailPageP
               </CardHeader>
               <CardContent>
                 <div className="prose prose-lg max-w-none text-muted-foreground">
-                  <p>{dest.long_description}</p>
+                  {formatContent(dest.long_description)}
                 </div>
               </CardContent>
             </Card>
