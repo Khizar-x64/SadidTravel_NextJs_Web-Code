@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useForm } from "react-hook-form";
@@ -47,12 +48,17 @@ export function ContactForm() {
   });
 
   const onSubmit = (data: FormData) => {
-    console.log(data); // In a real app, you would send this to your backend
+    const subject = encodeURIComponent(`Inquiry from ${data.name} - ${data.category}`);
+    const body = encodeURIComponent(
+      `Name: ${data.name}\nEmail: ${data.email}\nCategory: ${data.category}\n\nQuestion:\n${data.question}`
+    );
+    const mailtoLink = `mailto:sadidtravelsllc@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
+
     toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We will get back to you shortly.",
+      title: "Opening Your Email Client",
+      description: "Please complete and send the message from your email app.",
     });
-    form.reset();
   };
 
   return (
