@@ -103,69 +103,69 @@
   },
   {
     "id": "kaaba-crowd",
-    "description": "Close-up of the Kaaba with a dense crowd of pilgrims surrounding it.",
-    "imageUrl": "https://images.unsplash.com/photo-1531525645387-4351342654a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxrYWFiYSUyMGNyb3dkfGVufDB8fHx8MTc1OTUxMTg1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+    "description": "Pilgrims circumambulating the Kaaba in Mecca.",
+    "imageUrl": "https://images.unsplash.com/photo-1531525645387-4351342654a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxLYWFiYSUyMGNyb3dkfGVufDB8fHx8MTc2MDM3ODMwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
     "imageHint": "Kaaba crowd"
   },
   {
     "id": "madinah-mosque-interior",
-    "description": "The grand interior of the Prophet's Mosque in Madinah with intricate carpets and columns.",
-    "imageUrl": "https://images.unsplash.com/photo-1662581896062-b535560938f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYWRpbmFoJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzU5NTE5MTczfDA&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "mosque interior"
+    "description": "The grand interior of the Prophet's Mosque in Madinah with intricate carpets and columns under open umbrellas.",
+    "imageUrl": "https://images.unsplash.com/photo-1662581896062-b535560938f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWRpbmFoJTIwbW9zcXVlJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYwMzc4Mzg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "Madinah mosque"
   },
   {
     "id": "kaaba-at-night",
-    "description": "The Kaaba illuminated at night, with pilgrims performing tawaf.",
-    "imageUrl": "https://images.unsplash.com/photo-1602162969968-315e1a590513?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxrYWFiYSUyMGF0JTIwbmlnaHR8ZW58MHx8fHwxNzU5NTIwNDcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "description": "A nighttime shot of the Kaaba, beautifully illuminated, with motion blur of pilgrims.",
+    "imageUrl": "https://images.unsplash.com/photo-1602162969968-315e1a590513?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxrYWFiYSUyMGF0JTIwbmlnaHR8ZW58MHx8fHwxNzYwMzc4NDMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
     "imageHint": "Kaaba night"
   },
   {
     "id": "madinah-sunset",
-    "description": "A beautiful sunset over the city of Madinah, with mosque minarets in the skyline.",
-    "imageUrl": "https://images.unsplash.com/photo-1627922759105-047df1534898?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWRpbmFoJTIwc3Vuc2V0fGVufDB8fHx8MTc1OTUyMDY2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+    "description": "The Prophet's Mosque in Madinah viewed from a distance during a beautiful sunset.",
+    "imageUrl": "https://images.unsplash.com/photo-1627922759105-047df1534988?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWRpbmFoJTIwc3Vuc2V0fGVufDB8fHx8MTc2MDM3ODQ2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
     "imageHint": "Madinah sunset"
   },
   {
     "id": "mecca-cityscape",
-    "description": "A panoramic view of the Mecca cityscape with the clock tower and Masjid al-Haram.",
-    "imageUrl": "https://images.unsplash.com/photo-1590187519969-e374245c363d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtZWNjYSUyMGNpdHlzY2FwZXxlbnwwfHx8fDE3NTk1MjA3MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "description": "A panoramic view of the Mecca cityscape with the clock tower and Masjid al-Haram at dusk.",
+    "imageUrl": "https://images.unsplash.com/photo-1590187519969-e374245c363d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZWNjYSUyMGNpdHlzY2FwZXxlbnwwfHx8fDE3NjAzNzg1MDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "imageHint": "Mecca cityscape"
   },
   {
     "id": "quran-rehal",
-    "description": "An open Quran on a wooden stand (rehal) in a softly lit room.",
-    "imageUrl": "https://images.unsplash.com/photo-1609592222477-993c3c75184b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxRdXJhbiUyMHJlaGFsfGVufDB8fHx8MTc1OTUyMDc1OXww&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "Quran rehal"
+    "description": "A close-up shot of the Kaaba's Kiswah with golden calligraphy.",
+    "imageUrl": "https://images.unsplash.com/photo-1616790924943-030613867664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxrYWFiYSUyMGRldGFpbHxlbnwwfHx8fDE3NjAzNzg1NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "Kaaba detail"
   },
   {
     "id": "prayer-beads",
-    "description": "Close-up of Islamic prayer beads (tasbih) on a prayer mat.",
-    "imageUrl": "https://images.unsplash.com/photo-1602732392403-d242bdb7ef00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcmF5ZXIlMjBiZWFkc3xlbnwwfHx8fDE3NTk1MjA4MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "prayer beads"
+    "description": "The minarets and green dome of the Prophet's Mosque against a clear blue sky.",
+    "imageUrl": "https://images.unsplash.com/photo-1588887258385-a35567095a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWRpbmFoJTIwZG9tZXxlbnwwfHx8fDE3NjAzNzg1ODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "Madinah dome"
   },
   {
     "id": "islamic-pattern",
-    "description": "A detailed, colorful Islamic geometric pattern from a tile wall.",
-    "imageUrl": "https://images.unsplash.com/photo-1582236168937-05b634586333?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxpc2xhbWljJTIwcGF0dGVybnxlbnwwfHx8fDE3NTk1MjA4NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "islamic pattern"
+    "description": "Looking up at the Kaaba and the surrounding Grand Mosque building.",
+    "imageUrl": "https://images.unsplash.com/photo-1558236128-3e4b4457223c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxLYWFiYSUyMGZyb20lMjBiZWxvd3xlbnwwfHx8fDE3NjAzNzg2NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "Kaaba architecture"
   },
   {
     "id": "pilgrims-walking",
-    "description": "A crowd of pilgrims walking towards the Grand Mosque in Mecca.",
-    "imageUrl": "https://images.unsplash.com/photo-1529107386315-3F947343546a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwaWxncmltcyUyMHdhbGtpbmd8ZW58MHx8fHwxNzU5NTIwOTIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "pilgrims walking"
+    "description": "A close-up of the courtyard of the Prophet's Mosque with its iconic umbrellas.",
+    "imageUrl": "https://images.unsplash.com/photo-1605725695272-3c1356396554?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWRpbmFoJTIwdW1icmVsbGFzfGVufDB8fHx8MTc2MDM3ODY4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "Madinah courtyard"
   },
   {
     "id": "mosque-silhouette",
-    "description": "The silhouette of a mosque against a beautiful sunset sky.",
-    "imageUrl": "https://images.unsplash.com/photo-1575936802424-71249b657448?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3NxdWUlMjBzaWxob3VldHRlfGVufDB8fHx8MTc1OTUyMDk4MHww&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "mosque silhouette"
+    "description": "An aerial view of pilgrims performing tawaf around the Kaaba.",
+    "imageUrl": "https://images.unsplash.com/photo-1603241595166-d4859a0f67a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0YXdhZiUyMGFlcmlhbHxlbnwwfHx8fDE3NjAzNzg3Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "Tawaf aerial"
   },
   {
     "id": "dates-and-water",
-    "description": "A traditional Islamic scene of dates and a glass of water for breaking fast.",
-    "imageUrl": "https://images.unsplash.com/photo-1601925349488-5789069651a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRlcyUyMGFuZCUyMHdhdGVyfGVufDB8fHx8MTc1OTUyMTAwOXww&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "dates water"
+    "description": "A serene view of the Prophet's Mosque minarets at dawn.",
+    "imageUrl": "https://images.unsplash.com/photo-1605725695292-6a4a15a31e84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWRpbmFoJTIwZGF3bnxlbnwwfHx8fDE3NjAzNzg3Njl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "Madinah dawn"
   },
   {
     "id": "hajj-package-image",
