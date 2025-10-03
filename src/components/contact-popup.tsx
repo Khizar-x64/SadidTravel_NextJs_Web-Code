@@ -37,8 +37,8 @@ export default function ContactPopup() {
           <div className="space-y-4 text-muted-foreground">
             <div className="flex items-center">
               <Phone className="h-5 w-5 mr-3 text-primary" />
-              <a href="tel:+12242241652" className="hover:text-primary">
-                +1 224-224-1652
+              <a href="tel:+17543992498" className="hover:text-primary">
+                +1 754-399-2498
               </a>
             </div>
             <div className="flex items-center">
