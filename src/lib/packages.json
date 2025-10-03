@@ -39,25 +39,6 @@
     ]
   },
   {
-    "id": "islamic-jerusalem-tour-7",
-    "slug": "islamic-jerusalem-tour-7-days",
-    "title": "7-Day Islamic Jerusalem Tour",
-    "description": "Journey to the third holiest site in Islam. Pray at Masjid Al-Aqsa and explore the rich Islamic history of Jerusalem.",
-    "price": 1499,
-    "duration": "7 Days, 6 Nights",
-    "imageId": "al-aqsa-dome",
-    "includes": ["4-Star Hotel", "Daily Breakfast", "Guided Tours of Al-Aqsa & Old City", "Airport Transfers"],
-    "itinerary": [
-        { "day": 1, "title": "Arrival in Jerusalem", "description": "Arrive at the airport and transfer to your hotel in Jerusalem." },
-        { "day": 2, "title": "Al-Aqsa Compound", "description": "Full-day tour of the Al-Aqsa compound, including prayers at the mosque and visiting the Dome of the Rock." },
-        { "day": 3, "title": "Old City Exploration", "description": "Walk through the historic quarters of the Old City, visiting Islamic landmarks and markets." },
-        { "day": 4, "title": "Bethlehem & Hebron", "description": "Day trip to visit the birthplace of Prophet Isa (AS) in Bethlehem and the Ibrahimi Mosque in Hebron." },
-        { "day": 5, "title": "Free Day", "description": "A day for personal exploration, shopping, or additional prayers." },
-        { "day": 6, "title": "Historical Sites", "description": "Visit other historical sites around Jerusalem." },
-        { "day": 7, "title": "Departure", "description": "Transfer to the airport for your flight home." }
-    ]
-  },
-  {
     "id": "istanbul-bursa-tour-8",
     "slug": "istanbul-bursa-tour-8-days",
     "title": "8-Day Istanbul & Bursa Tour",
