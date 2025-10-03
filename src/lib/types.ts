@@ -35,6 +35,8 @@ export type Package = {
   };
   includes: string[];
   itinerary: { day: number | string; title: string; description: string }[];
+  category?: string;
+  imageId?: string;
 };
 
 export type Blog = {

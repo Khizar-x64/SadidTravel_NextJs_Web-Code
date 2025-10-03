@@ -3,7 +3,7 @@
     {
       "id": "kaaba-hero",
       "description": "A wide shot of the Kaaba in Mecca, surrounded by pilgrims, under a clear sky.",
-      "imageUrl": "https://images.unsplash.com/photo-1751040138846-560876e08259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxLYWFiYSUyME1lY2NhfGVufDB8fHx8MTc1ODcwMjk4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589252033339-372048f15b3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxLYWFiYSUyME1lY2NhfGVufDB8fHx8MTc1ODcwMjk4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Kaaba Mecca"
     },
     {
@@ -43,12 +43,6 @@
       "imageHint": "islamic architecture"
     },
     {
-      "id": "blog-travel-tips",
-      "description": "A flat lay of travel essentials like a passport, map, and compass on a wooden table.",
-      "imageUrl": "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0cmF2ZWwlMjBlc3NlbnRpYWxzfGVufDB8fHx8MTc1ODcwMjk4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "travel essentials"
-    },
-    {
       "id": "blog-spiritual-journey",
       "description": "A person reading a Quran with a soft light.",
       "imageUrl": "https://images.unsplash.com/photo-1575645513913-c002ea3b2e01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyZWFkaW5nJTIwcXVyYW58ZW58MHx8fHwxNzU4NzAyOTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -81,32 +75,98 @@
     {
       "id": "petra-jordan",
       "description": "The Treasury building in Petra, Jordan, carved into a sandstone cliff face.",
-      "imageUrl": "https://images.unsplash.com/photo-1559922463-ea688323c68a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3JvY2NvJTIwYmx1ZSUyMGNpdHl8ZW58MHx8fHwxNzU5MDQyMjA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1590132338426-370c915c67d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxQZXRyYSUyMEpvcmRhbnxlbnwwfHx8fDE3NTkwNDIwNzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Petra Jordan"
     },
     {
       "id": "pyramids-egypt",
       "description": "The great pyramids of Giza in Egypt with camels in the foreground.",
-      "imageUrl": "https://images.unsplash.com/photo-1572009153323-e274a7731a5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxweXJhbWlkcyUyMGVneXB0fGVufDB8fHx8MTc1OTQyNDgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcmF5aW1pZHMlMjBlZ3lwdHxlbnwwfHx8fDE3NTkwNDIxNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "pyramids egypt"
     },
     {
       "id": "sheikh-zayed-mosque",
       "description": "The Sheikh Zayed Grand Mosque in Abu Dhabi, UAE, with its white marble domes and minarets.",
-      "imageUrl": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7207?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkdWJhaXxlbnwwfHx8fDE3NTk0MjQ4Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579401546285-a74a1d401a88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaGVpa2glMjB6YXllZCUyMG1vc3F1ZXxlbnwwfHx8fDE3NTkwNDIxODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "grand mosque"
     },
     {
       "id": "morocco-blue-city",
       "description": "The iconic blue-washed walls and streets of Chefchaouen, Morocco.",
-      "imageUrl": "https://images.unsplash.com/photo-1534999395232-3c8b935a8f64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3JvY2NvfGVufDB8fHx8MTc1OTQyNDg5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1559922463-ea688323c68a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3JvY2NvJTIwYmx1ZSUyMGNpdHl8ZW58MHx8fHwxNzU5MDQyMjA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "blue city"
     },
     {
       "id": "thailand-boats",
       "description": "Long-tail boats on a turquoise beach in Thailand with limestone cliffs in the background.",
-      "imageUrl": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0aGFpbGFuZCUyMGJpb2R8ZW58MHx8fHwxNzU5NDI0OTIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0aGFpbGFuZCUyMGJlYWNofGVufDB8fHx8MTc1OTA0MjI0MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "thailand beach"
+    },
+    {
+      "id": "kaaba-crowd",
+      "description": "Close-up of the Kaaba with a dense crowd of pilgrims surrounding it.",
+      "imageUrl": "https://images.unsplash.com/photo-1604573713537-a1a1b1a4a8a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxLYWFiYSUyME1lY2NhfGVufDB8fHx8MTc1ODcwMjk4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Kaaba crowd"
+    },
+    {
+      "id": "madinah-mosque-interior",
+      "description": "The grand interior of the Prophet's Mosque in Madinah with intricate carpets and columns.",
+      "imageUrl": "https://images.unsplash.com/photo-1610052811497-6c8417837ff2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYWRpbmFoJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzU5MDc4NjkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mosque interior"
+    },
+    {
+      "id": "kaaba-at-night",
+      "description": "The Kaaba illuminated at night, with pilgrims performing tawaf.",
+      "imageUrl": "https://images.unsplash.com/photo-1563859017693-61427a1a6f87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxrYWFiYSUyMG5pZ2h0fGVufDB8fHx8MTc1OTA3ODczN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Kaaba night"
+    },
+    {
+      "id": "madinah-sunset",
+      "description": "A beautiful sunset over the city of Madinah, with mosque minarets in the skyline.",
+      "imageUrl": "https://images.unsplash.com/photo-1601471373587-f8349f4544f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWRpbmFoJTIwc3Vuc2V0fGVufDB8fHx8MTc1OTA3ODc1NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Madinah sunset"
+    },
+    {
+      "id": "mecca-cityscape",
+      "description": "A panoramic view of the Mecca cityscape with the clock tower and Masjid al-Haram.",
+      "imageUrl": "https://images.unsplash.com/photo-1528822858178-5a8b9823282f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZWNjYSUyMGNpdHlzY2FwZXxlbnwwfHx8fDE3NTkwNzg3NzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Mecca cityscape"
+    },
+    {
+      "id": "quran-rehal",
+      "description": "An open Quran on a wooden stand (rehal) in a softly lit room.",
+      "imageUrl": "https://images.unsplash.com/photo-1590056931557-5503b41d2f7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxxdXJhbiUyMHJlaGFsfGVufDB8fHx8MTc1OTA3ODc5MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Quran rehal"
+    },
+    {
+      "id": "prayer-beads",
+      "description": "Close-up of Islamic prayer beads (tasbih) on a prayer mat.",
+      "imageUrl": "https://images.unsplash.com/photo-1604108133036-67990ac83451?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpc2xhbWljJTIwcHJheWVyJTIwYmVhZHN8ZW58MHx8fHwxNzU5MDc4ODA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "prayer beads"
+    },
+    {
+      "id": "islamic-pattern",
+      "description": "A detailed, colorful Islamic geometric pattern from a tile wall.",
+      "imageUrl": "https://images.unsplash.com/photo-1581977054242-f61b99a3a3b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpc2xhbWljJTIwcGF0dGVybnxlbnwwfHx8fDE3NTkwNzg4MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "islamic pattern"
+    },
+    {
+      "id": "pilgrims-walking",
+      "description": "A crowd of pilgrims walking towards the Grand Mosque in Mecca.",
+      "imageUrl": "https://images.unsplash.com/photo-1531213274296-6a235b318c39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaWxncmltcyUyMHdhbGtpbmclMjBtZWNjYXxlbnwwfHx8fDE3NTkwNzg4MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pilgrims walking"
+    },
+    {
+      "id": "mosque-silhouette",
+      "description": "The silhouette of a mosque against a beautiful sunset sky.",
+      "imageUrl": "https://images.unsplash.com/photo-1532664035157-9333f4a0a43d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3NxdWUlMjBzaWxob3VldHRlfGVufDB8fHx8MTc1OTA3ODg0NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mosque silhouette"
+    },
+    {
+      "id": "dates-and-water",
+      "description": "A traditional Islamic scene of dates and a glass of water for breaking fast.",
+      "imageUrl": "https://images.unsplash.com/photo-1585189781357-893d51829053?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRlcyUyMGFuZCUyMHdhdGVyJTIwaXNsYW1pY3xlbnwwfHx8fDE3NTkwNzg4NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dates water"
     }
   ]
 }

@@ -1,0 +1,111 @@
+
+[
+  {
+    "id": "luxury-5-days",
+    "title": "5 Day Luxury Umrah",
+    "description": "5-star VIP package.",
+    "price": 1199,
+    "duration": "5 Days",
+    "category": "Luxury / VIP",
+    "imageId": "kaaba-crowd"
+  },
+  {
+    "id": "luxury-7-days",
+    "title": "7 Day Luxury Umrah",
+    "description": "7 nights 5-star package.",
+    "price": 1499,
+    "duration": "7 Days",
+    "category": "Luxury / VIP",
+    "imageId": "madinah-mosque-interior"
+  },
+  {
+    "id": "luxury-10-days",
+    "title": "10 Day Luxury Umrah",
+    "description": "10 nights 5-star package.",
+    "price": 1645,
+    "duration": "10 Days",
+    "category": "Luxury / VIP",
+    "imageId": "kaaba-at-night"
+  },
+  {
+    "id": "deluxe-5-days",
+    "title": "5 Day Deluxe Umrah",
+    "description": "Deluxe 5 Nights package.",
+    "price": 750,
+    "duration": "5 Days",
+    "category": "Deluxe",
+    "imageId": "pilgrims-praying"
+  },
+  {
+    "id": "deluxe-7-days",
+    "title": "7 Day Deluxe Umrah",
+    "description": "Deluxe 7 Nights package.",
+    "price": 925,
+    "duration": "7 Days",
+    "category": "Deluxe",
+    "imageId": "madinah-sunset"
+  },
+  {
+    "id": "deluxe-10-days",
+    "title": "10 Day Deluxe Umrah",
+    "description": "Deluxe 10 Nights package.",
+    "price": 1150,
+    "duration": "10 Days",
+    "category": "Deluxe",
+    "imageId": "mecca-cityscape"
+  },
+  {
+    "id": "premium-5-days",
+    "title": "5 Day Premium Umrah",
+    "description": "Premium 5 Nights package.",
+    "price": 725,
+    "duration": "5 Days",
+    "category": "Premium / Shuttle",
+    "imageId": "quran-rehal"
+  },
+  {
+    "id": "premium-7-days",
+    "title": "7 Day Premium Umrah",
+    "description": "Premium 7 Nights package.",
+    "price": 875,
+    "duration": "7 Days",
+    "category": "Premium / Shuttle",
+    "imageId": "prayer-beads"
+  },
+  {
+    "id": "premium-10-days",
+    "title": "10 Day Premium Umrah",
+    "description": "Premium 10 Nights package.",
+    "price": 1075,
+    "duration": "10 Days",
+    "category": "Premium / Shuttle",
+    "imageId": "islamic-pattern"
+  },
+  {
+    "id": "economy-5-days",
+    "title": "5 Day Economy Umrah",
+    "description": "Economy 5 Nights package.",
+    "price": 650,
+    "duration": "5 Days",
+    "category": "Economy",
+    "imageId": "pilgrims-walking"
+  },
+  {
+    "id": "economy-7-days",
+    "title": "7 Day Economy Umrah",
+    "description": "Economy 7 Nights package.",
+    "price": 775,
+    "duration": "7 Days",
+    "category": "Economy",
+    "imageId": "mosque-silhouette"
+  },
+  {
+    "id": "economy-10-days",
+    "title": "10 Day Economy Umrah",
+    "description": "Economy 10 Nights package.",
+    "price": 975,
+    "duration": "10 Days",
+    "category": "Economy",
+    "imageId": "dates-and-water"
+  }
+]
