@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { ContactForm } from "@/components/contact-form";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -50,36 +51,36 @@ export default function ContactPage() {
                   <div className="flex items-start">
                     <MapPin className="h-5 w-5 mr-4 mt-1 text-primary" />
                     <span>
-                      123 Islamic Center, Makkah, Saudi Arabia
+                      307 W 38th St, New York, NY 10018, USA
                     </span>
                   </div>
                   <div className="flex items-center">
                     <Phone className="h-5 w-5 mr-4 text-primary" />
-                    <a href="tel:+1234567890" className="hover:text-primary">
-                      +1 (234) 567-890
+                    <a href="tel:+12242241652" className="hover:text-primary">
+                      +1 224-224-1652
                     </a>
                   </div>
                   <div className="flex items-center">
                     <Mail className="h-5 w-5 mr-4 text-primary" />
                     <a
-                      href="mailto:info@sadidtravels.com"
+                      href="mailto:sadidtravelsllc@gmail.com"
                       className="hover:text-primary"
                     >
-                      info@sadidtravels.com
+                      sadidtravelsllc@gmail.com
                     </a>
                   </div>
                 </div>
               </div>
               <div className="bg-card h-80 rounded-lg shadow-lg overflow-hidden">
                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435521.6888241414!2d74.05419435697395!3d31.48263513337956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1758699999999!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.428489833502!2d-73.9926285845942!3d40.75263727932757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259ac557b5f1b%3A0x4f3479986b2b5125!2s307%20W%2038th%20St%2C%20New%20York%2C%20NY%2010018%2C%20USA!5e0!3m2!1sen!2s!4v1678886400000!5m2!1sen!2s"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen={false}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Lahore, Pakistan Map"
+                    title="Sadid Travels Location"
                  ></iframe>
               </div>
             </div>

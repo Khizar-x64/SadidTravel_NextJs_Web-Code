@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
@@ -61,7 +62,7 @@ export default function PrivacyPage() {
                 <p>You have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; and (iv) if applicable, to data portability.</p>
 
                 <h2>9. Contact Us</h2>
-                <p>If you have questions or comments about this policy, you may email us at privacy@sadidtravels.com.</p>
+                <p>If you have questions or comments about this policy, you may email us at sadidtravelsllc@gmail.com.</p>
             </div>
         </div>
       </section>

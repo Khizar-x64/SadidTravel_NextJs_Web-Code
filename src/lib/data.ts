@@ -1,3 +1,4 @@
+
 import { SiteConfig, Package, Testimonial, FAQ, Blog, Destination, Partner } from "@/lib/types";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import packagesData from './packages.json';
@@ -21,8 +22,8 @@ export const siteConfig: SiteConfig = {
   url: "https://sadid-travels.com",
   ogImage: "https://sadid-travels.com/og.jpg",
   links: {
-    twitter: "https://twitter.com/sadidtravels",
-    facebook: "https://facebook.com/sadidtravels",
+    instagram: "https://www.instagram.com/sadidtravels?igsh=aGE2M2RqenJ3aWVz",
+    facebook: "https://www.facebook.com/sadidtravels",
   },
   mainNav: [
     { title: "Home", href: "/" },

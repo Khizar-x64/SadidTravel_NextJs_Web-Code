@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import { Facebook, Twitter, Instagram } from "lucide-react";
 
@@ -31,12 +32,7 @@ export function Footer() {
                   <Facebook className="h-5 w-5" />
                 </Button>
               </Link>
-              <Link href={siteConfig.links.twitter} passHref>
-                <Button variant="ghost" size="icon" aria-label="Twitter">
-                  <Twitter className="h-5 w-5" />
-                </Button>
-              </Link>
-              <Link href="#" passHref>
+              <Link href={siteConfig.links.instagram} passHref>
                 <Button variant="ghost" size="icon" aria-label="Instagram">
                   <Instagram className="h-5 w-5" />
                 </Button>

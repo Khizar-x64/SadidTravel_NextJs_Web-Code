@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -36,23 +37,23 @@ export default function ContactPopup() {
           <div className="space-y-4 text-muted-foreground">
             <div className="flex items-center">
               <Phone className="h-5 w-5 mr-3 text-primary" />
-              <a href="tel:+1234567890" className="hover:text-primary">
-                +1 (234) 567-890
+              <a href="tel:+12242241652" className="hover:text-primary">
+                +1 224-224-1652
               </a>
             </div>
             <div className="flex items-center">
               <Mail className="h-5 w-5 mr-3 text-primary" />
               <a
-                href="mailto:info@sadidtravels.com"
+                href="mailto:sadidtravelsllc@gmail.com"
                 className="hover:text-primary"
               >
-                info@sadidtravels.com
+                sadidtravelsllc@gmail.com
               </a>
             </div>
             <div className="flex items-center">
               <WhatsappIcon />
               <Link
-                href="https://wa.me/1234567890"
+                href="https://wa.me/12242241652"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary"
