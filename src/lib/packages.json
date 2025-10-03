@@ -29,7 +29,7 @@
     "description": "Fulfill the pillar of Islam with our premium Hajj package, offering comfort and guidance throughout the rituals.",
     "price": 7999,
     "duration": "14 Days",
-    "imageId": "kaaba-hero",
+    "imageId": "hajj-package-image",
     "includes": ["5-Star Hotels near Haram", "Mina Tents (Category A)", "Full Board Meals", "Dedicated Hajj Guide"],
     "itinerary": [
         { "day": 1, "title": "Arrival in Makkah & Pre-Hajj Rituals", "description": "Arrive in Makkah, perform initial Umrah, and prepare for the rites of Hajj with guidance from our scholars." },
