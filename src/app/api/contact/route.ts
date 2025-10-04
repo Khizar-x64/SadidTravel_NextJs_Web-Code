@@ -1,40 +1,51 @@
-// IMPORTANT: This is a simulated API route.
-// In a real application, you would use a service like Nodemailer, SendGrid, or Resend
-// to actually send the email. This example just simulates a successful response.
 
 import { NextResponse } from 'next/server';
+import { Resend } from 'resend';
+
+// IMPORTANT: Create an account at https://resend.com and generate an API key.
+// Add the API key to your .env file as RESEND_API_KEY.
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {
     const body = await request.json();
     const { name, email, category, question } = body;
 
-    // --- Developer Note ---
-    // This is where you would integrate your email sending logic.
-    // For example, using a service like Resend:
-    /*
-    import { Resend } from 'resend';
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    // Ensure the API key is available
+    if (!process.env.RESEND_API_KEY) {
+        console.error("Resend API key is not configured. Please add RESEND_API_KEY to your .env file.");
+        throw new Error("Server configuration error: Email service is not set up.");
+    }
 
-    await resend.emails.send({
-      from: 'onboarding@resend.dev',
-      to: 'sadidtravelsllc@gmail.com',
+    const { data, error } = await resend.emails.send({
+      // IMPORTANT: Resend's free plan requires you to verify your 'from' domain.
+      // For testing, they provide a default 'onboarding@resend.dev' address.
+      // For production, you should use your own verified domain (e.g., 'noreply@sadidtravels.com').
+      from: 'Sadid Travels Inquiry <onboarding@resend.dev>',
+      to: ['sadidtravelsllc@gmail.com'], // Your destination email
       subject: `New Inquiry from ${name} - ${category}`,
-      html: `<p>Name: ${name}</p><p>Email: ${email}</p><p>Category: ${category}</p><p>Question: ${question}</p>`,
+      reply_to: email, // Set the user's email as the reply-to address
+      html: `
+        <div style="font-family: Arial, sans-serif; line-height: 1.6;">
+            <h2>New Contact Form Submission</h2>
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Category:</strong> ${category}</p>
+            <h3>Question:</h3>
+            <p>${question}</p>
+        </div>
+      `,
     });
-    */
-    
-    // Simulate network delay
-    await new Promise(resolve => setTimeout(resolve, 1000));
 
-    console.log("Simulated sending email with data:", body);
+    if (error) {
+      console.error("Resend API Error:", error);
+      throw new Error("Failed to send message through email service.");
+    }
     
-    // Always return a success response in this simulation
     return NextResponse.json({ message: "Message sent successfully!" }, { status: 200 });
 
-  } catch (error) {
+  } catch (error: any) {
     console.error("Error in contact API route:", error);
-    // In a real scenario, you'd want more specific error handling
-    return NextResponse.json({ message: "Error sending message" }, { status: 500 });
+    return NextResponse.json({ message: error.message || "Error sending message" }, { status: 500 });
   }
 }
