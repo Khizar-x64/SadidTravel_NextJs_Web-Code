@@ -1,9 +1,10 @@
-
 "use client";
 
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { Loader2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -25,6 +26,7 @@ import {
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 
+
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
   email: z.string().email({ message: "Please enter a valid email address." }),
@@ -36,6 +38,7 @@ type FormData = z.infer<typeof formSchema>;
 
 export function ContactForm() {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
@@ -48,17 +51,20 @@ export function ContactForm() {
   });
 
   const onSubmit = (data: FormData) => {
-    const subject = encodeURIComponent(`Inquiry from ${data.name} - ${data.category}`);
-    const body = encodeURIComponent(
-      `Name: ${data.name}\nEmail: ${data.email}\nCategory: ${data.category}\n\nQuestion:\n${data.question}`
-    );
-    const mailtoLink = `mailto:sadidtravelsllc@gmail.com?subject=${subject}&body=${body}`;
-    window.location.href = mailtoLink;
-
-    toast({
-      title: "Opening Your Email Client",
-      description: "Please complete and send the message from your email app.",
-    });
+    setIsSubmitting(true);
+    const subject = `New Inquiry from ${data.name} - ${data.category}`;
+    const body = `Name: ${data.name}\nEmail: ${data.email}\nCategory: ${data.category}\n\nQuestion:\n${data.question}`;
+    window.location.href = `mailto:sadidtravelsllc@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Simulate form submission for UI feedback
+    setTimeout(() => {
+        toast({
+            title: "Email Client Opened",
+            description: "Your email application should now be open. Please send the message from there.",
+        });
+        setIsSubmitting(false);
+        form.reset();
+    }, 1000);
   };
 
   return (
@@ -134,7 +140,16 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" size="lg">Send Message</Button>
+        <Button type="submit" size="lg" disabled={isSubmitting}>
+          {isSubmitting ? (
+            <>
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              Opening Email...
+            </>
+          ) : (
+            "Send Message"
+          )}
+        </Button>
       </form>
     </Form>
   );
