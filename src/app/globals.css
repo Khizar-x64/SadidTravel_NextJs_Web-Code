@@ -4,25 +4,25 @@
 
 @layer base {
   :root {
-    --background: 38 72% 85%; /* Soft Gold */
+    --background: 39 82% 90%; /* Soft Cream Gold */
     --foreground: 222 47% 11%; /* Dark Blue */
 
-    --card: 38 72% 85%;
+    --card: 39 82% 90%;
     --card-foreground: 222 47% 11%;
 
-    --popover: 38 72% 85%;
+    --popover: 39 82% 90%;
     --popover-foreground: 222 47% 11%;
 
     --primary: 217 91% 60%; /* Royal Blue */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 38 60% 92%; /* Lighter Gold */
+    --secondary: 39 82% 94%; /* Lighter Cream Gold */
     --secondary-foreground: 222 47% 11%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
     
-    --accent: 45 93% 47%; /* Gold */
+    --accent: 45 86% 47%; /* Rich Gold */
     --accent-foreground: 45 100% 10%;
 
     --destructive: 0 84.2% 60.2%;
@@ -60,7 +60,7 @@
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215.4 16.3% 56.9%;
     
-    --accent: 45 93% 55%; /* Gold */
+    --accent: 45 86% 55%; /* Rich Gold */
     --accent-foreground: 45 100% 10%;
 
     --destructive: 0 62.8% 30.6%;
