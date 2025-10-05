@@ -20,7 +20,7 @@
   {
     "id": "istanbul-mosque",
     "description": "A grand mosque in Istanbul at dusk with lights illuminating its architecture.",
-    "imageUrl": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageUrl": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpc3RhbmJ1bCUyMG1vc3F1ZXxlbnwwfHx8fDE3NTg2MTUzNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "imageHint": "Istanbul mosque"
   },
   {
@@ -100,72 +100,6 @@
     "description": "The modern skyline of Doha, Qatar, with futuristic buildings and the Museum of Islamic Art.",
     "imageUrl": "https://images.unsplash.com/photo-1576483486217-054668f443e4?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "imageHint": "Doha skyline"
-  },
-  {
-    "id": "kaaba-crowd",
-    "description": "Pilgrims circumambulating the Kaaba in Mecca.",
-    "imageUrl": "https://images.unsplash.com/photo-1694112901375-1ad46056820d?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "imageHint": "Kaaba crowd"
-  },
-  {
-    "id": "madinah-mosque-interior",
-    "description": "The grand interior of the Prophet's Mosque in Madinah with intricate carpets and columns under open umbrellas.",
-    "imageUrl": "https://images.unsplash.com/photo-1692566123227-0f68f1b9dac6?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "imageHint": "Madinah mosque"
-  },
-  {
-    "id": "kaaba-at-night",
-    "description": "A nighttime shot of the Kaaba, beautifully illuminated, with motion blur of pilgrims.",
-    "imageUrl": "https://images.unsplash.com/photo-1513072064285-240f87fa81e8?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "imageHint": "Kaaba night"
-  },
-  {
-    "id": "madinah-sunset",
-    "description": "The Prophet's Mosque in Madinah viewed from a distance during a beautiful sunset.",
-    "imageUrl": "https://images.pexels.com/photos/33731524/pexels-photo-33731524.jpeg",
-    "imageHint": "Madinah sunset"
-  },
-  {
-    "id": "mecca-cityscape",
-    "description": "A panoramic view of the Mecca cityscape with the clock tower and Masjid al-Haram at dusk.",
-    "imageUrl": "https://images.pexels.com/photos/18274181/pexels-photo-18274181.jpeg",
-    "imageHint": "Mecca cityscape"
-  },
-  {
-    "id": "quran-rehal",
-    "description": "A close-up shot of the Kaaba's Kiswah with golden calligraphy.",
-    "imageUrl": "https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "imageHint": "Kaaba detail"
-  },
-  {
-    "id": "prayer-beads",
-    "description": "The minarets and green dome of the Prophet's Mosque against a clear blue sky.",
-    "imageUrl": "https://images.pexels.com/photos/33731524/pexels-photo-33731524.jpeg",
-    "imageHint": "Madinah dome"
-  },
-  {
-    "id": "islamic-pattern",
-    "description": "Looking up at the Kaaba and the surrounding Grand Mosque building.",
-    "imageUrl": "https://images.pexels.com/photos/18274181/pexels-photo-18274181.jpeg",
-    "imageHint": "Kaaba architecture"
-  },
-  {
-    "id": "pilgrims-walking",
-    "description": "A close-up of the courtyard of the Prophet's Mosque with its iconic umbrellas.",
-    "imageUrl": "https://images.unsplash.com/photo-1694112901375-1ad46056820d?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "imageHint": "Madinah courtyard"
-  },
-  {
-    "id": "mosque-silhouette",
-    "description": "An aerial view of pilgrims performing tawaf around the Kaaba.",
-    "imageUrl": "https://images.pexels.com/photos/18274181/pexels-photo-18274181.jpeg",
-    "imageHint": "Tawaf aerial"
-  },
-  {
-    "id": "dates-and-water",
-    "description": "A serene view of the Prophet's Mosque minarets at dawn.",
-    "imageUrl": "https://images.unsplash.com/photo-1692566123227-0f68f1b9dac6?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "imageHint": "Madinah dawn"
   },
   {
     "id": "hajj-package-image",
