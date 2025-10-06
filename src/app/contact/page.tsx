@@ -51,7 +51,7 @@ export default function ContactPage() {
                   <div className="flex items-start">
                     <MapPin className="h-5 w-5 mr-4 mt-1 text-primary" />
                     <span>
-                      307 W 38th St, New York, NY 10018, USA
+                      720 Marble Way, Boca Raton, FL 33432, USA
                     </span>
                   </div>
                   <div className="flex items-center">
@@ -73,7 +73,7 @@ export default function ContactPage() {
               </div>
               <div className="bg-card h-80 rounded-lg shadow-lg overflow-hidden">
                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.428489833502!2d-73.9926285845942!3d40.75263727932757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259ac557b5f1b%3A0x4f3479986b2b5125!2s307%20W%2038th%20St%2C%20New%20York%2C%20NY%2010018%2C%20USA!5e0!3m2!1sen!2s!4v1678886400000!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.882483163102!2d-80.11005812456488!3d26.36224377778933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91e77a23c8e63%3A0x234d6ac335349f85!2s720%20Marble%20Way%2C%20Boca%20Raton%2C%20FL%2033432%2C%20USA!5e0!3m2!1sen!2s!4v1717616634863!5m2!1sen!2s"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
