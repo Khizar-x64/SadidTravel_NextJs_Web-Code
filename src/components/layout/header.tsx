@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Facebook, Instagram, Mail, Menu, Phone, X } from "lucide-react";
 
 import { siteConfig } from "@/lib/data";
 import { cn } from "@/lib/utils";
@@ -23,6 +23,37 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-sm">
+      {/* Top bar */}
+      <div className="bg-secondary text-secondary-foreground py-1">
+        <div className="container flex justify-between items-center h-10 text-xs">
+           <div className="flex items-center gap-4">
+              <a href="tel:+17543992498" className="flex items-center gap-2 hover:text-primary transition-colors">
+                <Phone className="h-4 w-4" />
+                <span className="hidden sm:inline">+1 754-399-2498</span>
+              </a>
+              <span className="hidden sm:inline">|</span>
+              <a href="mailto:sadidtravelsllc@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
+                <Mail className="h-4 w-4" />
+                <span className="hidden sm:inline">sadidtravelsllc@gmail.com</span>
+              </a>
+           </div>
+           <div className="flex items-center gap-2">
+            <p className="hidden md:block">Follow Us:</p>
+            <Link href={siteConfig.links.facebook} passHref>
+                <Button variant="ghost" size="icon" aria-label="Facebook" className="h-8 w-8">
+                  <Facebook className="h-4 w-4" />
+                </Button>
+            </Link>
+            <Link href={siteConfig.links.instagram} passHref>
+                <Button variant="ghost" size="icon" aria-label="Instagram" className="h-8 w-8">
+                  <Instagram className="h-4 w-4" />
+                </Button>
+              </Link>
+           </div>
+        </div>
+      </div>
+
+      {/* Main Header */}
       <div className="container flex h-20 items-center">
         {/* Desktop Logo */}
         <Link href="/" className="mr-6 hidden items-center space-x-2 md:flex">

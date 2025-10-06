@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import "./globals.css";
+import WhatsAppFAB from "@/components/whatsapp-fab";
 
 const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
@@ -52,6 +53,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <WhatsAppFAB />
         <Toaster />
       </body>
     </html>
