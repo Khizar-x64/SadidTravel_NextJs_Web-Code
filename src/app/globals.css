@@ -55,13 +55,14 @@
 }
 
 @layer utilities {
-  @keyframes vibrate {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-2px); }
-    50% { transform: translateX(2px); }
-    75% { transform: translateX(-2px); }
+  @keyframes ring {
+    0% { transform: rotate(0); }
+    10%, 30% { transform: rotate(-15deg); }
+    20%, 40% { transform: rotate(15deg); }
+    50% { transform: rotate(0); }
+    100% { transform: rotate(0); }
   }
-  .animate-vibrate {
-    animation: vibrate 0.3s ease-in-out;
+  .animate-ring {
+    animation: ring 1s ease-in-out;
   }
 }

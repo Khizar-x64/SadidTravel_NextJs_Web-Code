@@ -12,19 +12,37 @@ const WhatsappIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 
 export default function WhatsAppFAB() {
-    const [isVibrating, setIsVibrating] = useState(false);
+    const [isRinging, setIsRinging] = useState(false);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsVibrating(true);
-            const stopVibration = setTimeout(() => setIsVibrating(false), 300); // Vibrate for 300ms
-            return () => clearTimeout(stopVibration);
-        }, 1000); // Start vibrating after 1 second
+        // Start the animation loop after an initial 1-second delay
+        const initialTimeout = setTimeout(() => {
+            setIsRinging(true); // Trigger the first animation
 
-        return () => clearTimeout(timer);
+            // Set up an interval to toggle the animation on and off
+            // It runs every 2 seconds (1s for animation, 1s for pause)
+            const interval = setInterval(() => {
+                setIsRinging(true); // Re-trigger animation
+            }, 2000); 
+
+            return () => clearInterval(interval);
+        }, 1000);
+
+        return () => clearTimeout(initialTimeout);
     }, []);
 
-    const fabClasses = `fixed bottom-6 left-6 text-white rounded-full h-16 w-16 flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 z-50 ${isVibrating ? 'animate-vibrate' : ''}`;
+    // When isRinging is true, the `animate-ring` class is added.
+    // We need to remove it after the animation completes so it can be re-added.
+    useEffect(() => {
+        if (isRinging) {
+            const timer = setTimeout(() => {
+                setIsRinging(false);
+            }, 1000); // Animation duration is 1s
+            return () => clearTimeout(timer);
+        }
+    }, [isRinging]);
+
+    const fabClasses = `fixed bottom-6 left-6 text-white rounded-full h-16 w-16 flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 z-50 ${isRinging ? 'animate-ring' : ''}`;
 
     return (
         <Link href="https://wa.me/12242241652" target="_blank" rel="noopener noreferrer" className={fabClasses} aria-label="Chat on WhatsApp">
