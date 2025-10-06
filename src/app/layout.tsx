@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import WhatsAppFAB from "@/components/whatsapp-fab";
 
@@ -44,17 +45,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfairDisplay.variable} ${ptSans.variable} ${amiri.variable}`}>
+    <html lang="en" className={`${playfairDisplay.variable} ${ptSans.variable} ${amiri.variable}`} suppressHydrationWarning>
       <body
         className={cn(
           "min-h-screen bg-background font-body antialiased"
         )}
       >
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <WhatsAppFAB />
-        <Toaster />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+        >
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <WhatsAppFAB />
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );

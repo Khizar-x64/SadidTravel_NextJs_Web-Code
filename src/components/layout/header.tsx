@@ -16,6 +16,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { ThemeToggle } from "./theme-toggle";
 
 export function Header() {
   const pathname = usePathname();
@@ -128,7 +129,8 @@ export function Header() {
         </nav>
         
         <div className="flex items-center justify-end md:w-auto">
-          <Button asChild className="hidden md:inline-flex">
+          <ThemeToggle />
+          <Button asChild className="hidden md:inline-flex ml-4">
             <Link href="/contact">Book Now</Link>
           </Button>
           <div className="w-6 md:hidden"></div> {/* Spacer for mobile layout */}
