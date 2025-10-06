@@ -13,11 +13,11 @@
     --popover: 60 56% 95%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 147 48% 49%; /* Emerald Green */
-    --primary-foreground: 147 100% 98%;
+    --primary: 221 83% 53%; /* Noble Blue */
+    --primary-foreground: 210 40% 98%;
 
     --secondary: 60 56% 96%; /* Lighter Beige for secondary sections */
-    --secondary-foreground: 147 48% 20%;
+    --secondary-foreground: 221 83% 25%;
 
     --muted: 60 30% 90%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -30,7 +30,7 @@
 
     --border: 60 30% 85%;
     --input: 60 30% 88%;
-    --ring: 147 48% 49%;
+    --ring: 221 83% 53%;
 
     --radius: 0.5rem;
 
