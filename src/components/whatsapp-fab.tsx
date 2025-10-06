@@ -23,7 +23,7 @@ export default function WhatsAppFAB() {
         return () => clearTimeout(timer);
     }, []);
 
-    const fabClasses = `fixed bottom-6 right-6 bg-[#25D366] text-white rounded-full h-16 w-16 flex items-center justify-center shadow-lg hover:bg-[#128C7E] transition-all duration-300 transform hover:scale-110 z-50 ${isVibrating ? 'animate-vibrate' : ''}`;
+    const fabClasses = `fixed bottom-6 left-6 bg-[#25D366] text-white rounded-full h-16 w-16 flex items-center justify-center shadow-lg hover:bg-[#128C7E] transition-all duration-300 transform hover:scale-110 z-50 ${isVibrating ? 'animate-vibrate' : ''}`;
 
     return (
         <Link href="https://wa.me/12242241652" target="_blank" rel="noopener noreferrer" className={fabClasses} aria-label="Chat on WhatsApp">
