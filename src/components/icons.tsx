@@ -14,7 +14,7 @@ export const Icons = {
         fontFamily="var(--font-playfair-display)"
         fontSize="40"
         fontWeight="bold"
-        className="fill-primary dark:fill-primary-foreground"
+        className="fill-primary"
       >
         Sadid
       </text>

@@ -18,32 +18,10 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-// A simplified theme toggle for demonstration
-const useTheme = () => {
-  const [theme, setTheme] = React.useState('light');
-
-  React.useEffect(() => {
-    const isDark = document.documentElement.classList.contains('dark');
-    setTheme(isDark ? 'dark' : 'light');
-  }, []);
-
-  const toggleTheme = () => {
-    if (theme === 'light') {
-      document.documentElement.classList.add('dark');
-      setTheme('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      setTheme('light');
-    }
-  };
-
-  return { theme, toggleTheme };
-};
 
 export function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-  const { theme, toggleTheme } = useTheme();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-sm">
@@ -117,15 +95,6 @@ export function Header() {
             </Link>
           </div>
           <nav className="flex items-center">
-            <Button
-              variant="ghost"
-              size="icon"
-              aria-label="Toggle Theme"
-              onClick={toggleTheme}
-            >
-              <Sun className="h-6 w-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-            </Button>
             <Button asChild className="hidden md:inline-flex ml-2">
               <Link href="/packages">Book Now</Link>
             </Button>
