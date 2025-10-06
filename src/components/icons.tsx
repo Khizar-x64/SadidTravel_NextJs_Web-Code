@@ -11,7 +11,7 @@ export const Icons = {
       <text
         x="0"
         y="40"
-        fontFamily="var(--font-cormorant-garamond)"
+        fontFamily="var(--font-playfair-display)"
         fontSize="40"
         fontWeight="bold"
         className="fill-primary dark:fill-primary-foreground"
@@ -21,7 +21,7 @@ export const Icons = {
       <text
         x="105"
         y="40"
-        fontFamily="var(--font-montserrat)"
+        fontFamily="var(--font-pt-sans)"
         fontSize="40"
         fontWeight="normal"
         className="fill-foreground"

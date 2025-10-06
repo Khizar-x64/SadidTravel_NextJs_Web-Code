@@ -18,8 +18,8 @@ const config = {
     },
     extend: {
       fontFamily: {
-        body: ['var(--font-montserrat)'],
-        headline: ['var(--font-cormorant-garamond)'],
+        body: ['var(--font-pt-sans)'],
+        headline: ['var(--font-playfair-display)'],
         arabic: ['var(--font-amiri)'],
       },
       colors: {
