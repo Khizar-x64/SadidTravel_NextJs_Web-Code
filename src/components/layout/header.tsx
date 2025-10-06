@@ -21,6 +21,14 @@ import { ThemeToggle } from "./theme-toggle";
 export function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  const isHomePage = pathname === "/";
+
+  const LogoComponent = () => (
+    <div className="flex items-center space-x-2">
+        <Icons.Logo />
+        {isHomePage && <Icons.LogoIcon />}
+    </div>
+  );
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-sm">
@@ -58,7 +66,7 @@ export function Header() {
       <div className="container flex h-20 items-center">
         {/* Desktop Logo */}
         <Link href="/" className="mr-6 hidden items-center space-x-2 md:flex">
-          <Icons.Logo />
+          <LogoComponent />
         </Link>
         
         {/* Mobile Menu Trigger */}
@@ -76,7 +84,7 @@ export function Header() {
             <SheetHeader className="mb-8">
               <SheetTitle>
                 <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Icons.Logo />
+                  <LogoComponent />
                 </Link>
               </SheetTitle>
             </SheetHeader>
@@ -106,7 +114,7 @@ export function Header() {
         {/* Mobile Logo (centered) */}
         <div className="flex flex-1 justify-center md:hidden">
           <Link href="/" className="flex items-center space-x-2">
-            <Icons.Logo />
+            <LogoComponent />
           </Link>
         </div>
 

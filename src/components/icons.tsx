@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export const Icons = {
   Logo: ({ className, ...props }: React.SVGProps<SVGSVGElement>) => (
@@ -29,5 +30,15 @@ export const Icons = {
         Travels
       </text>
     </svg>
+  ),
+  LogoIcon: ({ className, ...props }: React.ComponentProps<typeof Image>) => (
+    <Image
+      src="/logo.ico"
+      alt="Sadid Travels Logo"
+      width={32}
+      height={32}
+      className={cn("h-8 w-8", className)}
+      {...props}
+    />
   ),
 };
