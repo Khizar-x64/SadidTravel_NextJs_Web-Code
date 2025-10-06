@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Playfair_Display, PT_Sans, Amiri } from 'next/font/google';
 import { cn } from "@/lib/utils";
@@ -53,7 +54,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
         >
           <Header />
