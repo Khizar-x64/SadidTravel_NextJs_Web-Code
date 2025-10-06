@@ -4,7 +4,7 @@ export const Icons = {
   Logo: ({ className, ...props }: React.SVGProps<SVGSVGElement>) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 200 50"
+      viewBox="0 0 240 50"
       className={cn("h-8 w-auto", className)}
       {...props}
     >
