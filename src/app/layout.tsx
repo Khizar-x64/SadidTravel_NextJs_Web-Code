@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
-import { Playfair_Display, PT_Sans, Amiri } from 'next/font/google';
+import { Cormorant_Garamond, Montserrat, Amiri } from 'next/font/google';
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import "./globals.css";
 
-const playfairDisplay = Playfair_Display({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-playfair-display',
-});
-
-const ptSans = PT_Sans({
+const cormorantGaramond = Cormorant_Garamond({
   subsets: ['latin'],
   weight: ['400', '700'],
   display: 'swap',
-  variable: '--font-pt-sans',
+  variable: '--font-cormorant-garamond',
+});
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  display: 'swap',
+  variable: '--font-montserrat',
 });
 
 const amiri = Amiri({
@@ -42,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${playfairDisplay.variable} ${ptSans.variable} ${amiri.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${cormorantGaramond.variable} ${montserrat.variable} ${amiri.variable}`}>
       <body
         className={cn(
           "min-h-screen bg-background font-body antialiased"
