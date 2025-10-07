@@ -21,14 +21,6 @@ import { ThemeToggle } from "./theme-toggle";
 export function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-  const isHomePage = pathname === "/";
-
-  const LogoComponent = () => (
-    <div className="flex items-center space-x-2">
-        <Icons.Logo />
-        {isHomePage && <Icons.LogoIcon />}
-    </div>
-  );
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-sm">
@@ -64,9 +56,9 @@ export function Header() {
 
       {/* Main Header */}
       <div className="container flex h-20 items-center">
-        {/* Desktop Logo */}
-        <Link href="/" className="mr-6 hidden items-center space-x-2 md:flex">
-          <LogoComponent />
+        {/* Logo */}
+        <Link href="/" className="mr-6 flex items-center space-x-2">
+          <Icons.Logo />
         </Link>
         
         {/* Mobile Menu Trigger */}
@@ -74,7 +66,7 @@ export function Header() {
           <SheetTrigger asChild>
             <Button
               variant="ghost"
-              className="mr-4 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
+              className="mr-auto px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
             >
               <Menu className="h-6 w-6" />
               <span className="sr-only">Toggle Menu</span>
@@ -84,7 +76,7 @@ export function Header() {
             <SheetHeader className="mb-8">
               <SheetTitle>
                 <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
-                  <LogoComponent />
+                  <Icons.Logo />
                 </Link>
               </SheetTitle>
             </SheetHeader>
@@ -111,14 +103,7 @@ export function Header() {
           </SheetContent>
         </Sheet>
         
-        {/* Mobile Logo (centered) */}
-        <div className="flex flex-1 justify-center md:hidden">
-          <Link href="/" className="flex items-center space-x-2">
-            <LogoComponent />
-          </Link>
-        </div>
-
-        {/* Desktop Navigation (centered) */}
+        {/* Desktop Navigation */}
         <nav className="hidden items-center justify-center flex-1 space-x-6 text-sm font-medium md:flex">
           {siteConfig.mainNav.map((item) => (
             <Link
@@ -136,12 +121,11 @@ export function Header() {
           ))}
         </nav>
         
-        <div className="flex items-center justify-end md:w-auto">
+        <div className="flex items-center justify-end">
           <ThemeToggle />
           <Button asChild className="hidden md:inline-flex ml-4">
             <Link href="/contact">Book Now</Link>
           </Button>
-          <div className="w-6 md:hidden"></div> {/* Spacer for mobile layout */}
         </div>
       </div>
     </header>

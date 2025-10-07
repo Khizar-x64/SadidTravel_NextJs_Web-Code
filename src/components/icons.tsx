@@ -2,42 +2,14 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 export const Icons = {
-  Logo: ({ className, ...props }: React.SVGProps<SVGSVGElement>) => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 240 50"
-      className={cn("h-8 w-auto", className)}
-      {...props}
-    >
-      <text
-        x="0"
-        y="40"
-        fontFamily="var(--font-playfair-display)"
-        fontSize="40"
-        fontWeight="bold"
-        className="fill-primary"
-      >
-        Sadid
-      </text>
-      <text
-        x="105"
-        y="40"
-        fontFamily="var(--font-pt-sans)"
-        fontSize="40"
-        fontWeight="normal"
-        className="fill-foreground"
-      >
-        Travels
-      </text>
-    </svg>
-  ),
-  LogoIcon: ({ className, ...props }: React.ComponentProps<typeof Image>) => (
+  Logo: ({ className, ...props }: React.ComponentProps<typeof Image>) => (
     <Image
-      src="/logo.ico"
+      src="/logo.svg"
       alt="Sadid Travels Logo"
-      width={32}
+      width={120}
       height={32}
-      className={cn("h-8 w-8", className)}
+      className={cn("h-8 w-auto", className)}
+      priority
       {...props}
     />
   ),
