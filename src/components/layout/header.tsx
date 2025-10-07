@@ -19,13 +19,10 @@ import {
 import { ThemeToggle } from "./theme-toggle";
 
 const LogoComponent = () => {
-    const pathname = usePathname();
-    const isHomePage = pathname === '/';
-
     return (
         <div className="flex items-center space-x-2">
             <Icons.Logo />
-            {isHomePage && <Icons.LogoIcon />}
+            <Icons.LogoIcon />
         </div>
     );
 }
