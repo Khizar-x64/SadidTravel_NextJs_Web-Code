@@ -1,3 +1,4 @@
+
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
@@ -16,7 +17,7 @@ export const Icons = {
   ),
   LogoIcon: ({ className, ...props }: React.ComponentProps<typeof Image>) => (
     <Image
-      src="/logo.ico"
+      src="/logos/logo.svg"
       alt="Sadid Travels Icon"
       width={32}
       height={32}
