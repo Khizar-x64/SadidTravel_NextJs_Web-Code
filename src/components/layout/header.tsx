@@ -18,6 +18,18 @@ import {
 } from "@/components/ui/sheet";
 import { ThemeToggle } from "./theme-toggle";
 
+const LogoComponent = () => {
+    const pathname = usePathname();
+    const isHomePage = pathname === '/';
+
+    return (
+        <div className="flex items-center space-x-2">
+            <Icons.Logo />
+            {isHomePage && <Icons.LogoIcon />}
+        </div>
+    );
+}
+
 export function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -57,8 +69,8 @@ export function Header() {
       {/* Main Header */}
       <div className="container flex h-20 items-center">
         {/* Logo */}
-        <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Icons.Logo />
+        <Link href="/" className="mr-6 flex items-center">
+          <LogoComponent />
         </Link>
         
         {/* Mobile Menu Trigger */}
@@ -76,7 +88,7 @@ export function Header() {
             <SheetHeader className="mb-8">
               <SheetTitle>
                 <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Icons.Logo />
+                  <LogoComponent />
                 </Link>
               </SheetTitle>
             </SheetHeader>
