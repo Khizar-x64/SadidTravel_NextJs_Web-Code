@@ -92,7 +92,7 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
           priority
           data-ai-hint={post.image.imageHint}
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-transparent" />
         <div className="relative container mx-auto h-full flex flex-col items-start justify-end text-white p-4 md:p-8">
           <Badge variant="secondary" className="mb-4">
             Blog Post

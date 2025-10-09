@@ -18,9 +18,9 @@ export default function PackagesPage() {
                 data-ai-hint={pageHeaderImage.imageHint}
             />
         )}
-        <div className="absolute inset-0 bg-primary/80" />
+        
         <div className="container mx-auto px-4 relative">
-          <div className="text-center text-primary-foreground">
+          <div className="text-center text-white" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.7)'}}>
             <h1 className="text-4xl md:text-5xl font-headline font-bold">
               Our Spiritual Journeys
             </h1>
