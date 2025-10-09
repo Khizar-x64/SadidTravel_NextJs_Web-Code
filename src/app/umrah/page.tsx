@@ -18,7 +18,7 @@ const pageHeaderImage = PlaceHolderImages.find(p => p.id === 'kaaba-hero');
 
 const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
   return (
-    <Card className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+    <Card className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-primary text-primary-foreground">
       <div className="relative h-56 w-full">
         <Image
           src={pkg.image.imageUrl}
@@ -33,19 +33,19 @@ const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
         <CardTitle className="font-headline text-2xl leading-tight">
           {pkg.title}
         </CardTitle>
-        <CardDescription className="flex items-center pt-2 text-card-foreground/80">
+        <CardDescription className="flex items-center pt-2 text-primary-foreground/80">
           <Clock className="h-4 w-4 mr-2" />
           {pkg.duration}
         </CardDescription>
       </CardHeader>
       <CardContent className="flex-grow">
-        <p className="text-card-foreground/80">
+        <p className="text-primary-foreground/80">
           A high-quality Umrah experience with excellent amenities. Contact us for detailed inclusions.
         </p>
       </CardContent>
       <CardFooter className="flex justify-between items-center bg-black/20 p-4">
         <div>
-          <p className="text-sm text-card-foreground/80">Starting from</p>
+          <p className="text-sm text-primary-foreground/80">Starting from</p>
           <p className="text-2xl font-bold text-white">${pkg.price}</p>
         </div>
         <Button asChild variant="accent">

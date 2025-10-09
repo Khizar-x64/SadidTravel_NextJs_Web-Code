@@ -39,7 +39,7 @@ export default function BlogsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogs.map((post) => (
               <Link key={post.id} href={`/blogs/${post.slug}`} className="group block">
-                <Card className="flex flex-col h-full overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-1">
+                <Card className="flex flex-col h-full overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-1 bg-primary text-primary-foreground">
                   <div className="relative h-56 w-full">
                     <Image
                       src={post.image.imageUrl}
@@ -50,20 +50,20 @@ export default function BlogsPage() {
                     />
                   </div>
                   <CardHeader>
-                    <CardTitle className="font-headline text-xl leading-tight group-hover:text-primary transition-colors">
+                    <CardTitle className="font-headline text-xl leading-tight group-hover:text-accent transition-colors">
                       {post.title}
                     </CardTitle>
-                     <CardDescription className="pt-2 text-sm">
+                     <CardDescription className="pt-2 text-sm text-primary-foreground/80">
                       By {post.author} on {post.date}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="flex-grow">
-                    <p className="text-muted-foreground line-clamp-3">
+                    <p className="text-primary-foreground/80 line-clamp-3">
                       {post.excerpt}
                     </p>
                   </CardContent>
                   <div className="p-6 pt-0">
-                    <span className="font-semibold text-primary group-hover:underline">
+                    <span className="font-semibold text-accent group-hover:underline">
                         Read More <ArrowRight className="inline-block h-4 w-4 ml-1" />
                     </span>
                   </div>

@@ -24,7 +24,7 @@ export default function TestimonialsSection() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial) => (
-              <Card key={testimonial.id} className="bg-card shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Card key={testimonial.id} className="bg-primary text-primary-foreground shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardHeader className="flex flex-row items-center gap-4">
                   <Avatar className="h-14 w-14">
                     <AvatarImage
@@ -35,7 +35,7 @@ export default function TestimonialsSection() {
                   </Avatar>
                   <div>
                     <CardTitle className="font-bold">{testimonial.name}</CardTitle>
-                    <CardDescription className="text-card-foreground/80">{testimonial.location}</CardDescription>
+                    <CardDescription className="text-primary-foreground/80">{testimonial.location}</CardDescription>
                   </div>
                 </CardHeader>
                 <CardContent>
@@ -44,7 +44,7 @@ export default function TestimonialsSection() {
                       <Star key={i} className="h-5 w-5 fill-accent text-accent" />
                     ))}
                   </div>
-                  <p className="text-card-foreground/90 italic">
+                  <p className="text-primary-foreground/90 italic">
                     <MessageSquare className="inline-block h-4 w-4 mr-2" />
                     {testimonial.quote}
                   </p>

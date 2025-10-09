@@ -124,12 +124,12 @@ export default function DestinationDetailPage({ params }: DestinationDetailPageP
       <div className="container mx-auto py-12 px-4">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
           <div className="lg:col-span-2">
-            <Card className="shadow-lg">
+            <Card className="shadow-lg bg-primary text-primary-foreground">
               <CardHeader>
-                <CardTitle className="font-headline text-3xl text-primary">About {dest.name}</CardTitle>
+                <CardTitle className="font-headline text-3xl text-primary-foreground">About {dest.name}</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="prose prose-lg max-w-none text-muted-foreground">
+                <div className="prose prose-lg max-w-none text-primary-foreground/80">
                   {formatContent(dest.long_description)}
                 </div>
               </CardContent>
@@ -151,9 +151,9 @@ export default function DestinationDetailPage({ params }: DestinationDetailPageP
 
           <div className="space-y-8 lg:sticky top-24">
             {relatedBlogs.length > 0 && (
-                <Card>
+                <Card className="bg-primary text-primary-foreground">
                 <CardHeader>
-                    <CardTitle className="font-headline text-2xl flex items-center">
+                    <CardTitle className="font-headline text-2xl flex items-center text-primary-foreground">
                     <Newspaper className="mr-3 h-6 w-6" />
                     Related Insights
                     </CardTitle>
@@ -161,9 +161,9 @@ export default function DestinationDetailPage({ params }: DestinationDetailPageP
                 <CardContent className="space-y-4">
                     {relatedBlogs.map(blog => (
                     <Link key={blog.id} href={`/blogs/${blog.slug}`} className="group block">
-                        <div className="p-3 rounded-lg hover:bg-secondary transition-colors">
-                            <h3 className="font-semibold group-hover:text-primary">{blog.title}</h3>
-                            <p className="text-sm text-muted-foreground line-clamp-2">{blog.excerpt}</p>
+                        <div className="p-3 rounded-lg hover:bg-primary-foreground/10 transition-colors">
+                            <h3 className="font-semibold group-hover:text-accent">{blog.title}</h3>
+                            <p className="text-sm text-primary-foreground/80 line-clamp-2">{blog.excerpt}</p>
                         </div>
                     </Link>
                     ))}

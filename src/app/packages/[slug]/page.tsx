@@ -78,12 +78,12 @@ export default function PackageDetailPage({ params }: PackageDetailPageProps) {
       <div className="container mx-auto py-12 px-4">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
-            <Card>
+            <Card className="bg-primary text-primary-foreground">
               <CardHeader>
                 <CardTitle className="font-headline text-3xl">
                   Trip Itinerary
                 </CardTitle>
-                <CardDescription>
+                <CardDescription className="text-primary-foreground/80">
                   A day-by-day plan for your journey.
                 </CardDescription>
               </CardHeader>
@@ -91,10 +91,10 @@ export default function PackageDetailPage({ params }: PackageDetailPageProps) {
                 <Accordion type="single" collapsible defaultValue="item-0">
                   {pkg.itinerary.map((item, index) => (
                     <AccordionItem key={item.day} value={`item-${index}`}>
-                      <AccordionTrigger className="font-bold text-lg">
+                      <AccordionTrigger className="font-bold text-lg text-primary-foreground">
                         Day {item.day}: {item.title}
                       </AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground">
+                      <AccordionContent className="text-primary-foreground/80">
                         {item.description}
                       </AccordionContent>
                     </AccordionItem>
@@ -105,7 +105,7 @@ export default function PackageDetailPage({ params }: PackageDetailPageProps) {
           </div>
 
           <div className="space-y-8">
-            <Card className="sticky top-24">
+            <Card className="sticky top-24 bg-primary text-primary-foreground">
               <CardHeader>
                 <CardTitle className="font-headline text-3xl">
                   Package Details
@@ -113,20 +113,20 @@ export default function PackageDetailPage({ params }: PackageDetailPageProps) {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center">
-                  <DollarSign className="h-5 w-5 mr-3 text-primary" />
+                  <DollarSign className="h-5 w-5 mr-3 text-accent" />
                   <div>
                     <span className="font-bold text-2xl">${pkg.price}</span>
-                    <span className="text-muted-foreground"> / person</span>
+                    <span className="text-primary-foreground/80"> / person</span>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <Clock className="h-5 w-5 mr-3 text-primary" />
+                  <Clock className="h-5 w-5 mr-3 text-accent" />
                   <span className="font-semibold">{pkg.duration}</span>
                 </div>
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="bg-primary text-primary-foreground">
               <CardHeader>
                 <CardTitle className="font-headline text-2xl">
                   What's Included
@@ -136,15 +136,15 @@ export default function PackageDetailPage({ params }: PackageDetailPageProps) {
                 <ul className="space-y-3">
                   {pkg.includes.map((item) => (
                     <li key={item} className="flex items-center">
-                      <CheckCircle className="h-5 w-5 mr-3 text-primary" />
-                      <span className="text-muted-foreground">{item}</span>
+                      <CheckCircle className="h-5 w-5 mr-3 text-accent" />
+                      <span className="text-primary-foreground/80">{item}</span>
                     </li>
                   ))}
                 </ul>
               </CardContent>
             </Card>
             
-            <Button asChild size="lg" className="w-full font-bold">
+            <Button asChild size="lg" className="w-full font-bold" variant="accent">
               <Link href="/contact">
                 Book This Package <ArrowRight className="ml-2 h-5 w-5" />
               </Link>

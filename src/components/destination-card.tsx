@@ -18,7 +18,7 @@ interface DestinationCardProps {
 
 export function DestinationCard({ destination }: DestinationCardProps) {
   return (
-    <Card className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+    <Card className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group bg-primary text-primary-foreground">
       <div className="relative h-56 w-full">
         <Image
           src={destination.image.imageUrl}
@@ -34,7 +34,7 @@ export function DestinationCard({ destination }: DestinationCardProps) {
         </CardTitle>
       </CardHeader>
       <CardContent className="flex-grow">
-        <p className="text-card-foreground/80 line-clamp-3">
+        <p className="text-primary-foreground/80 line-clamp-3">
           {destination.short_description}
         </p>
       </CardContent>
