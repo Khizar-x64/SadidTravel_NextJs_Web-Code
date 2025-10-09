@@ -1,3 +1,4 @@
+
 import { umrahPackages } from "@/lib/data";
 import { PackageCard } from "@/components/package-card";
 import Image from "next/image";
@@ -67,7 +68,7 @@ export default function UmrahPackagesPage() {
       <section className="bg-secondary">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="py-20 md:py-32">
+            <div className="py-20 md:py-32 animate-slide-up-and-fade">
               <h1 className="text-4xl md:text-5xl font-headline font-bold">
                 Umrah Packages
               </h1>
@@ -75,7 +76,7 @@ export default function UmrahPackagesPage() {
                 Choose from a wide range of Umrah packages tailored to your needs and budget.
               </p>
             </div>
-            <div className="h-64 md:h-[450px] relative">
+            <div className="h-64 md:h-[450px] relative animate-fade-in">
               {pageHeaderImage && (
                   <Image
                       src={pageHeaderImage.imageUrl}

@@ -1,3 +1,4 @@
+
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -106,13 +107,13 @@ export default function DestinationDetailPage({ params }: DestinationDetailPageP
       <section className="bg-secondary">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="py-12 md:py-24">
+            <div className="py-12 md:py-24 animate-slide-up-and-fade">
               <Badge variant="secondary" className="mb-4">Destination</Badge>
               <h1 className="text-4xl md:text-5xl font-headline font-bold tracking-tight">
                 {dest.name}
               </h1>
             </div>
-            <div className="h-64 md:h-[450px] relative">
+            <div className="h-64 md:h-[450px] relative animate-fade-in">
               <Image
                 src={dest.image.imageUrl}
                 alt={dest.image.description}
@@ -156,7 +157,7 @@ export default function DestinationDetailPage({ params }: DestinationDetailPageP
 
           <div className="space-y-8 lg:sticky top-24">
             {relatedBlogs.length > 0 && (
-                <Card className="bg-primary text-primary-foreground">
+                <Card className="bg-white text-foreground">
                 <CardHeader>
                     <CardTitle className="font-headline text-2xl flex items-center text-primary-foreground">
                     <Newspaper className="mr-3 h-6 w-6" />

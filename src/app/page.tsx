@@ -45,10 +45,10 @@ export default function Home() {
       <ContactPopup />
 
       {/* --- Hero Section --- */}
-      <section className="bg-secondary">
+      <section className="relative bg-secondary">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="py-12 md:py-24 text-left">
+            <div className="py-12 md:py-24 text-left animate-slide-up-and-fade">
               <h1 className="text-4xl md:text-5xl font-headline font-bold tracking-tight text-secondary-foreground">
                 Crafting Journeys of Faith, Perfected for You.
               </h1>
@@ -72,7 +72,7 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="h-64 md:h-[450px] relative">
+            <div className="h-64 md:h-[450px] relative animate-fade-in">
               {heroImage && (
                 <Image
                   src={heroImage.imageUrl}

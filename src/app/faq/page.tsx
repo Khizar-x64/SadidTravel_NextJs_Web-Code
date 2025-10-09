@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import {
   Accordion,
@@ -16,7 +17,7 @@ export default function FAQPage() {
       <section className="bg-secondary">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="py-20 md:py-32">
+            <div className="py-20 md:py-32 animate-slide-up-and-fade">
               <h1 className="text-4xl md:text-5xl font-headline font-bold">
                 Frequently Asked Questions
               </h1>
@@ -24,7 +25,7 @@ export default function FAQPage() {
                 Find answers to common questions about our services and your journey.
               </p>
             </div>
-            <div className="h-64 md:h-[450px] relative">
+            <div className="h-64 md:h-[450px] relative animate-fade-in">
               {faqHeaderImage && (
                   <Image
                       src={faqHeaderImage.imageUrl}

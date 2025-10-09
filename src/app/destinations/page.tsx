@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { destinations } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -11,7 +12,7 @@ export default function DestinationsPage() {
       <section className="bg-secondary">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="py-20 md:py-32">
+            <div className="py-20 md:py-32 animate-slide-up-and-fade">
               <h1 className="text-4xl md:text-5xl font-headline font-bold">
                 Explore Islamic Heritage
               </h1>
@@ -19,7 +20,7 @@ export default function DestinationsPage() {
                 Journey to lands rich with Islamic history, culture, and beauty beyond the holy cities.
               </p>
             </div>
-            <div className="h-64 md:h-[450px] relative">
+            <div className="h-64 md:h-[450px] relative animate-fade-in">
               {pageHeaderImage && (
                   <Image
                       src={pageHeaderImage.imageUrl}

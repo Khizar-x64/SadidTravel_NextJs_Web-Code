@@ -1,3 +1,4 @@
+
 import { packages } from "@/lib/data";
 import { PackageCard } from "@/components/package-card";
 import Image from "next/image";
@@ -11,7 +12,7 @@ export default function PackagesPage() {
       <section className="bg-secondary">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="py-20 md:py-32">
+            <div className="py-20 md:py-32 animate-slide-up-and-fade">
               <h1 className="text-4xl md:text-5xl font-headline font-bold">
                 Our Spiritual Journeys
               </h1>
@@ -20,7 +21,7 @@ export default function PackagesPage() {
                 packages designed for your comfort and spiritual fulfillment.
               </p>
             </div>
-            <div className="h-64 md:h-[450px] relative">
+            <div className="h-64 md:h-[450px] relative animate-fade-in">
               {pageHeaderImage && (
                   <Image
                       src={pageHeaderImage.imageUrl}

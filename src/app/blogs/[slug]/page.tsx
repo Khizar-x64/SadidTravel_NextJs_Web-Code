@@ -1,3 +1,4 @@
+
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { blogs } from "@/lib/data";
@@ -86,7 +87,7 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
       <section className="bg-secondary">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="py-12 md:py-24">
+            <div className="py-12 md:py-24 animate-slide-up-and-fade">
               <Badge variant="secondary" className="mb-4">
                 Blog Post
               </Badge>
@@ -97,7 +98,7 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
                 <span>By {post.author}</span> | <span>Published on {post.date}</span>
               </div>
             </div>
-            <div className="h-64 md:h-[450px] relative">
+            <div className="h-64 md:h-[450px] relative animate-fade-in">
               <Image
                 src={post.image.imageUrl}
                 alt={post.image.description}
