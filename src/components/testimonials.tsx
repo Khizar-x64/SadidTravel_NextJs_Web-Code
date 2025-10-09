@@ -35,7 +35,7 @@ export default function TestimonialsSection() {
                   </Avatar>
                   <div>
                     <CardTitle className="font-bold">{testimonial.name}</CardTitle>
-                    <CardDescription>{testimonial.location}</CardDescription>
+                    <CardDescription className="text-card-foreground/80">{testimonial.location}</CardDescription>
                   </div>
                 </CardHeader>
                 <CardContent>
@@ -44,7 +44,7 @@ export default function TestimonialsSection() {
                       <Star key={i} className="h-5 w-5 fill-accent text-accent" />
                     ))}
                   </div>
-                  <p className="text-muted-foreground italic">
+                  <p className="text-card-foreground/90 italic">
                     <MessageSquare className="inline-block h-4 w-4 mr-2" />
                     {testimonial.quote}
                   </p>
