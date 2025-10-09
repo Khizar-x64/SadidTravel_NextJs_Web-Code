@@ -48,7 +48,7 @@ export default function AboutPage() {
                         Sadid Travels was founded with a simple yet profound mission: to provide pilgrims with a seamless, comfortable, and spiritually enriching experience on their journey to the holy lands. Our name, 'Sadid', which means 'correct' or 'on the right path' in Arabic, reflects our commitment to integrity, excellence, and unwavering support for our guests.
                     </p>
                     <p>
-                        From humble beginnings, we have grown into a trusted name in Islamic travel, guided by our core values and the invaluable trust of the community we serve.
+                        From humble beginnings, we have grown into a trusted name in Islamic travel across the USA, guided by our core values and the invaluable trust of the community we serve.
                     </p>
                 </div>
                  <div>
