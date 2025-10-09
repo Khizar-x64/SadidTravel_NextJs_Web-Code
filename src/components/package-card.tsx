@@ -33,22 +33,22 @@ export function PackageCard({ pkg }: PackageCardProps) {
         <CardTitle className="font-headline text-2xl leading-tight">
           {pkg.title}
         </CardTitle>
-        <CardDescription className="flex items-center pt-2">
+        <CardDescription className="flex items-center pt-2 text-card-foreground/80">
           <Clock className="h-4 w-4 mr-2" />
           {pkg.duration}
         </CardDescription>
       </CardHeader>
       <CardContent className="flex-grow">
-        <p className="text-muted-foreground line-clamp-3">
+        <p className="text-card-foreground/80 line-clamp-3">
           {pkg.description}
         </p>
       </CardContent>
-      <CardFooter className="flex justify-between items-center bg-secondary/50 p-4">
+      <CardFooter className="flex justify-between items-center bg-black/20 p-4">
         <div>
-          <p className="text-sm text-muted-foreground">Starting from</p>
-          <p className="text-2xl font-bold text-primary">${pkg.price}</p>
+          <p className="text-sm text-card-foreground/80">Starting from</p>
+          <p className="text-2xl font-bold text-white">${pkg.price}</p>
         </div>
-        <Button asChild>
+        <Button asChild variant="accent">
           <Link href={`/packages/${pkg.slug}`}>
             Details <ArrowRight className="ml-2 h-4 w-4" />
           </Link>

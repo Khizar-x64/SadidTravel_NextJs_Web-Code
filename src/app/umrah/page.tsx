@@ -27,28 +27,28 @@ const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
           className="object-cover"
           data-ai-hint={pkg.image.imageHint}
         />
-        <div className="absolute top-2 left-2 bg-secondary text-secondary-foreground text-xs font-bold px-2 py-1 rounded-full">{pkg.category}</div>
+        <div className="absolute top-2 left-2 bg-accent text-accent-foreground text-xs font-bold px-2 py-1 rounded-full">{pkg.category}</div>
       </div>
       <CardHeader>
         <CardTitle className="font-headline text-2xl leading-tight">
           {pkg.title}
         </CardTitle>
-        <CardDescription className="flex items-center pt-2">
+        <CardDescription className="flex items-center pt-2 text-card-foreground/80">
           <Clock className="h-4 w-4 mr-2" />
           {pkg.duration}
         </CardDescription>
       </CardHeader>
       <CardContent className="flex-grow">
-        <p className="text-muted-foreground">
+        <p className="text-card-foreground/80">
           A high-quality Umrah experience with excellent amenities. Contact us for detailed inclusions.
         </p>
       </CardContent>
-      <CardFooter className="flex justify-between items-center bg-secondary/50 p-4">
+      <CardFooter className="flex justify-between items-center bg-black/20 p-4">
         <div>
-          <p className="text-sm text-muted-foreground">Starting from</p>
-          <p className="text-2xl font-bold text-primary">${pkg.price}</p>
+          <p className="text-sm text-card-foreground/80">Starting from</p>
+          <p className="text-2xl font-bold text-white">${pkg.price}</p>
         </div>
-        <Button asChild>
+        <Button asChild variant="accent">
           <Link href="/contact">
             Inquire Now <ArrowRight className="ml-2 h-4 w-4" />
           </Link>

@@ -29,17 +29,17 @@ export function DestinationCard({ destination }: DestinationCardProps) {
         />
       </div>
       <CardHeader>
-        <CardTitle className="font-headline text-2xl leading-tight group-hover:text-primary transition-colors">
+        <CardTitle className="font-headline text-2xl leading-tight group-hover:text-accent transition-colors">
           {destination.name}
         </CardTitle>
       </CardHeader>
       <CardContent className="flex-grow">
-        <p className="text-muted-foreground line-clamp-3">
+        <p className="text-card-foreground/80 line-clamp-3">
           {destination.short_description}
         </p>
       </CardContent>
-      <CardFooter className="bg-secondary/50 p-4">
-        <Button asChild className="w-full">
+      <CardFooter className="bg-black/20 p-4">
+        <Button asChild variant="accent" className="w-full">
           <Link href={`/destinations/${destination.slug}`}>
             View More <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
