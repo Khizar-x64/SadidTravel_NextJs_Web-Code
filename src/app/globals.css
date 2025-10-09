@@ -26,28 +26,6 @@
     --ring: 226 70% 34%;
     --radius: 0.5rem;
   }
- 
-  .dark {
-    --background: 220 40% 5%; /* #0B1120 */
-    --foreground: 215 20% 90%; /* #E2E8F0 */
-    --card: 256 32% 25%; /* #312c56 */
-    --card-foreground: 215 20% 90%;
-    --popover: 220 40% 5%;
-    --popover-foreground: 215 20% 90%;
-    --primary: 217 91% 60%; /* #3B82F6 */
-    --primary-foreground: 210 40% 98%;
-    --secondary: 222 47% 11%; /* #111827 */
-    --secondary-foreground: 215 20% 90%;
-    --muted: 222 47% 11%;
-    --muted-foreground: 215 25% 63%; /* #94A3B8 */
-    --accent: 45 93% 53%; /* #FACC15 - Gold Accent */
-    --accent-foreground: 224 44% 11%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 216 33% 17%;
-    --input: 216 33% 17%;
-    --ring: 217 91% 60%;
-  }
 }
 
 @layer base {

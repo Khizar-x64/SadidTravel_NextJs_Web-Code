@@ -1,3 +1,4 @@
+
 "use client";
 
 import * as React from "react";
@@ -16,7 +17,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { ThemeToggle } from "./theme-toggle";
 
 const LogoComponent = () => {
     return (
@@ -34,15 +34,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-sm">
       {/* Top bar */}
-      <div className="bg-secondary text-secondary-foreground py-1">
+      <div className="bg-primary text-primary-foreground py-1">
         <div className="container flex justify-between items-center h-10 text-xs">
            <div className="flex items-center gap-4">
-              <a href="tel:+17543992498" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <a href="tel:+17543992498" className="flex items-center gap-2 hover:text-white/80 transition-colors">
                 <Phone className="h-4 w-4" />
                 <span className="hidden sm:inline">+1 754-399-2498</span>
               </a>
               <span className="hidden sm:inline">|</span>
-              <a href="mailto:sadidtravelsllc@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <a href="mailto:sadidtravelsllc@gmail.com" className="flex items-center gap-2 hover:text-white/80 transition-colors">
                 <Mail className="h-4 w-4" />
                 <span className="hidden sm:inline">sadidtravelsllc@gmail.com</span>
               </a>
@@ -50,12 +50,12 @@ export function Header() {
            <div className="flex items-center gap-2">
             <p className="hidden md:block">Follow Us:</p>
             <Link href={siteConfig.links.facebook} passHref>
-                <Button variant="ghost" size="icon" aria-label="Facebook" className="h-8 w-8">
+                <Button variant="ghost" size="icon" aria-label="Facebook" className="h-8 w-8 text-primary-foreground hover:bg-white/20 hover:text-primary-foreground">
                   <Facebook className="h-4 w-4" />
                 </Button>
             </Link>
             <Link href={siteConfig.links.instagram} passHref>
-                <Button variant="ghost" size="icon" aria-label="Instagram" className="h-8 w-8">
+                <Button variant="ghost" size="icon" aria-label="Instagram" className="h-8 w-8 text-primary-foreground hover:bg-white/20 hover:text-primary-foreground">
                   <Instagram className="h-4 w-4" />
                 </Button>
               </Link>
@@ -131,7 +131,6 @@ export function Header() {
         </nav>
         
         <div className="flex items-center justify-end">
-          <ThemeToggle />
           <Button asChild className="hidden md:inline-flex ml-4">
             <Link href="/contact">Book Now</Link>
           </Button>
