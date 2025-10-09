@@ -8,25 +8,28 @@ const lastUpdatedDate = "June 1, 2024";
 export default function RefundPage() {
   return (
     <div className="bg-background">
-      <section className="relative py-20 md:py-32 bg-secondary">
-        {headerImage && (
-            <Image
-                src={headerImage.imageUrl}
-                alt={headerImage.description}
-                fill
-                className="object-cover opacity-50"
-                data-ai-hint={headerImage.imageHint}
-            />
-        )}
-        
-        <div className="container mx-auto px-4 relative">
-          <div className="text-center text-white" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.7)'}}>
-            <h1 className="text-4xl md:text-5xl font-headline font-bold">
-              Refund Policy
-            </h1>
-            <p className="mt-4 max-w-2xl mx-auto text-lg">
-              Our policy on cancellations and refunds.
-            </p>
+      <section className="bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="py-20 md:py-32">
+              <h1 className="text-4xl md:text-5xl font-headline font-bold">
+                Refund Policy
+              </h1>
+              <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
+                Our policy on cancellations and refunds.
+              </p>
+            </div>
+            <div className="h-64 md:h-[450px] relative">
+              {headerImage && (
+                  <Image
+                      src={headerImage.imageUrl}
+                      alt={headerImage.description}
+                      fill
+                      className="object-cover rounded-lg shadow-lg opacity-50"
+                      data-ai-hint={headerImage.imageHint}
+                  />
+              )}
+            </div>
           </div>
         </div>
       </section>

@@ -13,25 +13,28 @@ const faqHeaderImage = PlaceHolderImages.find(p => p.id === 'islamic-architectur
 export default function FAQPage() {
   return (
     <div>
-      <section className="relative py-20 md:py-32 bg-secondary">
-        {faqHeaderImage && (
-            <Image
-                src={faqHeaderImage.imageUrl}
-                alt={faqHeaderImage.description}
-                fill
-                className="object-cover opacity-50"
-                data-ai-hint={faqHeaderImage.imageHint}
-            />
-        )}
-        
-        <div className="container mx-auto px-4 relative">
-          <div className="text-center text-white" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.7)'}}>
-            <h1 className="text-4xl md:text-5xl font-headline font-bold">
-              Frequently Asked Questions
-            </h1>
-            <p className="mt-4 max-w-2xl mx-auto text-lg">
-              Find answers to common questions about our services and your journey.
-            </p>
+      <section className="bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="py-20 md:py-32">
+              <h1 className="text-4xl md:text-5xl font-headline font-bold">
+                Frequently Asked Questions
+              </h1>
+              <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
+                Find answers to common questions about our services and your journey.
+              </p>
+            </div>
+            <div className="h-64 md:h-[450px] relative">
+              {faqHeaderImage && (
+                  <Image
+                      src={faqHeaderImage.imageUrl}
+                      alt={faqHeaderImage.description}
+                      fill
+                      className="object-cover rounded-lg shadow-lg"
+                      data-ai-hint={faqHeaderImage.imageHint}
+                  />
+              )}
+            </div>
           </div>
         </div>
       </section>

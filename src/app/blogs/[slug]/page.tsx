@@ -83,25 +83,30 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
 
   return (
     <div className="bg-background">
-      <section className="relative h-[40vh] md:h-[50vh]">
-        <Image
-          src={post.image.imageUrl}
-          alt={post.image.description}
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint={post.image.imageHint}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-transparent" />
-        <div className="relative container mx-auto h-full flex flex-col items-start justify-end text-white p-4 md:p-8">
-          <Badge variant="secondary" className="mb-4">
-            Blog Post
-          </Badge>
-          <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tight">
-            {post.title}
-          </h1>
-          <div className="mt-4 text-primary-foreground/90 text-lg">
-            <span>By {post.author}</span> | <span>Published on {post.date}</span>
+      <section className="bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="py-12 md:py-24">
+              <Badge variant="secondary" className="mb-4">
+                Blog Post
+              </Badge>
+              <h1 className="text-4xl md:text-5xl font-headline font-bold tracking-tight">
+                {post.title}
+              </h1>
+              <div className="mt-4 text-muted-foreground text-lg">
+                <span>By {post.author}</span> | <span>Published on {post.date}</span>
+              </div>
+            </div>
+            <div className="h-64 md:h-[450px] relative">
+              <Image
+                src={post.image.imageUrl}
+                alt={post.image.description}
+                fill
+                className="object-cover rounded-lg shadow-lg"
+                priority
+                data-ai-hint={post.image.imageHint}
+              />
+            </div>
           </div>
         </div>
       </section>

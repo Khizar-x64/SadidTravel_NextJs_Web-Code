@@ -55,23 +55,28 @@ export default function PackageDetailPage({ params }: PackageDetailPageProps) {
 
   return (
     <div className="bg-background">
-      <section className="relative h-[40vh] md:h-[50vh]">
-        <Image
-          src={pkg.image.imageUrl}
-          alt={pkg.image.description}
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint={pkg.image.imageHint}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-transparent" />
-        <div className="relative container mx-auto h-full flex flex-col items-start justify-end text-white p-4 md:p-8">
-          <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tight">
-            {pkg.title}
-          </h1>
-          <p className="mt-2 text-lg md:text-xl text-primary-foreground/90 max-w-3xl">
-            {pkg.description}
-          </p>
+      <section className="bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="py-12 md:py-24">
+              <h1 className="text-4xl md:text-5xl font-headline font-bold tracking-tight">
+                {pkg.title}
+              </h1>
+              <p className="mt-2 text-lg md:text-xl text-muted-foreground max-w-3xl">
+                {pkg.description}
+              </p>
+            </div>
+            <div className="h-64 md:h-[450px] relative">
+              <Image
+                src={pkg.image.imageUrl}
+                alt={pkg.image.description}
+                fill
+                className="object-cover rounded-lg shadow-lg"
+                priority
+                data-ai-hint={pkg.image.imageHint}
+              />
+            </div>
+          </div>
         </div>
       </section>
 

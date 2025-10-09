@@ -45,44 +45,46 @@ export default function Home() {
       <ContactPopup />
 
       {/* --- Hero Section --- */}
-      <section>
-        <div className="relative w-full h-[60vh]">
-          {heroImage && (
-            <Image
-              src={heroImage.imageUrl}
-              alt={heroImage.description}
-              fill
-              className="object-cover"
-              priority
-              data-ai-hint={heroImage.imageHint}
-            />
-          )}
-        </div>
-        <div className="bg-secondary">
-            <div className="container mx-auto px-4 py-12 md:py-16 text-center">
-                 <h1 className="text-4xl md:text-5xl font-headline font-bold tracking-tight text-secondary-foreground">
-                    Crafting Journeys of Faith, Perfected for You.
-                </h1>
-                <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-                    Experience premium Hajj, Umrah, and Islamic tours designed for
-                    spiritual enrichment and ultimate comfort.
-                </p>
-                <div className="mt-8 flex flex-wrap justify-center gap-4">
+      <section className="bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="py-12 md:py-24 text-left">
+              <h1 className="text-4xl md:text-5xl font-headline font-bold tracking-tight text-secondary-foreground">
+                Crafting Journeys of Faith, Perfected for You.
+              </h1>
+              <p className="mt-4 max-w-2xl text-lg md:text-xl text-muted-foreground">
+                Experience premium Hajj, Umrah, and Islamic tours designed for
+                spiritual enrichment and ultimate comfort.
+              </p>
+              <div className="mt-8 flex flex-wrap justify-start gap-4">
                 <Button asChild size="lg" variant="accent" className="font-bold">
-                    <Link href="/packages">
+                  <Link href="/packages">
                     Explore Packages <ArrowRight className="ml-2 h-5 w-5" />
-                    </Link>
+                  </Link>
                 </Button>
                 <Button
-                    asChild
-                    size="lg"
-                    variant="outline"
-                    className="font-bold border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                  asChild
+                  size="lg"
+                  variant="outline"
+                  className="font-bold border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                 >
-                    <Link href="/contact">Plan Your Trip</Link>
+                  <Link href="/contact">Plan Your Trip</Link>
                 </Button>
-                </div>
+              </div>
             </div>
+            <div className="h-64 md:h-[450px] relative">
+              {heroImage && (
+                <Image
+                  src={heroImage.imageUrl}
+                  alt={heroImage.description}
+                  fill
+                  className="object-cover rounded-lg shadow-lg"
+                  priority
+                  data-ai-hint={heroImage.imageHint}
+                />
+              )}
+            </div>
+          </div>
         </div>
       </section>
 

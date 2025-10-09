@@ -11,25 +11,28 @@ const blogHeaderImage = PlaceHolderImages.find(p => p.id === 'blog-spiritual-jou
 export default function BlogsPage() {
   return (
     <div>
-      <section className="relative py-20 md:py-32 bg-secondary">
-        {blogHeaderImage && (
-            <Image
-                src={blogHeaderImage.imageUrl}
-                alt={blogHeaderImage.description}
-                fill
-                className="object-cover"
-                data-ai-hint={blogHeaderImage.imageHint}
-            />
-        )}
-        
-        <div className="container mx-auto px-4 relative">
-          <div className="text-center text-white" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.7)'}}>
-            <h1 className="text-4xl md:text-5xl font-headline font-bold">
-              Our Blog
-            </h1>
-            <p className="mt-4 max-w-2xl mx-auto text-lg">
-              Insights, tips, and stories to inspire your spiritual travels.
-            </p>
+      <section className="bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="py-20 md:py-32">
+              <h1 className="text-4xl md:text-5xl font-headline font-bold">
+                Our Blog
+              </h1>
+              <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+                Insights, tips, and stories to inspire your spiritual travels.
+              </p>
+            </div>
+            <div className="h-64 md:h-[450px] relative">
+              {blogHeaderImage && (
+                  <Image
+                      src={blogHeaderImage.imageUrl}
+                      alt={blogHeaderImage.description}
+                      fill
+                      className="object-cover rounded-lg shadow-lg"
+                      data-ai-hint={blogHeaderImage.imageHint}
+                  />
+              )}
+            </div>
           </div>
         </div>
       </section>

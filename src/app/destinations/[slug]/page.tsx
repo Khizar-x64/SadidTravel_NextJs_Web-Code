@@ -103,21 +103,26 @@ export default function DestinationDetailPage({ params }: DestinationDetailPageP
 
   return (
     <div className="bg-background">
-      <section className="relative h-[40vh] md:h-[50vh]">
-        <Image
-          src={dest.image.imageUrl}
-          alt={dest.image.description}
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint={dest.image.imageHint}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-transparent" />
-        <div className="relative container mx-auto h-full flex flex-col items-start justify-end text-white p-4 md:p-8">
-          <Badge variant="secondary" className="mb-4">Destination</Badge>
-          <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tight">
-            {dest.name}
-          </h1>
+      <section className="bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="py-12 md:py-24">
+              <Badge variant="secondary" className="mb-4">Destination</Badge>
+              <h1 className="text-4xl md:text-5xl font-headline font-bold tracking-tight">
+                {dest.name}
+              </h1>
+            </div>
+            <div className="h-64 md:h-[450px] relative">
+              <Image
+                src={dest.image.imageUrl}
+                alt={dest.image.description}
+                fill
+                className="object-cover rounded-lg shadow-lg"
+                priority
+                data-ai-hint={dest.image.imageHint}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
