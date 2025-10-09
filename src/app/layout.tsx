@@ -48,7 +48,7 @@ export default function RootLayout({
     <html lang="en" className={`${playfairDisplay.variable} ${ptSans.variable} ${amiri.variable}`} suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-body antialiased"
+          "min-h-screen bg-background font-body antialiased light"
         )}
       >
         <Header />
