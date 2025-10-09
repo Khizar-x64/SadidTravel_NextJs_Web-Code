@@ -43,12 +43,12 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                 <div className="prose prose-lg max-w-none text-muted-foreground">
-                    <h2 className="font-headline text-3xl text-primary">Our Story</h2>
+                    <h2 className="font-headline text-3xl text-primary">Our Mission</h2>
                     <p>
-                        Sadid Travels was founded with a simple yet profound mission: to provide pilgrims with a seamless, comfortable, and spiritually enriching experience on their journey to the holy lands. Our name, 'Sadid', which means 'correct' or 'on the right path' in Arabic, reflects our commitment to integrity, excellence, and unwavering support for our guests.
+                        Sadid Travels specializes in crafting unforgettable Umrah packages for the community across the USA. Our mission is to be the nation's most trusted Umrah travel partner, making your sacred journey both seamless and spiritually profound.
                     </p>
                     <p>
-                        From humble beginnings, we have grown into a trusted name in Islamic travel across the USA, guided by our core values and the invaluable trust of the community we serve.
+                        Our team of seasoned travel experts is dedicated to managing every detail for you. From premium 5-star accommodations and flight bookings to streamlined visa services, we handle all the logistics. This allows you to fully immerse yourself in your spiritual experience, whether you are traveling to Makkah, Madinah, or exploring the rich Islamic heritage of destinations like Egypt, Turkey, and Dubai. We pride ourselves on creating tailored packages that meet your specific needs, guaranteeing an unforgettable and deeply meaningful travel experience with us.
                     </p>
                 </div>
                  <div>
