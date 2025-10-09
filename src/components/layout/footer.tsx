@@ -18,7 +18,7 @@ export function Footer() {
   const accreditations = [
     { name: "Ministry of Hajj and Umrah", logo: "/logos/Ministry of Hajj and Umrah.svg", url: "#" },
     { name: "IATA", logo: "/logos/iata.svg", url: "#" },
-    { name: "IATAN", logo: "/logos/iatan.svg", url: "#" },
+    { name: "IATAN", logo: "/logos/iatAn.svg", url: "#" },
   ];
 
   return (
@@ -82,18 +82,18 @@ export function Footer() {
           <div>
             <h3 className="font-headline font-semibold">Accreditation</h3>
             <div className="mt-4 flex flex-col space-y-4">
-              {accreditations.map((acc) => (
-                <Link key={acc.name} href={acc.url} target="_blank" rel="noopener noreferrer" className="block">
-                  <div className="relative h-12 w-32">
-                    <Image
-                      src={acc.logo}
-                      alt={`${acc.name} logo`}
-                      fill
-                      className="object-contain object-left invert brightness-0"
-                    />
-                  </div>
-                </Link>
-              ))}
+                {accreditations.map((acc) => (
+                  <Link key={acc.name} href={acc.url} target="_blank" rel="noopener noreferrer" className="block opacity-80 hover:opacity-100 transition-opacity">
+                      <div className="relative h-16 w-32">
+                          <Image
+                              src={acc.logo}
+                              alt={`${acc.name} logo`}
+                              fill
+                              className="object-contain object-left brightness-0 invert"
+                          />
+                      </div>
+                  </Link>
+                ))}
             </div>
           </div>
         </div>
