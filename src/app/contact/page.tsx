@@ -12,29 +12,24 @@ const contactHeaderImage = PlaceHolderImages.find(p => p.id === 'contact-banner'
 export default function ContactPage() {
   return (
     <div className="bg-background">
-      <section className="bg-secondary">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="py-20 md:py-32">
-              <h1 className="text-4xl md:text-5xl font-headline font-bold">
+      <section className="relative h-96">
+        {contactHeaderImage && (
+            <Image
+                src={contactHeaderImage.imageUrl}
+                alt={contactHeaderImage.description}
+                fill
+                className="object-cover"
+                data-ai-hint={contactHeaderImage.imageHint}
+            />
+        )}
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
+            <h1 className="text-4xl md:text-6xl font-bold font-headline leading-tight">
                 Contact Us
-              </h1>
-              <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
+            </h1>
+            <p className="mt-4 max-w-2xl text-lg md:text-xl" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.7)' }}>
                 Let's plan your next spiritual journey. We are here to assist you every step of the way.
-              </p>
-            </div>
-            <div className="h-64 md:h-[450px] relative">
-              {contactHeaderImage && (
-                  <Image
-                      src={contactHeaderImage.imageUrl}
-                      alt={contactHeaderImage.description}
-                      fill
-                      className="object-cover rounded-lg shadow-lg"
-                      data-ai-hint={contactHeaderImage.imageHint}
-                  />
-              )}
-            </div>
-          </div>
+            </p>
         </div>
       </section>
 
