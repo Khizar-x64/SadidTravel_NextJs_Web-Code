@@ -50,10 +50,10 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="py-12 md:py-24 text-left animate-slide-up-and-fade">
               <h1 className="text-4xl md:text-5xl font-headline font-bold tracking-tight text-secondary-foreground">
-                Your Trusted Umrah Agency in the USA
+                Your Sacred Journey Awaits
               </h1>
               <p className="mt-4 max-w-2xl text-lg md:text-xl text-muted-foreground">
-                Experience a seamless and spiritually fulfilling Umrah journey with our expert guidance. We provide tailored packages designed for your comfort and peace of mind, ensuring a memorable pilgrimage.
+                Experience a seamless and spiritually fulfilling Umrah with Sadid Travels. We provide expertly guided, tailored packages from the USA, designed for your ultimate comfort and peace of mind.
               </p>
               <div className="mt-8 flex flex-wrap justify-start gap-4">
                 <Button asChild size="lg" variant="accent" className="font-bold">
