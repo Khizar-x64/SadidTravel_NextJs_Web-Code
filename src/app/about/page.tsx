@@ -12,14 +12,6 @@ export default function AboutPage() {
     <div className="bg-background">
       <section className="bg-secondary py-12 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center animate-slide-up-and-fade">
-            <h1 className="text-4xl md:text-5xl font-headline font-bold text-secondary-foreground">
-              About Sadid Travels
-            </h1>
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-              Crafting unforgettable spiritual journeys with devotion and excellence.
-            </p>
-          </div>
           <div className="mt-8 md:mt-12 h-64 md:h-[450px] relative animate-fade-in">
             {aboutHeaderImage && (
                 <Image
@@ -30,6 +22,14 @@ export default function AboutPage() {
                     data-ai-hint={aboutHeaderImage.imageHint}
                 />
             )}
+          </div>
+          <div className="text-center animate-slide-up-and-fade mt-8">
+            <h1 className="text-4xl md:text-5xl font-headline font-bold text-secondary-foreground">
+              About Sadid Travels
+            </h1>
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+              Crafting unforgettable spiritual journeys with devotion and excellence.
+            </p>
           </div>
         </div>
       </section>
