@@ -43,7 +43,7 @@ export default function ContactPage() {
               <h2 className="text-3xl font-headline font-bold text-primary mb-6">
                 Send a Direct Message
               </h2>
-              <Card className="p-8 border shadow-lg bg-card text-card-foreground">
+              <Card className="p-8 border shadow-lg bg-white text-foreground">
                 <ContactForm />
               </Card>
             </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
                 Other Ways to Connect
               </h2>
               <div className="space-y-6">
-                <Card className="overflow-hidden shadow-lg bg-card text-card-foreground">
+                <Card className="overflow-hidden shadow-lg bg-white text-foreground">
                   <CardHeader className="bg-secondary p-6 flex flex-row items-center gap-4">
                     <div className="bg-primary/10 p-3 rounded-full">
                       <Phone className="h-6 w-6 text-primary" />
@@ -68,7 +68,7 @@ export default function ContactPage() {
                   </CardContent>
                 </Card>
 
-                 <Card className="overflow-hidden shadow-lg bg-card text-card-foreground">
+                 <Card className="overflow-hidden shadow-lg bg-white text-foreground">
                   <CardHeader className="bg-secondary p-6 flex flex-row items-center gap-4">
                     <div className="bg-primary/10 p-3 rounded-full">
                       <Mail className="h-6 w-6 text-primary" />
@@ -83,7 +83,7 @@ export default function ContactPage() {
                   </CardContent>
                 </Card>
 
-                <Card className="overflow-hidden shadow-lg bg-card text-card-foreground">
+                <Card className="overflow-hidden shadow-lg bg-white text-foreground">
                   <CardHeader className="bg-secondary p-6 flex flex-row items-center gap-4">
                      <div className="bg-primary/10 p-3 rounded-full">
                       <MapPin className="h-6 w-6 text-primary" />
