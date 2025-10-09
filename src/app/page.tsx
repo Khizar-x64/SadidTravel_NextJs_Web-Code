@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Star, Compass, ShieldCheck, Heart } from 'lucide-react';
@@ -44,55 +45,56 @@ export default function Home() {
       <ContactPopup />
 
       {/* --- Hero Section --- */}
-      <section className="relative w-full h-[80vh] md:h-[90vh]">
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            fill
-            className="object-cover"
-            priority
-            data-ai-hint={heroImage.imageHint}
-          />
-        )}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-transparent" />
-        <div className="relative container mx-auto h-full flex flex-col items-start justify-end text-white px-4 pb-20 md:pb-24">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tight leading-tight text-shadow-lg">
-              Crafting Journeys of Faith, Perfected for You.
-            </h1>
-            <p className="mt-4 max-w-2xl text-lg md:text-xl text-primary-foreground/90">
-              Experience premium Hajj, Umrah, and Islamic tours designed for
-              spiritual enrichment and ultimate comfort.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Button asChild size="lg" variant="accent" className="font-bold">
-                <Link href="/packages">
-                  Explore Packages <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="font-bold bg-transparent text-white border-white hover:bg-white hover:text-primary"
-              >
-                <Link href="/contact">Plan Your Trip</Link>
-              </Button>
+      <section>
+        <div className="relative w-full h-[60vh]">
+          {heroImage && (
+            <Image
+              src={heroImage.imageUrl}
+              alt={heroImage.description}
+              fill
+              className="object-cover"
+              priority
+              data-ai-hint={heroImage.imageHint}
+            />
+          )}
+        </div>
+        <div className="bg-secondary">
+            <div className="container mx-auto px-4 py-12 md:py-16 text-center">
+                 <h1 className="text-4xl md:text-5xl font-headline font-bold tracking-tight text-secondary-foreground">
+                    Crafting Journeys of Faith, Perfected for You.
+                </h1>
+                <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
+                    Experience premium Hajj, Umrah, and Islamic tours designed for
+                    spiritual enrichment and ultimate comfort.
+                </p>
+                <div className="mt-8 flex flex-wrap justify-center gap-4">
+                <Button asChild size="lg" variant="accent" className="font-bold">
+                    <Link href="/packages">
+                    Explore Packages <ArrowRight className="ml-2 h-5 w-5" />
+                    </Link>
+                </Button>
+                <Button
+                    asChild
+                    size="lg"
+                    variant="outline"
+                    className="font-bold border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                >
+                    <Link href="/contact">Plan Your Trip</Link>
+                </Button>
+                </div>
             </div>
-          </div>
         </div>
       </section>
 
       {/* --- Why Choose Us Section --- */}
-      <section className="py-16 md:py-24 bg-secondary">
+      <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center md:text-left">
             {whyUsFeatures.map((feature, index) => (
               <div key={index} className="flex flex-col items-center md:flex-row gap-4">
                 <div className="flex-shrink-0">{feature.icon}</div>
                 <div>
-                  <h3 className="text-xl font-bold font-headline text-secondary-foreground">
+                  <h3 className="text-xl font-bold font-headline text-primary">
                     {feature.title}
                   </h3>
                   <p className="mt-1 text-muted-foreground">
@@ -107,10 +109,10 @@ export default function Home() {
 
 
       {/* --- Featured Destinations Section --- */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">
+            <h2 className="text-3xl md:text-4xl font-headline font-bold text-secondary-foreground">
               Explore Our Destinations
             </h2>
             <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -127,10 +129,10 @@ export default function Home() {
 
 
       {/* --- Featured Packages Section --- */}
-      <section className="py-16 md:py-24 bg-secondary">
+      <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold text-secondary-foreground">
+            <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">
               Curated Spiritual Journeys
             </h2>
             <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
