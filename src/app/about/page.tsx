@@ -10,28 +10,26 @@ const missionImage = PlaceHolderImages.find(p => p.id === 'pilgrims-praying');
 export default function AboutPage() {
   return (
     <div className="bg-background">
-      <section className="bg-secondary">
+      <section className="bg-secondary py-12 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="py-20 md:py-32 animate-slide-up-and-fade">
-              <h1 className="text-4xl md:text-5xl font-headline font-bold text-secondary-foreground">
-                About Sadid Travels
-              </h1>
-              <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                Crafting unforgettable spiritual journeys with devotion and excellence.
-              </p>
-            </div>
-            <div className="h-64 md:h-[450px] relative animate-fade-in">
-              {aboutHeaderImage && (
-                  <Image
-                      src={aboutHeaderImage.imageUrl}
-                      alt={aboutHeaderImage.description}
-                      fill
-                      className="object-cover rounded-lg shadow-lg"
-                      data-ai-hint={aboutHeaderImage.imageHint}
-                  />
-              )}
-            </div>
+          <div className="text-center animate-slide-up-and-fade">
+            <h1 className="text-4xl md:text-5xl font-headline font-bold text-secondary-foreground">
+              About Sadid Travels
+            </h1>
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+              Crafting unforgettable spiritual journeys with devotion and excellence.
+            </p>
+          </div>
+          <div className="mt-8 md:mt-12 h-64 md:h-[450px] relative animate-fade-in">
+            {aboutHeaderImage && (
+                <Image
+                    src={aboutHeaderImage.imageUrl}
+                    alt={aboutHeaderImage.description}
+                    fill
+                    className="object-cover rounded-lg shadow-lg"
+                    data-ai-hint={aboutHeaderImage.imageHint}
+                />
+            )}
           </div>
         </div>
       </section>
