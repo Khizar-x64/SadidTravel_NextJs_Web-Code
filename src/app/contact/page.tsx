@@ -43,7 +43,7 @@ export default function ContactPage() {
               <h2 className="text-3xl font-headline font-bold text-primary mb-6">
                 Send a Direct Message
               </h2>
-              <Card className="p-8 border shadow-lg">
+              <Card className="p-8 border shadow-lg bg-card text-card-foreground">
                 <ContactForm />
               </Card>
             </div>
@@ -53,12 +53,12 @@ export default function ContactPage() {
                 Other Ways to Connect
               </h2>
               <div className="space-y-6">
-                <Card className="overflow-hidden shadow-lg">
+                <Card className="overflow-hidden shadow-lg bg-background text-foreground">
                   <CardHeader className="bg-secondary p-6 flex flex-row items-center gap-4">
                     <div className="bg-primary/10 p-3 rounded-full">
                       <Phone className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle className="text-xl font-headline">Call Us</CardTitle>
+                    <CardTitle className="text-xl font-headline text-secondary-foreground">Call Us</CardTitle>
                   </CardHeader>
                   <CardContent className="p-6 space-y-2">
                     <p className="text-muted-foreground">Speak directly to our travel experts.</p>
@@ -68,12 +68,12 @@ export default function ContactPage() {
                   </CardContent>
                 </Card>
 
-                 <Card className="overflow-hidden shadow-lg">
+                 <Card className="overflow-hidden shadow-lg bg-background text-foreground">
                   <CardHeader className="bg-secondary p-6 flex flex-row items-center gap-4">
                     <div className="bg-primary/10 p-3 rounded-full">
                       <Mail className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle className="text-xl font-headline">Email Us</CardTitle>
+                    <CardTitle className="text-xl font-headline text-secondary-foreground">Email Us</CardTitle>
                   </CardHeader>
                   <CardContent className="p-6 space-y-2">
                     <p className="text-muted-foreground">For detailed inquiries and bookings.</p>
@@ -83,12 +83,12 @@ export default function ContactPage() {
                   </CardContent>
                 </Card>
 
-                <Card className="overflow-hidden shadow-lg">
+                <Card className="overflow-hidden shadow-lg bg-background text-foreground">
                   <CardHeader className="bg-secondary p-6 flex flex-row items-center gap-4">
                      <div className="bg-primary/10 p-3 rounded-full">
                       <MapPin className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle className="text-xl font-headline">Visit Our Office</CardTitle>
+                    <CardTitle className="text-xl font-headline text-secondary-foreground">Visit Our Office</CardTitle>
                   </CardHeader>
                   <CardContent className="p-6 space-y-2">
                      <p className="text-muted-foreground">720 Marble Way, <br/>Boca Raton, FL 33432, USA</p>
