@@ -15,25 +15,25 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-secondary text-secondary-foreground">
+    <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block mb-4">
               <Icons.Logo className="h-10" />
             </Link>
-            <p className="max-w-xs text-muted-foreground">
+            <p className="max-w-xs text-primary-foreground/80">
               Your trusted partner for a spiritually fulfilling journey to the
               holy lands.
             </p>
             <div className="flex space-x-4 mt-6">
               <Link href={siteConfig.links.facebook} passHref>
-                <Button variant="ghost" size="icon" aria-label="Facebook">
+                <Button variant="ghost" size="icon" aria-label="Facebook" className="text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
                   <Facebook className="h-5 w-5" />
                 </Button>
               </Link>
               <Link href={siteConfig.links.instagram} passHref>
-                <Button variant="ghost" size="icon" aria-label="Instagram">
+                <Button variant="ghost" size="icon" aria-label="Instagram" className="text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
                   <Instagram className="h-5 w-5" />
                 </Button>
               </Link>
@@ -47,7 +47,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-primary-foreground/80 hover:text-primary-foreground hover:underline transition-colors"
                   >
                     {item.title}
                   </Link>
@@ -63,7 +63,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-primary-foreground/80 hover:text-primary-foreground hover:underline transition-colors"
                   >
                     {item.title}
                   </Link>
@@ -73,7 +73,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-background text-muted-foreground">
+      <div className="bg-primary/90 text-primary-foreground/80">
         <div className="container mx-auto px-4 py-4 text-center text-sm">
           &copy; {new Date().getFullYear()} Sadid Travels. All Rights Reserved.
         </div>
