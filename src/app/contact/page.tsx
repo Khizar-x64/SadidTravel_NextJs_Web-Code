@@ -2,13 +2,16 @@
 import Image from "next/image";
 import { ContactForm } from "@/components/contact-form";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Building, Clock, MessageSquare } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const contactHeaderImage = PlaceHolderImages.find(p => p.id === 'contact-banner');
 
 export default function ContactPage() {
   return (
-    <div>
+    <div className="bg-background">
       <section className="relative py-20 md:py-32 bg-secondary">
          {contactHeaderImage && (
             <Image
@@ -23,11 +26,10 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 relative">
           <div className="text-center text-primary-foreground">
             <h1 className="text-4xl md:text-5xl font-headline font-bold">
-              Get in Touch
+              Contact Us
             </h1>
             <p className="mt-4 max-w-2xl mx-auto text-lg">
-              We're here to help you plan your perfect spiritual journey. Reach
-              out to us with your questions.
+              Let's plan your next spiritual journey. We are here to assist you every step of the way.
             </p>
           </div>
         </div>
@@ -35,56 +37,83 @@ export default function ContactPage() {
 
       <section className="py-12 md:py-24 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
-            <div className="lg:col-span-2 bg-card p-8 rounded-lg shadow-lg">
-              <h2 className="text-2xl md:text-3xl font-headline font-bold mb-6 text-primary">
-                Send us a Message
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
+            
+            <div className="lg:col-span-3">
+              <h2 className="text-3xl font-headline font-bold text-primary mb-6">
+                Send a Direct Message
               </h2>
-              <ContactForm />
+              <Card className="p-8 border shadow-lg">
+                <ContactForm />
+              </Card>
             </div>
-            <div className="space-y-8">
-              <div className="bg-card p-8 rounded-lg shadow-lg">
-                <h3 className="text-xl font-headline font-bold mb-4">
-                  Contact Information
-                </h3>
-                <div className="space-y-4 text-muted-foreground">
-                  <div className="flex items-start">
-                    <MapPin className="h-5 w-5 mr-4 mt-1 text-primary" />
-                    <span>
-                      720 Marble Way, Boca Raton, FL 33432, USA
-                    </span>
-                  </div>
-                  <div className="flex items-center">
-                    <Phone className="h-5 w-5 mr-4 text-primary" />
-                    <a href="tel:+17543992498" className="hover:text-primary">
+            
+            <div className="lg:col-span-2">
+               <h2 className="text-3xl font-headline font-bold text-primary mb-6">
+                Other Ways to Connect
+              </h2>
+              <div className="space-y-6">
+                <Card className="overflow-hidden shadow-lg">
+                  <CardHeader className="bg-secondary p-6 flex flex-row items-center gap-4">
+                    <div className="bg-primary/10 p-3 rounded-full">
+                      <Phone className="h-6 w-6 text-primary" />
+                    </div>
+                    <CardTitle className="text-xl font-headline">Call Us</CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-6 space-y-2">
+                    <p className="text-muted-foreground">Speak directly to our travel experts.</p>
+                    <a href="tel:+17543992498" className="text-lg font-semibold text-primary hover:underline">
                       +1 754-399-2498
                     </a>
-                  </div>
-                  <div className="flex items-center">
-                    <Mail className="h-5 w-5 mr-4 text-primary" />
-                    <a
-                      href="mailto:sadidtravelsllc@gmail.com"
-                      className="hover:text-primary"
-                    >
+                  </CardContent>
+                </Card>
+
+                 <Card className="overflow-hidden shadow-lg">
+                  <CardHeader className="bg-secondary p-6 flex flex-row items-center gap-4">
+                    <div className="bg-primary/10 p-3 rounded-full">
+                      <Mail className="h-6 w-6 text-primary" />
+                    </div>
+                    <CardTitle className="text-xl font-headline">Email Us</CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-6 space-y-2">
+                    <p className="text-muted-foreground">For detailed inquiries and bookings.</p>
+                    <a href="mailto:sadidtravelsllc@gmail.com" className="text-lg font-semibold text-primary hover:underline break-all">
                       sadidtravelsllc@gmail.com
                     </a>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-card h-80 rounded-lg shadow-lg overflow-hidden">
-                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.882483163102!2d-80.11005812456488!3d26.36224377778933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91e77a23c8e63%3A0x234d6ac335349f85!2s720%20Marble%20Way%2C%20Boca%20Raton%2C%20FL%2033432%2C%20USA!5e0!3m2!1sen!2s!4v1717616634863!5m2!1sen!2s"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen={false}
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Sadid Travels Location"
-                 ></iframe>
+                  </CardContent>
+                </Card>
+
+                <Card className="overflow-hidden shadow-lg">
+                  <CardHeader className="bg-secondary p-6 flex flex-row items-center gap-4">
+                     <div className="bg-primary/10 p-3 rounded-full">
+                      <MapPin className="h-6 w-6 text-primary" />
+                    </div>
+                    <CardTitle className="text-xl font-headline">Visit Our Office</CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-6 space-y-2">
+                     <p className="text-muted-foreground">720 Marble Way, <br/>Boca Raton, FL 33432, USA</p>
+                      <p className="text-sm text-muted-foreground flex items-center"><Clock className="mr-2 h-4 w-4"/>Mon - Fri, 9am - 5pm</p>
+                  </CardContent>
+                </Card>
+
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="h-96">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.882483163102!2d-80.11005812456488!3d26.36224377778933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91e77a23c8e63%3A0x234d6ac335349f85!2s720%20Marble%20Way%2C%20Boca%20Raton%2C%20FL%2033432%2C%20USA!5e0!3m2!1sen!2s!4v1717616634863!5m2!1sen!2s"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Sadid Travels Location"
+            ></iframe>
         </div>
       </section>
     </div>

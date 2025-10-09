@@ -7,8 +7,8 @@
   :root {
     --background: 210 20% 98%; /* #F9FAFB */
     --foreground: 224 44% 11%; /* #0F172A */
-    --card: 226 70% 34%; /* Navy Blue */
-    --card-foreground: 210 40% 98%; /* White */
+    --card: 210 20% 98%;
+    --card-foreground: 224 44% 11%;
     --popover: 0 0% 100%;
     --popover-foreground: 224 44% 11%;
     --primary: 226 70% 34%; /* #1E40AF */

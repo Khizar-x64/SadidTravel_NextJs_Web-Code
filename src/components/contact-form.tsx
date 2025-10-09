@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -156,7 +157,7 @@ export function ContactForm() {
               </FormItem>
             )}
           />
-          <Button type="submit" size="lg" disabled={isSubmitting}>
+          <Button type="submit" size="lg" variant="accent" className="w-full" disabled={isSubmitting}>
             {isSubmitting ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
