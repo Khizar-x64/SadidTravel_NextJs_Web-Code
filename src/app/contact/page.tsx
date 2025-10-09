@@ -53,7 +53,7 @@ export default function ContactPage() {
                 Other Ways to Connect
               </h2>
               <div className="space-y-6">
-                <Card className="overflow-hidden shadow-lg bg-background text-foreground">
+                <Card className="overflow-hidden shadow-lg bg-card text-card-foreground">
                   <CardHeader className="bg-secondary p-6 flex flex-row items-center gap-4">
                     <div className="bg-primary/10 p-3 rounded-full">
                       <Phone className="h-6 w-6 text-primary" />
@@ -68,7 +68,7 @@ export default function ContactPage() {
                   </CardContent>
                 </Card>
 
-                 <Card className="overflow-hidden shadow-lg bg-background text-foreground">
+                 <Card className="overflow-hidden shadow-lg bg-card text-card-foreground">
                   <CardHeader className="bg-secondary p-6 flex flex-row items-center gap-4">
                     <div className="bg-primary/10 p-3 rounded-full">
                       <Mail className="h-6 w-6 text-primary" />
@@ -83,7 +83,7 @@ export default function ContactPage() {
                   </CardContent>
                 </Card>
 
-                <Card className="overflow-hidden shadow-lg bg-background text-foreground">
+                <Card className="overflow-hidden shadow-lg bg-card text-card-foreground">
                   <CardHeader className="bg-secondary p-6 flex flex-row items-center gap-4">
                      <div className="bg-primary/10 p-3 rounded-full">
                       <MapPin className="h-6 w-6 text-primary" />
@@ -92,7 +92,6 @@ export default function ContactPage() {
                   </CardHeader>
                   <CardContent className="p-6 space-y-2">
                      <p className="text-muted-foreground">720 Marble Way, <br/>Boca Raton, FL 33432, USA</p>
-                      <p className="text-sm text-muted-foreground flex items-center"><Clock className="mr-2 h-4 w-4"/>Mon - Fri, 9am - 5pm</p>
                   </CardContent>
                 </Card>
 
