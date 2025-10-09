@@ -5,6 +5,7 @@ import { Facebook, Twitter, Instagram } from "lucide-react";
 import { siteConfig } from "@/lib/data";
 import { Icons } from "@/components/icons";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export function Footer() {
   const footerNav = [
@@ -12,6 +13,12 @@ export function Footer() {
     { title: "Terms of Service", href: "/terms" },
     { title: "Privacy Policy", href: "/privacy" },
     { title: "Refund Policy", href: "/refund" },
+  ];
+
+  const accreditations = [
+    { name: "Ministry of Hajj and Umrah", logo: "/logos/Ministry of Hajj and Umrah.svg", url: "#" },
+    { name: "IATA", logo: "/logos/iata.svg", url: "#" },
+    { name: "IATAN", logo: "/logos/iatan.svg", url: "#" },
   ];
 
   return (
@@ -70,6 +77,24 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+          </div>
+
+          <div>
+            <h3 className="font-headline font-semibold">Accreditation</h3>
+            <div className="mt-4 flex flex-col space-y-4">
+              {accreditations.map((acc) => (
+                <Link key={acc.name} href={acc.url} target="_blank" rel="noopener noreferrer" className="block">
+                  <div className="relative h-12 w-32">
+                    <Image
+                      src={acc.logo}
+                      alt={`${acc.name} logo`}
+                      fill
+                      className="object-contain object-left invert brightness-0"
+                    />
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>
