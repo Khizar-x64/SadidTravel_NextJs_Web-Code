@@ -15,13 +15,13 @@ export const Icons = {
       </text>
     </svg>
   ),
-  LogoIcon: ({ className, ...props }: React.ComponentProps<typeof Image>) => (
+  LogoIcon: ({ className, src, ...props }: React.ComponentProps<typeof Image>) => (
     <Image
-      src="/logos/logo.svg"
+      src={src || "/logos/logo.svg"}
       alt="Sadid Travels Icon"
-      width={32}
-      height={32}
-      className={cn("h-8 w-auto", className)}
+      width={60}
+      height={60}
+      className={cn("h-20 w-auto", className)}
       priority
       {...props}
     />
