@@ -1,4 +1,3 @@
-
 import { Star, MessageSquare } from "lucide-react";
 import {
   Card,
@@ -12,7 +11,7 @@ import { testimonials } from "@/lib/data";
 
 export default function TestimonialsSection() {
     return (
-        <section className="py-12 md:py-24 bg-background">
+        <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">
@@ -34,19 +33,18 @@ export default function TestimonialsSection() {
                     <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                   </Avatar>
                   <div>
-                    <CardTitle className="font-bold">{testimonial.name}</CardTitle>
+                    <CardTitle className="font-bold text-primary-foreground">{testimonial.name}</CardTitle>
                     <CardDescription className="text-primary-foreground/80">{testimonial.location}</CardDescription>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="flex items-center mb-2">
+                  <div className="flex items-center mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="h-5 w-5 fill-accent text-accent" />
                     ))}
                   </div>
                   <p className="text-primary-foreground/90 italic">
-                    <MessageSquare className="inline-block h-4 w-4 mr-2" />
-                    {testimonial.quote}
+                    "{testimonial.quote}"
                   </p>
                 </CardContent>
               </Card>
