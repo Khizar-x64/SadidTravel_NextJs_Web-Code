@@ -1,11 +1,11 @@
 
 import Link from "next/link";
 import { Facebook, Twitter, Instagram } from "lucide-react";
+import Image from "next/image";
 
 import { siteConfig } from "@/lib/data";
 import { Icons } from "@/components/icons";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 
 export function Footer() {
   const footerNav = [
@@ -15,11 +15,17 @@ export function Footer() {
     { title: "Refund Policy", href: "/refund" },
   ];
 
+  const accreditations = [
+    { name: "Ministry of Hajj and Umrah", logo: "/logos/hajj-ministry.png", url: "https://www.haj.gov.sa/" },
+    { name: "IATA", logo: "/logos/iata.png", url: "https://www.iata.org/" },
+    { name: "IATAN", logo: "/logos/iatan.png", url: "https://www.iatan.org/" },
+  ];
+
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-4">
               <Icons.Logo className="h-10" />
             </Link>
@@ -71,6 +77,24 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+          </div>
+
+          <div>
+            <h3 className="font-headline font-semibold">Accreditation</h3>
+            <div className="mt-4 space-y-4">
+              {accreditations.map((acc) => (
+                <Link key={acc.name} href={acc.url} target="_blank" rel="noopener noreferrer" className="block">
+                  <div className="relative h-14 w-28">
+                    <Image
+                      src={acc.logo}
+                      alt={`${acc.name} logo`}
+                      fill
+                      className="object-contain object-left"
+                    />
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>
