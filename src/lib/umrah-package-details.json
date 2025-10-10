@@ -1,123 +1,123 @@
 
 [
-  {
-    "packageId": "deluxe",
-    "packageCategory": "Deluxe",
-    "packageInclusions": {
-      "makkahAccommodation": "Hilton Convention Hotel or similar, front of Haram, with breakfast.",
-      "madinahAccommodation": "Al-Aqeeq Madinah Hotel or similar, front of Haram, with breakfast.",
-      "transportation": "Complete private luxury transportation.",
-      "sightseeing": "Comprehensive guided tours in Makkah & Madinah.",
-      "visa": "Saudi Tourist E-Visa included."
+    {
+        "packageId": "group",
+        "packageCategory": "Group Umrah Package",
+        "packageInclusions": {
+            "makkahAccommodation": "Hilton Convention Hotel or similar in front of Haram with Breakfast.",
+            "madinahAccommodation": "Al-Aqeeq Madinah or similar in front of Haram with Breakfast.",
+            "transportation": "Complete private, luxury transport from Jeddah Airport- Makkah Hotel- Madinah Hotel- Madinah Airport.",
+            "sightseeing": "Explore The Journey Of Beautiful And Historical Places In Mecca & Medina.",
+            "visa": "A Saudi Tourist Visa is included."
+        },
+        "whatToExpect": [
+            "Professional meet and greet service upon arrival.",
+            "24-hour dedicated support service throughout your stay in Makkah and Madinah.",
+            "Complimentary Umrah reading materials.",
+            "Online in-person preparatory session for Umrah guidance."
+        ],
+        "hotelDetailsMakkah": {
+            "name": "Mövenpick Hilton Convention",
+            "description": "Located in one of the tallest buildings in the world and overlooking the holy Grand Mosque, Makkah Tower combines traditions with modern comforts. It features in-house shops and fine dining options.\n\nOffering free WiFi, rooms at Mövenpick Hotel & Residence Makkah Hotel are decorated with contemporary wooden furnishings, most facing the Masjid al-Haram and the sacred K’aba. All rooms are equipped with a flat-screen satellite TV, tea/coffee making facilities and a minibar.\n\nGuests can enjoy gourmet Saudi specialities at the Al Naim restaurant and an array of international classics at the Al Firdaous buffet bistros. Al Diwan Tea Lounge serves Arabic coffee and selected tea blends."
+        },
+        "hotelDetailsMadinah": {
+            "name": "Al-Aqeeq Madinah",
+            "description": "Al-Aqeeq Madinah Hotel is located in Medina, just a few steps from the holy Haram. Guests can enjoy free WiFi throughout the property. Rooms here will provide you with a flat-screen satellite TV, air conditioning and a mini-bar. Featuring a shower, private bathrooms also come with a hairdryer and free toiletries. Suites have a living room. Room service is available 24 hours.\n\nAt Al-Aqeeq Madinah you will find a 24-hour front desk and a mini-market on site. Other facilities offered include 2 restaurants, a coffee shop and shops (on site). The hotel is 1.9 mi from Al Noor Mall and 2 mi from Madina Mall. The property offers on-site parking upon availability"
+        },
+        "transportationServices": "Complete private, luxury transport from Jeddah Airport- Makkah Hotel- Madinah Hotel- Madinah Airport.",
+        "visaInformation": {
+            "title": "Saudi Tourist E-Visa",
+            "description": "The E-Visa will be a one-year, multiple entry visa, allowing tourists to spend up to 90 days in the country. The tourist visa allows you to take part in tourism-related activities such as, events, family & relatives visits, leisure, and Umrah (excluding Hajj) and excludes other activities such as studying."
+        }
     },
-    "whatToExpect": [
-      "Professional meet and greet service upon arrival.",
-      "24-hour dedicated support service in Makkah and Madinah.",
-      "Complimentary Umrah reading materials.",
-      "Online in-person preparatory session for Umrah guidance."
-    ],
-    "hotelDetailsMakkah": {
-      "name": "Mövenpick Hilton Convention",
-      "description": "Located within one of the tallest buildings in the world and overlooking the Holy Grand Mosque, Makkah Tower seamlessly combines traditional values with modern comfort. The property features on-site shopping facilities and fine dining options. Offering complimentary WiFi, rooms are decorated with contemporary wooden furnishings, with most rooms facing Masjid al-Haram and the sacred Ka'aba. All rooms are equipped with flat-screen satellite television, tea and coffee making facilities, and a minibar. Guests can enjoy gourmet Saudi specialties at the Al Naim restaurant and an array of international classics at the Al Firdaous buffet bistros. Al Diwan Tea Lounge serves Arabic coffee and selected tea blends."
+    {
+        "packageId": "luxury",
+        "packageCategory": "Luxury Packages",
+        "packageInclusions": {
+            "makkahAccommodation": "Hilton Convention Hotel or similar in front of Haram with Breakfast.",
+            "madinahAccommodation": "Al-Aqeeq Madinah or similar in front of Haram with Breakfast.",
+            "transportation": "Complete private, luxury transport from Jeddah Airport- Makkah Hotel- Madinah Hotel- Madinah Airport.",
+            "sightseeing": "Explore The Journey Of Beautiful And Historical Places In Mecca & Medina.",
+            "visa": "A Saudi Tourist Visa is included."
+        },
+        "whatToExpect": [
+            "Professional meet and greet service upon arrival.",
+            "24-hour dedicated support service throughout your stay in Makkah and Madinah.",
+            "Complimentary Umrah reading materials.",
+            "Online in-person preparatory session for Umrah guidance."
+        ],
+        "hotelDetailsMakkah": {
+            "name": "Mövenpick Hilton Convention",
+            "description": "Located in one of the tallest buildings in the world and overlooking the holy Grand Mosque, Makkah Tower combines traditions with modern comforts. It features in-house shops and fine dining options.\n\nOffering free WiFi, rooms at Mövenpick Hotel & Residence Makkah Hotel are decorated with contemporary wooden furnishings, most facing the Masjid al-Haram and the sacred K’aba. All rooms are equipped with a flat-screen satellite TV, tea/coffee making facilities and a minibar.\n\nGuests can enjoy gourmet Saudi specialities at the Al Naim restaurant and an array of international classics at the Al Firdaous buffet bistros. Al Diwan Tea Lounge serves Arabic coffee and selected tea blends."
+        },
+        "hotelDetailsMadinah": {
+            "name": "Al-Aqeeq Madinah",
+            "description": "Al-Aqeeq Madinah Hotel is located in Medina, just a few steps from the holy Haram. Guests can enjoy free WiFi throughout the property. Rooms here will provide you with a flat-screen satellite TV, air conditioning and a mini-bar. Featuring a shower, private bathrooms also come with a hairdryer and free toiletries. Suites have a living room. Room service is available 24 hours.\n\nAt Al-Aqeeq Madinah you will find a 24-hour front desk and a mini-market on site. Other facilities offered include 2 restaurants, a coffee shop and shops (on site). The hotel is 1.9 mi from Al Noor Mall and 2 mi from Madina Mall. The property offers on-site parking upon availability"
+        },
+        "transportationServices": "Complete private, luxury transport from Jeddah Airport- Makkah Hotel- Madinah Hotel- Madinah Airport.",
+        "visaInformation": {
+            "title": "Saudi Tourist E-Visa",
+            "description": "The E-Visa will be a one-year, multiple entry visa, allowing tourists to spend up to 90 days in the country. The tourist visa allows you to take part in tourism-related activities such as, events, family & relatives visits, leisure, and Umrah (excluding Hajj) and excludes other activities such as studying."
+        }
     },
-    "hotelDetailsMadinah": {
-      "name": "Al-Aqeeq Madinah",
-      "description": "Al-Aqeeq Madinah Hotel is located in Medina, just a few steps from the Holy Haram. Guests can enjoy complimentary WiFi throughout the property. Rooms provide flat-screen satellite television, air conditioning, and a minibar. Featuring a shower, private bathrooms also include a hairdryer and complimentary toiletries. Suites feature a living room. Room service is available 24 hours. At Al-Aqeeq Madinah, guests will find a 24-hour front desk and a mini-market on site. Other facilities include 2 restaurants, a coffee shop, and retail shops on the premises. The property offers on-site parking upon availability."
+    {
+        "packageId": "standard",
+        "packageCategory": "Standard Umrah Package",
+        "packageInclusions": {
+            "makkahAccommodation": "Hilton Convention Hotel or similar in front of Haram with Breakfast.",
+            "madinahAccommodation": "Al-Aqeeq Madinah or similar in front of Haram with Breakfast.",
+            "transportation": "Complete private, luxury transport from Jeddah Airport- Makkah Hotel- Madinah Hotel- Madinah Airport.",
+            "sightseeing": "Explore The Journey Of Beautiful And Historical Places In Mecca & Medina.",
+            "visa": "A Saudi Tourist Visa is included."
+        },
+        "whatToExpect": [
+            "Professional meet and greet service upon arrival.",
+            "24-hour dedicated support service throughout your stay in Makkah and Madinah.",
+            "Complimentary Umrah reading materials.",
+            "Online in-person preparatory session for Umrah guidance."
+        ],
+        "hotelDetailsMakkah": {
+            "name": "Mövenpick Hilton Convention",
+            "description": "Located in one of the tallest buildings in the world and overlooking the holy Grand Mosque, Makkah Tower combines traditions with modern comforts. It features in-house shops and fine dining options.\n\nOffering free WiFi, rooms at Mövenpick Hotel & Residence Makkah Hotel are decorated with contemporary wooden furnishings, most facing the Masjid al-Haram and the sacred K’aba. All rooms are equipped with a flat-screen satellite TV, tea/coffee making facilities and a minibar.\n\nGuests can enjoy gourmet Saudi specialities at the Al Naim restaurant and an array of international classics at the Al Firdaous buffet bistros. Al Diwan Tea Lounge serves Arabic coffee and selected tea blends."
+        },
+        "hotelDetailsMadinah": {
+            "name": "Al-Aqeeq Madinah",
+            "description": "Al-Aqeeq Madinah Hotel is located in Medina, just a few steps from the holy Haram. Guests can enjoy free WiFi throughout the property. Rooms here will provide you with a flat-screen satellite TV, air conditioning and a mini-bar. Featuring a shower, private bathrooms also come with a hairdryer and free toiletries. Suites have a living room. Room service is available 24 hours.\n\nAt Al-Aqeeq Madinah you will find a 24-hour front desk and a mini-market on site. Other facilities offered include 2 restaurants, a coffee shop and shops (on site). The hotel is 1.9 mi from Al Noor Mall and 2 mi from Madina Mall. The property offers on-site parking upon availability"
+        },
+        "transportationServices": "Complete private, luxury transport from Jeddah Airport- Makkah Hotel- Madinah Hotel- Madinah Airport.",
+        "visaInformation": {
+            "title": "Saudi Tourist E-Visa",
+            "description": "The E-Visa will be a one-year, multiple entry visa, allowing tourists to spend up to 90 days in the country. The tourist visa allows you to take part in tourism-related activities such as, events, family & relatives visits, leisure, and Umrah (excluding Hajj) and excludes other activities such as studying."
+        }
     },
-    "transportationServices": "Complete private luxury transportation from Jeddah Airport to Makkah Hotel, Makkah Hotel to Madinah Hotel, and Madinah Hotel to Madinah Airport.",
-    "visaInformation": {
-      "title": "Saudi Tourist E-Visa",
-      "description": "The E-Visa is a one-year, multiple-entry visa, allowing tourists to spend up to 90 days in the country. The tourist visa permits participation in tourism-related activities such as events, family and relatives visits, leisure, and Umrah (excluding Hajj) and excludes other activities such as studying."
+    {
+        "packageId": "shuttle",
+        "packageCategory": "Shuttle Umrah Package",
+        "packageInclusions": {
+            "makkahAccommodation": "Voco Hotel or similar in front of Haram with Breakfast.",
+            "madinahAccommodation": "Dar Al Naeem or similar in front of Haram with Breakfast.",
+            "transportation": "Complete private, luxury transport from Jeddah Airport- Makkah Hotel- Madinah Hotel- Madinah Airport.",
+            "sightseeing": "Explore The Journey Of Beautiful And Historical Places In Mecca & Medina.",
+            "visa": "A Saudi Tourist Visa is included."
+        },
+        "whatToExpect": [
+            "Professional meet and greet service upon arrival.",
+            "24-hour dedicated support service throughout your stay in Makkah and Madinah.",
+            "Complimentary Umrah reading materials.",
+            "Online in-person preparatory session for Umrah guidance."
+        ],
+        "hotelDetailsMakkah": {
+            "name": "Mövenpick Voco Hotel",
+            "description": "Located in one of the tallest buildings in the world and overlooking the holy Grand Mosque, Makkah Tower combines traditions with modern comforts. It features in-house shops and fine dining options.\n\nOffering free WiFi, rooms at Mövenpick Hotel & Residence Voco Hotel are decorated with contemporary wooden furnishings, most facing the Masjid al-Haram and the sacred K’aba. All rooms are equipped with a flat-screen satellite TV, tea/coffee making facilities and a minibar.\n\nGuests can enjoy gourmet Saudi specialities at the Al Naim restaurant and an array of international classics at the Al Firdaous buffet bistros. Al Diwan Tea Lounge serves Arabic coffee and selected tea blends."
+        },
+        "hotelDetailsMadinah": {
+            "name": "Dar Al Naeem",
+            "description": "Dar Al Naeem Madinah Hotel is located in Medina, just a few steps from the holy Haram. Guests can enjoy free WiFi throughout the property. Rooms here will provide you with a flat-screen satellite TV, air conditioning and a mini-bar. Featuring a shower, private bathrooms also come with a hairdryer and free toiletries. Suites have a living room. Room service is available 24 hours.\n\nAt Dar Al Naeem Madinah you will find a 24-hour front desk and a mini-market on site. Other facilities offered include 2 restaurants, a coffee shop and shops (on site). The hotel is 1.9 mi from Al Noor Mall and 2 mi from Madina Mall. The property offers on-site parking upon availability"
+        },
+        "transportationServices": "Complete private, luxury transport from Jeddah Airport- Makkah Hotel- Madinah Hotel- Madinah Airport.",
+        "visaInformation": {
+            "title": "Saudi Tourist E-Visa",
+            "description": "The E-Visa will be a one-year, multiple entry visa, allowing tourists to spend up to 90 days in the country. The tourist visa allows you to take part in tourism-related activities such as, events, family & relatives visits, leisure, and Umrah (excluding Hajj) and excludes other activities such as studying."
+        }
     }
-  },
-  {
-    "packageId": "luxury",
-    "packageCategory": "Luxury / VIP",
-    "packageInclusions": {
-      "makkahAccommodation": "Hilton Convention Hotel or equivalent, facing Haram, breakfast included.",
-      "madinahAccommodation": "Al Aqeeq Madinah Hotel or equivalent, facing Haram, breakfast included.",
-      "transportation": "Private luxury transfers (Jeddah → Makkah → Madinah → Airport).",
-      "sightseeing": "Guided tours of historical and spiritual landmarks.",
-      "visa": "Saudi Tourist Visa included."
-    },
-    "whatToExpect": [
-      "VIP reception and personalized assistance upon arrival.",
-      "Dedicated 24/7 concierge service in Makkah and Madinah.",
-      "Exclusive Umrah preparation kit and premium reading materials.",
-      "Private one-on-one Umrah orientation session (online or in-person)."
-    ],
-    "hotelDetailsMakkah": {
-      "name": "Mövenpick Hilton Convention",
-      "description": "Located within one of the tallest buildings in the world and overlooking the Holy Grand Mosque, Makkah Tower seamlessly combines traditional values with modern comfort. The property features on-site shopping facilities and fine dining options. Offering complimentary WiFi, rooms are decorated with contemporary wooden furnishings, with most rooms facing Masjid al-Haram and the sacred Ka'aba. All rooms are equipped with flat-screen satellite television, tea and coffee making facilities, and a minibar. Guests can enjoy gourmet Saudi specialties at the Al Naim restaurant and an array of international classics at the Al Firdaous buffet bistros. Al Diwan Tea Lounge serves Arabic coffee and selected tea blends."
-    },
-    "hotelDetailsMadinah": {
-      "name": "Al-Aqeeq Madinah",
-      "description": "Al-Aqeeq Madinah Hotel is located in Medina, just a few steps from the Holy Haram. Guests can enjoy complimentary WiFi throughout the property. Rooms provide flat-screen satellite television, air conditioning, and a minibar. Featuring a shower, private bathrooms also include a hairdryer and complimentary toiletries. Suites feature a living room. Room service is available 24 hours. At Al-Aqeeq Madinah, guests will find a 24-hour front desk and a mini-market on site. Other facilities include 2 restaurants, a coffee shop, and retail shops on the premises. The property offers on-site parking upon availability."
-    },
-    "transportationServices": "Complete private luxury transportation from Jeddah Airport to Makkah Hotel, Makkah Hotel to Madinah Hotel, and Madinah Hotel to Madinah Airport.",
-    "visaInformation": {
-      "title": "Saudi Tourist E-Visa",
-      "description": "The E-Visa is a one-year, multiple-entry visa, allowing tourists to spend up to 90 days in the country. The tourist visa permits participation in tourism-related activities such as events, family and relatives visits, leisure, and Umrah (excluding Hajj) and excludes other activities such as studying."
-    }
-  },
-  {
-    "packageId": "premium",
-    "packageCategory": "Premium / Shuttle",
-    "packageInclusions": {
-      "makkahAccommodation": "Voco Hotel or equivalent, near Haram, with breakfast.",
-      "madinahAccommodation": "Dar Al Naeem Hotel or equivalent, near Haram, with breakfast.",
-      "transportation": "Private, luxury ground transfers from arrival to departure.",
-      "sightseeing": "Guided exploration of sacred and historical landmarks.",
-      "visa": "Saudi Tourist E-Visa included."
-    },
-    "whatToExpect": [
-      "Welcoming reception and assistance upon your arrival.",
-      "Around-the-clock on-call support in both holy cities.",
-      "Comprehensive digital Umrah guide and resources.",
-      "Access to a pre-recorded virtual Umrah preparation session."
-    ],
-    "hotelDetailsMakkah": {
-      "name": "Mövenpick Voco Hotel",
-      "description": "Located within one of the tallest buildings in the world and overlooking the Holy Grand Mosque, Makkah Tower seamlessly combines traditional values with modern comfort. The property features on-site shopping facilities and fine dining options. Offering complimentary WiFi, rooms at Mövenpick Hotel & Residence Voco Hotel are decorated with contemporary wooden furnishings, with most rooms facing Masjid al-Haram and the sacred Ka'aba. All rooms are equipped with flat-screen satellite television, tea and coffee making facilities, and a minibar. Guests can enjoy gourmet Saudi specialties at the Al Naim restaurant and an array of international classics at the Al Firdaous buffet bistros. Al Diwan Tea Lounge serves Arabic coffee and selected tea blends."
-    },
-    "hotelDetailsMadinah": {
-      "name": "Dar Al Naeem",
-      "description": "Dar Al Naeem Madinah Hotel is located in Medina, just a few steps from the Holy Haram. Guests can enjoy complimentary WiFi throughout the property. Rooms provide flat-screen satellite television, air conditioning, and a minibar. Featuring a shower, private bathrooms also include a hairdryer and complimentary toiletries. Suites feature a living room. Room service is available 24 hours. At Dar Al Naeem Madinah, guests will find a 24-hour front desk and a mini-market on site. Other facilities include 2 restaurants, a coffee shop, and retail shops on the premises. The property offers on-site parking upon availability."
-    },
-    "transportationServices": "Complete private luxury transportation from Jeddah Airport to Makkah Hotel, Makkah Hotel to Madinah Hotel, and Madinah Hotel to Madinah Airport.",
-    "visaInformation": {
-      "title": "Saudi Tourist E-Visa",
-      "description": "The E-Visa is a one-year, multiple-entry visa, allowing tourists to spend up to 90 days in the country. The tourist visa permits participation in tourism-related activities such as events, family and relatives visits, leisure, and Umrah (excluding Hajj) and excludes other activities such as studying."
-    }
-  },
-  {
-    "packageId": "economy",
-    "packageCategory": "Economy",
-    "packageInclusions": {
-      "makkahAccommodation": "Economy hotel in Makkah, some distance from Haram, with shuttle.",
-      "madinahAccommodation": "Economy hotel in Madinah, located in the outer central area.",
-      "transportation": "Shared standard bus transport.",
-      "sightseeing": "Optional Ziyarat tour (additional cost).",
-      "visa": "Saudi Tourist E-Visa is included."
-    },
-    "whatToExpect": [
-      "Friendly meet and greet upon arrival.",
-      "Dedicated phone support throughout your journey.",
-      "A helpful guide to the rites of Umrah.",
-      "Access to our online resources for self-preparation."
-    ],
-    "hotelDetailsMakkah": {
-      "name": "Economy Hotel (Shuttle Service)",
-      "description": "A comfortable and clean economy hotel located a short distance from the Haram, with reliable shuttle services provided for easy access to the Grand Mosque for all prayers. Rooms are equipped with essential amenities."
-    },
-    "hotelDetailsMadinah": {
-      "name": "Economy Hotel (Outer Central Area)",
-      "description": "A budget-friendly hotel located in the outer central area of Madinah, providing easy access to local markets and dining. The Prophet's Mosque is accessible via a short taxi ride or a longer walk."
-    },
-    "transportationServices": "Shared bus transportation is provided for transfers between the airport and hotels.",
-    "visaInformation": {
-      "title": "Saudi Tourist E-Visa",
-      "description": "The E-Visa is a one-year, multiple-entry visa, allowing tourists to spend up to 90 days in the country. The tourist visa permits participation in tourism-related activities such as events, family and relatives visits, leisure, and Umrah (excluding Hajj) and excludes other activities such as studying."
-    }
-  }
 ]

@@ -46,33 +46,28 @@ const umrahPackageDetails: UmrahPackageDetail[] = umrahPackageDetailsData;
 
 const getUmrahDetailsByCategory = (category?: string): UmrahPackageDetail | undefined => {
   if (!category) return undefined;
-  if (category.includes('Luxury')) return umrahPackageDetails.find(d => d.packageCategory === 'Luxury / VIP');
-  if (category.includes('Deluxe')) return umrahPackageDetails.find(d => d.packageCategory === 'Deluxe');
-  if (category.includes('Premium')) return umrahPackageDetails.find(d => d.packageCategory === 'Premium / Shuttle');
-  if (category.includes('Economy')) return umrahPackageDetails.find(d => d.packageCategory === 'Economy');
+  if (category.includes('Group')) return umrahPackageDetails.find(d => d.packageCategory === 'Group Umrah Package');
+  if (category.includes('Luxury')) return umrahPackageDetails.find(d => d.packageCategory === 'Luxury Packages');
+  if (category.includes('Standard')) return umrahPackageDetails.find(d => d.packageCategory === 'Standard Umrah Package');
+  if (category.includes('Shuttle')) return umrahPackageDetails.find(d => d.packageCategory === 'Shuttle Umrah Package');
   return undefined;
 }
 
-const umrahImagePool = [
-    {
-        id: 'umrah-random-1',
-        imageUrl: 'https://cdn.pixabay.com/photo/2017/04/26/15/04/religious-2262785_1280.jpg',
-        description: 'Pilgrims near the Kaaba',
-        imageHint: 'pilgrims Kaaba'
-    },
-    {
-        id: 'umrah-random-2',
-        imageUrl: 'https://cdn.pixabay.com/photo/2015/11/19/07/20/mosque-1050478_1280.jpg',
-        description: 'Grand mosque interior',
-        imageHint: 'mosque interior'
-    }
-];
-
 export const umrahPackages: Package[] = umrahPackagesData.map((pkg, index) => {
-    const randomImage = umrahImagePool[Math.floor(Math.random() * umrahImagePool.length)];
+    const umrahImagePool = [
+      'https://cdn.pixabay.com/photo/2017/04/26/15/04/religious-2262785_1280.jpg',
+      'https://cdn.pixabay.com/photo/2015/11/19/07/20/mosque-1050478_1280.jpg'
+    ];
+    const randomImageUrl = umrahImagePool[index % umrahImagePool.length];
+
     return {
         ...pkg,
-        image: randomImage,
+        image: {
+            id: `umrah-random-${index}`,
+            imageUrl: randomImageUrl,
+            description: 'A beautiful view of a holy site for Umrah.',
+            imageHint: 'islamic architecture'
+        },
         includes: [],
         itinerary: [],
         details: getUmrahDetailsByCategory(pkg.category)
