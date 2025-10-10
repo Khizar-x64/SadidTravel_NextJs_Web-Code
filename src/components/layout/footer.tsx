@@ -15,6 +15,11 @@ export function Footer() {
     { title: "Refund Policy", href: "/refund" },
   ];
 
+  const accreditations = [
+    { name: "Ministry of Hajj and Umrah", logo: "/logos/ministry-of-hajj-and-umrah.svg", url: "https://www.haj.gov.sa/" },
+    { name: "IATA", logo: "/logos/iata.svg", url: "https://www.iata.org/" },
+    { name: "IATAN", logo: "/logos/iatan.svg", url: "https://www.iatan.org/" },
+  ];
 
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -74,46 +79,23 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* <div>
+          <div className="lg:col-span-1">
             <h3 className="font-headline font-semibold">Accreditation</h3>
-            <div className="mt-4 flex flex-col space-y-6">
-              {/* Ministry of Hajj and Umrah Logo */}
-              {/* <Link href="#" target="_blank" rel="noopener noreferrer" className="block opacity-80 hover:opacity-100 transition-opacity">
-                <div className="relative h-20 w-40">
-                  <Image
-                    src="/logos/Ministry%20of%20Hajj%20and%20Umrah.svg"
-                    alt="Ministry of Hajj and Umrah logo"
-                    fill
-                    className="object-contain object-center brightness-0 invert scale-50"
-                  />
-                </div>
-              </Link> */}
-
-              {/* IATA Logo */}
-              {/* <Link href="#" target="_blank" rel="noopener noreferrer" className="block opacity-80 hover:opacity-100 transition-opacity">
-                <div className="relative h-20 w-40">
-                  <Image
-                    src="/logos/iata.svg"
-                    alt="IATA logo"
-                    fill
-                    className="object-contain object-left"
-                  />
-                </div>
-              </Link> */}
-
-              {/* IATAN Logo */}
-              {/* <Link href="#" target="_blank" rel="noopener noreferrer" className="block opacity-80 hover:opacity-100 transition-opacity">
-                <div className="relative h-20 w-40">
-                  <Image
-                    src="/logos/iatan.svg"
-                    alt="IATAN logo"
-                    fill
-                    className="object-contain object-left"
-                  />
-                </div>
-              </Link> */}
-            {/* </div>
-          </div> */}
+            <div className="mt-4 flex flex-col space-y-4 items-start">
+              {accreditations.map((acc) => (
+                <Link key={acc.name} href={acc.url} target="_blank" rel="noopener noreferrer" className="block opacity-80 hover:opacity-100 transition-opacity">
+                  <div className="relative h-16 w-32">
+                    <Image
+                      src={acc.logo}
+                      alt={`${acc.name} logo`}
+                      fill
+                      className="object-contain object-left brightness-0 invert"
+                    />
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
       <div className="bg-primary/90 text-primary-foreground/80">
