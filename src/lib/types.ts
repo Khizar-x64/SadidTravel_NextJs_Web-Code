@@ -89,8 +89,6 @@ export type Testimonial = {
   name: string;
   location: string;
   quote: string;
-  avatarUrl: string;
-  avatarImageId: string;
 };
 
 export type FAQ = {

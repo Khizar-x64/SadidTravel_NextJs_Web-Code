@@ -46,11 +46,7 @@ const umrahPackageDetails: UmrahPackageDetail[] = umrahPackageDetailsData;
 
 const getUmrahDetailsByCategory = (category?: string): UmrahPackageDetail | undefined => {
   if (!category) return undefined;
-  if (category.includes('Group')) return umrahPackageDetails.find(d => d.packageCategory === 'Group Umrah Package');
-  if (category.includes('Luxury')) return umrahPackageDetails.find(d => d.packageCategory === 'Luxury Packages');
-  if (category.includes('Standard')) return umrahPackageDetails.find(d => d.packageCategory === 'Standard Umrah Package');
-  if (category.includes('Shuttle')) return umrahPackageDetails.find(d => d.packageCategory === 'Shuttle Umrah Package');
-  return undefined;
+  return umrahPackageDetails.find(d => d.packageCategory === category);
 }
 
 export const umrahPackages: Package[] = umrahPackagesData.map((pkg, index) => {
@@ -75,10 +71,7 @@ export const umrahPackages: Package[] = umrahPackagesData.map((pkg, index) => {
 });
 
 
-export const testimonials: Testimonial[] = testimonialsData.map(t => ({
-  ...t,
-  avatarUrl: findImage(t.avatarImageId).imageUrl,
-}));
+export const testimonials: Testimonial[] = testimonialsData;
 
 export const faqs: FAQ[] = [
     {

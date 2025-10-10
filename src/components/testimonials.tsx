@@ -6,7 +6,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { testimonials } from "@/lib/data";
 
 export default function TestimonialsSection() {
@@ -23,21 +22,19 @@ export default function TestimonialsSection() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial) => (
-              <Card key={testimonial.id} className="bg-primary text-primary-foreground shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardHeader className="flex flex-row items-center gap-4">
-                  <Avatar className="h-14 w-14">
-                    <AvatarImage
-                      src={testimonial.avatarUrl}
-                      alt={testimonial.name}
-                    />
-                    <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                  </Avatar>
-                  <div>
-                    <CardTitle className="font-bold text-primary-foreground">{testimonial.name}</CardTitle>
-                    <CardDescription className="text-primary-foreground/80">{testimonial.location}</CardDescription>
+              <Card key={testimonial.id} className="bg-primary text-primary-foreground shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <CardHeader>
+                  <div className="flex items-center gap-4">
+                     <div className="bg-accent/20 p-3 rounded-full">
+                        <MessageSquare className="h-6 w-6 text-accent" />
+                     </div>
+                     <div>
+                        <CardTitle className="font-bold text-primary-foreground">{testimonial.name}</CardTitle>
+                        <CardDescription className="text-primary-foreground/80">{testimonial.location}</CardDescription>
+                     </div>
                   </div>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex-grow">
                   <div className="flex items-center mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="h-5 w-5 fill-accent text-accent" />
