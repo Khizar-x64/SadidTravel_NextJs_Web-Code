@@ -31,10 +31,10 @@ export function UmrahPackageDetails({ details }: UmrahPackageDetailsProps) {
             <CardContent>
                  <Tabs defaultValue="expect" className="w-full">
                     <TabsList className="grid w-full grid-cols-4 bg-secondary">
-                        <TabsTrigger value="expect"><Star className="mr-2 h-4 w-4" />What to Expect</TabsTrigger>
-                        <TabsTrigger value="hotel"><BedDouble className="mr-2 h-4 w-4" />Accommodation</TabsTrigger>
-                        <TabsTrigger value="transportation"><Bus className="mr-2 h-4 w-4" />Transport</TabsTrigger>
-                        <TabsTrigger value="visa"><FileText className="mr-2 h-4 w-4" />Visa</TabsTrigger>
+                        <TabsTrigger value="expect" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground"><Star className="mr-2 h-4 w-4" />What to Expect</TabsTrigger>
+                        <TabsTrigger value="hotel" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground"><BedDouble className="mr-2 h-4 w-4" />Accommodation</TabsTrigger>
+                        <TabsTrigger value="transportation" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground"><Bus className="mr-2 h-4 w-4" />Transport</TabsTrigger>
+                        <TabsTrigger value="visa" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground"><FileText className="mr-2 h-4 w-4" />Visa</TabsTrigger>
                     </TabsList>
                     <div className="pt-2">
                         <TabsContent value="expect" className="bg-primary rounded-lg p-6">
