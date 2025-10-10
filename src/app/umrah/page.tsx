@@ -13,15 +13,13 @@ import {
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight, Clock } from "lucide-react";
-import { UmrahPackageDetails } from "@/components/umrah-package-details";
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 
 const pageHeaderImage = PlaceHolderImages.find(p => p.id === 'kaaba-hero');
 
 const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
   return (
-    <Collapsible asChild>
-      <Card className="flex flex-col overflow-hidden shadow-lg bg-primary text-primary-foreground transition-all duration-300">
+    <Link href={`/umrah/${pkg.slug}`} className="group block h-full">
+      <Card className="flex flex-col h-full overflow-hidden shadow-lg bg-primary text-primary-foreground transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
         <div className="relative h-56 w-full">
           <Image
             src={pkg.image.imageUrl}
@@ -33,7 +31,7 @@ const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
           <div className="absolute top-2 left-2 bg-accent text-accent-foreground text-xs font-bold px-2 py-1 rounded-full">{pkg.category}</div>
         </div>
         <CardHeader>
-          <CardTitle className="font-headline text-2xl leading-tight">
+          <CardTitle className="font-headline text-2xl leading-tight group-hover:text-accent transition-colors">
             {pkg.title}
           </CardTitle>
           <CardDescription className="flex items-center pt-2 text-primary-foreground/80">
@@ -42,37 +40,21 @@ const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
           </CardDescription>
         </CardHeader>
         <CardContent className="flex-grow">
-          <p className="text-primary-foreground/80">
+          <p className="text-primary-foreground/80 line-clamp-3">
             {pkg.description}
           </p>
         </CardContent>
-        <CardFooter className="flex flex-col items-stretch bg-black/20 p-4">
-          <div className="flex justify-between items-center w-full">
-            <div>
-              <p className="text-sm text-primary-foreground/80">Starting from</p>
-              <p className="text-2xl font-bold text-white">${pkg.price}</p>
-            </div>
-            <div className="flex items-center gap-2">
-                <CollapsibleTrigger asChild>
-                    <Button variant="secondary">Details</Button>
-                </CollapsibleTrigger>
-                <Button asChild variant="accent">
-                  <Link href="/contact">
-                    Inquire <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-            </div>
+        <CardFooter className="flex justify-between items-center bg-black/20 p-4">
+          <div>
+            <p className="text-sm text-primary-foreground/80">Starting from</p>
+            <p className="text-2xl font-bold text-white">${pkg.price}</p>
+          </div>
+          <div className="font-semibold text-accent flex items-center">
+            View Details <ArrowRight className="ml-2 h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1" />
           </div>
         </CardFooter>
-        <CollapsibleContent>
-            {pkg.details && (
-                <div className="p-4 bg-primary/80">
-                    <UmrahPackageDetails details={pkg.details} />
-                </div>
-            )}
-        </CollapsibleContent>
       </Card>
-    </Collapsible>
+    </Link>
   );
 };
 
@@ -112,18 +94,23 @@ export default function UmrahPackagesPage() {
         </div>
       </section>
 
-      {packageCategories.map(category => (
-        <section key={category} className="py-12 md:py-16 bg-background" style={commitmentSectionStyle}>
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mb-8 text-center">{category} Packages</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {umrahPackages.filter(pkg => pkg.category === category).map((pkg) => (
-                <UmrahPackageCard key={pkg.id} pkg={pkg} />
-              ))}
+      {packageCategories.map(category => {
+        const packagesInCategory = umrahPackages.filter(pkg => pkg.category === category);
+        if (packagesInCategory.length === 0) return null;
+        
+        return (
+          <section key={category} className="py-12 md:py-16 bg-background" style={commitmentSectionStyle}>
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mb-8 text-center">{category} Packages</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {packagesInCategory.map((pkg) => (
+                  <UmrahPackageCard key={pkg.id} pkg={pkg} />
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
-      ))}
+          </section>
+        )
+      })}
 
     </div>
   );

@@ -46,8 +46,7 @@ const umrahPackageDetails: UmrahPackageDetail[] = umrahPackageDetailsData;
 
 export const umrahPackages: Package[] = umrahPackagesData.map(pkg => ({
     ...pkg,
-    slug: pkg.id, // Umrah packages don't have detail pages, so slug can be id
-    image: findImage(pkg.imageId),
+    image: findImage(pkg.imageId || ''),
     includes: [],
     itinerary: [],
     details: umrahPackageDetails.find(d => d.packageId === pkg.id)
