@@ -81,8 +81,8 @@ const config = {
         },
         "ring": {
           '0%': { boxShadow: '0 0 0 0 rgba(13, 193, 67, 0.7)' },
-          '70%': { boxShadow: '0 0 0 15px rgba(13, 193, 67, 0)' },
-          '100%': { boxShadow: '0 0 0 0 rgba(13, 193, 67, 0)' },
+          '35%': { boxShadow: '0 0 0 15px rgba(13, 193, 67, 0)' },
+          '50%, 100%': { boxShadow: '0 0 0 0 rgba(13, 193, 67, 0)' },
         }
       },
       animation: {
@@ -90,7 +90,7 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "slide-up-and-fade": "slide-up-and-fade 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both",
         "fade-in": "fade-in 1s ease-out both",
-        "ring": "ring 2s infinite",
+        "ring": "ring 4s infinite",
       },
     },
   },
