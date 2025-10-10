@@ -16,9 +16,9 @@ export function Footer() {
   ];
 
   const accreditations = [
-    { name: "Ministry of Hajj and Umrah", logo: "/logos/hajj-ministry.png", url: "https://www.haj.gov.sa/" },
-    { name: "IATA", logo: "https://images.seeklogo.com/logo-png/45/1/iata-logo-png_seeklogo-450184.png", url: "https://www.iata.org/" },
-    { name: "IATAN", logo: "/logos/iatan.png", url: "https://www.iatan.org/" },
+    { name: "Ministry of Hajj and Umrah", logo: "/logos/Ministry of Hajj and Umrah.svg", url: "https://www.haj.gov.sa/" },
+    { name: "IATA", logo: "logos/iata.svg", url: "https://www.iata.org/" },
+    { name: "IATAN", logo: "/logos/iatan.svg", url: "https://www.iatan.org/" },
   ];
 
   return (
@@ -84,15 +84,23 @@ export function Footer() {
             <div className="mt-4 space-y-4">
               {accreditations.map((acc) => (
                 <Link key={acc.name} href={acc.url} target="_blank" rel="noopener noreferrer" className="block bg-white p-2 rounded-md hover:opacity-90">
-                  <div className="relative h-14 w-full flex justify-center items-center">
-                    <Image
-                      src={acc.logo}
-                      alt={`${acc.name} logo`}
-                      width={120}
-                      height={40}
-                      className="object-contain"
-                    />
+                  <div className="relative h-20 w-full flex justify-center items-center">
+                      <Image
+                        src={acc.logo}
+                        alt={`${acc.name} logo`}
+                        width={200}
+                        height={80}
+                        className={`object-contain w-auto h-full ${
+                          acc.name === "Ministry of Hajj and Umrah" 
+                            ? "scale-110" 
+                            : acc.name === "IATAN" 
+                            ? "scale-105" 
+                            : "scale-100"
+                        }`}
+                        priority
+                      />
                   </div>
+
                 </Link>
               ))}
             </div>

@@ -39,6 +39,18 @@ const nextConfig: NextConfig = {
         hostname: 'images.seeklogo.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.iata.org',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.weserv.nl',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
