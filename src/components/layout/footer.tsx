@@ -17,7 +17,7 @@ export function Footer() {
 
   const accreditations = [
     { name: "Ministry of Hajj and Umrah", logo: "/logos/hajj-ministry.png", url: "https://www.haj.gov.sa/" },
-    { name: "IATA", logo: "https://www.iata.org/contentassets/d7c518ebc5e34837a3c743867f0f0300/iata-logo-blue.svg", url: "https://www.iata.org/" },
+    { name: "IATA", logo: "https://images.seeklogo.com/logo-png/45/1/iata-logo-png_seeklogo-450184.png", url: "https://www.iata.org/" },
     { name: "IATAN", logo: "/logos/iatan.png", url: "https://www.iatan.org/" },
   ];
 
