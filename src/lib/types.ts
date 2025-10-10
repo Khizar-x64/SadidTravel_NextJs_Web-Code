@@ -21,6 +21,16 @@ export type SiteConfig = {
   mainNav: MainNavItem[];
 };
 
+export type UmrahPackageDetail = {
+  packageId: string;
+  makkahHotel: string;
+  madinahHotel: string;
+  transportation: string;
+  sightseeing: string;
+  visa: string;
+  whatToExpect: string[];
+};
+
 export type Package = {
   id: string;
   slug: string;
@@ -38,6 +48,7 @@ export type Package = {
   itinerary: { day: number | string; title: string; description: string }[];
   category?: string;
   imageId?: string;
+  details?: UmrahPackageDetail;
 };
 
 export type Blog = {

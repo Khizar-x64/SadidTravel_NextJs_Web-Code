@@ -1,6 +1,5 @@
 
 import { umrahPackages } from "@/lib/data";
-import { PackageCard } from "@/components/package-card";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import {
@@ -14,48 +13,66 @@ import {
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight, Clock } from "lucide-react";
+import { UmrahPackageDetails } from "@/components/umrah-package-details";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 
 const pageHeaderImage = PlaceHolderImages.find(p => p.id === 'kaaba-hero');
 
 const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
   return (
-    <Card className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-primary text-primary-foreground">
-      <div className="relative h-56 w-full">
-        <Image
-          src={pkg.image.imageUrl}
-          alt={pkg.image.description}
-          fill
-          className="object-cover"
-          data-ai-hint={pkg.image.imageHint}
-        />
-        <div className="absolute top-2 left-2 bg-accent text-accent-foreground text-xs font-bold px-2 py-1 rounded-full">{pkg.category}</div>
-      </div>
-      <CardHeader>
-        <CardTitle className="font-headline text-2xl leading-tight">
-          {pkg.title}
-        </CardTitle>
-        <CardDescription className="flex items-center pt-2 text-primary-foreground/80">
-          <Clock className="h-4 w-4 mr-2" />
-          {pkg.duration}
-        </CardDescription>
-      </CardHeader>
-      <CardContent className="flex-grow">
-        <p className="text-primary-foreground/80">
-          A high-quality Umrah experience with excellent amenities. Contact us for detailed inclusions.
-        </p>
-      </CardContent>
-      <CardFooter className="flex justify-between items-center bg-black/20 p-4">
-        <div>
-          <p className="text-sm text-primary-foreground/80">Starting from</p>
-          <p className="text-2xl font-bold text-white">${pkg.price}</p>
+    <Collapsible asChild>
+      <Card className="flex flex-col overflow-hidden shadow-lg bg-primary text-primary-foreground transition-all duration-300">
+        <div className="relative h-56 w-full">
+          <Image
+            src={pkg.image.imageUrl}
+            alt={pkg.image.description}
+            fill
+            className="object-cover"
+            data-ai-hint={pkg.image.imageHint}
+          />
+          <div className="absolute top-2 left-2 bg-accent text-accent-foreground text-xs font-bold px-2 py-1 rounded-full">{pkg.category}</div>
         </div>
-        <Button asChild variant="accent">
-          <Link href="/contact">
-            Inquire Now <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
-        </Button>
-      </CardFooter>
-    </Card>
+        <CardHeader>
+          <CardTitle className="font-headline text-2xl leading-tight">
+            {pkg.title}
+          </CardTitle>
+          <CardDescription className="flex items-center pt-2 text-primary-foreground/80">
+            <Clock className="h-4 w-4 mr-2" />
+            {pkg.duration}
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="flex-grow">
+          <p className="text-primary-foreground/80">
+            {pkg.description}
+          </p>
+        </CardContent>
+        <CardFooter className="flex flex-col items-stretch bg-black/20 p-4">
+          <div className="flex justify-between items-center w-full">
+            <div>
+              <p className="text-sm text-primary-foreground/80">Starting from</p>
+              <p className="text-2xl font-bold text-white">${pkg.price}</p>
+            </div>
+            <div className="flex items-center gap-2">
+                <CollapsibleTrigger asChild>
+                    <Button variant="secondary">Details</Button>
+                </CollapsibleTrigger>
+                <Button asChild variant="accent">
+                  <Link href="/contact">
+                    Inquire <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+            </div>
+          </div>
+        </CardFooter>
+        <CollapsibleContent>
+            {pkg.details && (
+                <div className="p-4 bg-primary/80">
+                    <UmrahPackageDetails details={pkg.details} />
+                </div>
+            )}
+        </CollapsibleContent>
+      </Card>
+    </Collapsible>
   );
 };
 

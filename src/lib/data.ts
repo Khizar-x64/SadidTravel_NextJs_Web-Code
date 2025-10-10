@@ -1,11 +1,12 @@
 
-import { SiteConfig, Package, Testimonial, FAQ, Blog, Destination, Partner } from "@/lib/types";
+import { SiteConfig, Package, Testimonial, FAQ, Blog, Destination, Partner, UmrahPackageDetail } from "@/lib/types";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import packagesData from './packages.json';
 import umrahPackagesData from './umrah-packages.json';
 import blogsData from './blogs.json';
 import testimonialsData from './testimonials.json';
 import destinationsData from './destinations.json';
+import umrahPackageDetailsData from './umrah-package-details.json';
 
 const findImage = (id: string) => {
   const image = PlaceHolderImages.find((img) => img.id === id);
@@ -41,12 +42,15 @@ export const packages: Package[] = packagesData.map(pkg => ({
     image: findImage(pkg.imageId),
 }));
 
+const umrahPackageDetails: UmrahPackageDetail[] = umrahPackageDetailsData;
+
 export const umrahPackages: Package[] = umrahPackagesData.map(pkg => ({
     ...pkg,
     slug: pkg.id, // Umrah packages don't have detail pages, so slug can be id
     image: findImage(pkg.imageId),
     includes: [],
-    itinerary: []
+    itinerary: [],
+    details: umrahPackageDetails.find(d => d.packageId === pkg.id)
 }));
 
 export const testimonials: Testimonial[] = testimonialsData.map(t => ({

@@ -1,0 +1,171 @@
+
+[
+  {
+    "packageId": "luxury-5-days",
+    "makkahHotel": "Hilton Convention Hotel or similar in front of Haram with Breakfast.",
+    "madinahHotel": "Al-Aqeeq Madinah or similar in front of Haram with Breakfast.",
+    "transportation": "Complete private, luxury transport from Jeddah Airport- Makkah Hotel- Madinah Hotel- Madinah Airport.",
+    "sightseeing": "Explore The Journey Of Beautiful And Historical Places In Mecca & Medina.",
+    "visa": "A Saudi Tourist Visa is included.",
+    "whatToExpect": [
+      "Meet & Greet Service.",
+      "Commitment Of 24 Hrs Service In Mecca And Medina.",
+      "Complimentary Umrah Reading Material.",
+      "Online In-Person Session For Umrah Preparation."
+    ]
+  },
+  {
+    "packageId": "luxury-7-days",
+    "makkahHotel": "Makkah Clock Royal Tower, A Fairmont Hotel with Breakfast.",
+    "madinahHotel": "Anwar al Madinah Mövenpick Hotel with Breakfast.",
+    "transportation": "Complete private, luxury transport (GMC/Lexus) from airport and between cities.",
+    "sightseeing": "Private guided Ziyarat in Makkah & Madinah.",
+    "visa": "A Saudi Tourist Visa is included.",
+    "whatToExpect": [
+      "VIP Meet & Greet Service.",
+      "Dedicated 24/7 concierge.",
+      "Exclusive Umrah preparation kit.",
+      "Private online session for Umrah preparation."
+    ]
+  },
+  {
+    "packageId": "luxury-10-days",
+    "makkahHotel": "Raffles Makkah Palace with Breakfast.",
+    "madinahHotel": "Dar Al Iman InterContinental with Breakfast.",
+    "transportation": "Complete private, luxury transport (Mercedes/BMW) from airport and between cities.",
+    "sightseeing": "Exclusive private guided Ziyarat in Makkah & Madinah.",
+    "visa": "A Saudi Tourist Visa is included.",
+    "whatToExpect": [
+      "Dedicated VIP agent from arrival to departure.",
+      "24/7 personal assistant service.",
+      "Premium leather-bound Umrah guide.",
+      "One-on-one personalized session for Umrah preparation."
+    ]
+  },
+  {
+    "packageId": "deluxe-5-days",
+    "makkahHotel": "Swissôtel Al Maqam Makkah or similar with Breakfast.",
+    "madinahHotel": "Shahd Al Madinah Hotel or similar with Breakfast.",
+    "transportation": "Private transport from Jeddah Airport to Makkah and between cities.",
+    "sightseeing": "Guided group Ziyarat in Makkah & Madinah.",
+    "visa": "A Saudi Tourist Visa is included.",
+    "whatToExpect": [
+      "Meet & Greet Service upon arrival.",
+      "24-hour support team in Mecca and Medina.",
+      "Umrah guidance booklet.",
+      "Group online session for Umrah preparation."
+    ]
+  },
+  {
+    "packageId": "deluxe-7-days",
+    "makkahHotel": "Mövenpick Makkah Hajar Tower or similar with Breakfast.",
+    "madinahHotel": "Millennium Al Aqeeq Madinah Hotel or similar with Breakfast.",
+    "transportation": "Private transport from Jeddah Airport to Makkah and between cities.",
+    "sightseeing": "Guided group Ziyarat in Makkah & Madinah.",
+    "visa": "A Saudi Tourist Visa is included.",
+    "whatToExpect": [
+      "Meet & Greet Service upon arrival.",
+      "24-hour support team in Mecca and Medina.",
+      "Umrah guidance booklet.",
+      "Group online session for Umrah preparation."
+    ]
+  },
+  {
+    "packageId": "deluxe-10-days",
+    "makkahHotel": "Hyatt Regency Makkah or similar with Breakfast.",
+    "madinahHotel": "Madinah Hilton or similar with Breakfast.",
+    "transportation": "Private transport from Jeddah Airport to Makkah and between cities.",
+    "sightseeing": "Guided group Ziyarat in Makkah & Madinah.",
+    "visa": "A Saudi Tourist Visa is included.",
+    "whatToExpect": [
+      "Meet & Greet Service upon arrival.",
+      "24-hour support team in Mecca and Medina.",
+      "Umrah guidance booklet.",
+      "Group online session for Umrah preparation."
+    ]
+  },
+  {
+    "packageId": "premium-5-days",
+    "makkahHotel": "Hotel in Makkah with shuttle service, breakfast included.",
+    "madinahHotel": "Hotel in Madinah (walking distance), breakfast included.",
+    "transportation": "Shared bus transport from airport and between cities.",
+    "sightseeing": "Guided group Ziyarat in Makkah & Madinah.",
+    "visa": "A Saudi Tourist Visa is included.",
+    "whatToExpect": [
+      "Airport greeting by our representative.",
+      "On-site support during prayer times.",
+      "Digital Umrah guide (PDF).",
+      "Access to pre-recorded preparation videos."
+    ]
+  },
+  {
+    "packageId": "premium-7-days",
+    "makkahHotel": "Hotel in Makkah with shuttle service, breakfast included.",
+    "madinahHotel": "Hotel in Madinah (walking distance), breakfast included.",
+    "transportation": "Shared bus transport from airport and between cities.",
+    "sightseeing": "Guided group Ziyarat in Makkah & Madinah.",
+    "visa": "A Saudi Tourist Visa is included.",
+    "whatToExpect": [
+      "Airport greeting by our representative.",
+      "On-site support during prayer times.",
+      "Digital Umrah guide (PDF).",
+      "Access to pre-recorded preparation videos."
+    ]
+  },
+  {
+    "packageId": "premium-10-days",
+    "makkahHotel": "Hotel in Makkah with shuttle service, breakfast included.",
+    "madinahHotel": "Hotel in Madinah (walking distance), breakfast included.",
+    "transportation": "Shared bus transport from airport and between cities.",
+    "sightseeing": "Guided group Ziyarat in Makkah & Madinah.",
+    "visa": "A Saudi Tourist Visa is included.",
+    "whatToExpect": [
+      "Airport greeting by our representative.",
+      "On-site support during prayer times.",
+      "Digital Umrah guide (PDF).",
+      "Access to pre-recorded preparation videos."
+    ]
+  },
+  {
+    "packageId": "economy-5-days",
+    "makkahHotel": "Economy hotel in Makkah, some distance from Haram, with shuttle.",
+    "madinahHotel": "Economy hotel in Madinah, located in the outer central area.",
+    "transportation": "Shared standard bus transport.",
+    "sightseeing": "Optional Ziyarat tour (additional cost).",
+    "visa": "A Saudi Tourist Visa is included.",
+    "whatToExpect": [
+      "Basic Meet & Greet.",
+      "Phone support available.",
+      "Basic Umrah pamphlet.",
+      "Self-preparation recommended."
+    ]
+  },
+  {
+    "packageId": "economy-7-days",
+    "makkahHotel": "Economy hotel in Makkah, some distance from Haram, with shuttle.",
+    "madinahHotel": "Economy hotel in Madinah, located in the outer central area.",
+    "transportation": "Shared standard bus transport.",
+    "sightseeing": "Optional Ziyarat tour (additional cost).",
+    "visa": "A Saudi Tourist Visa is included.",
+    "whatToExpect": [
+      "Basic Meet & Greet.",
+      "Phone support available.",
+      "Basic Umrah pamphlet.",
+      "Self-preparation recommended."
+    ]
+  },
+  {
+    "packageId": "economy-10-days",
+    "makkahHotel": "Economy hotel in Makkah, some distance from Haram, with shuttle.",
+    "madinahHotel": "Economy hotel in Madinah, located in the outer central area.",
+    "transportation": "Shared standard bus transport.",
+    "sightseeing": "Optional Ziyarat tour (additional cost).",
+    "visa": "A Saudi Tourist Visa is included.",
+    "whatToExpect": [
+      "Basic Meet & Greet.",
+      "Phone support available.",
+      "Basic Umrah pamphlet.",
+      "Self-preparation recommended."
+    ]
+  }
+]
