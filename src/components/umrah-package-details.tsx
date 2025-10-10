@@ -47,21 +47,21 @@ export function UmrahPackageDetails({ details }: UmrahPackageDetailsProps) {
             </CardHeader>
             <CardContent>
                  <Tabs defaultValue="expect" className="w-full">
-                    <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-secondary h-auto">
-                        <TabsTrigger value="expect" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground text-sm">
-                            <Star className="mr-2 h-5 w-5" />
+                    <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-secondary h-auto p-1 rounded-lg">
+                        <TabsTrigger value="expect" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground text-sm flex justify-center items-center gap-2">
+                            <Star className="h-5 w-5" />
                             <span>What to Expect</span>
                         </TabsTrigger>
-                        <TabsTrigger value="hotel" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground text-sm">
-                            <BedDouble className="mr-2 h-5 w-5" />
+                        <TabsTrigger value="hotel" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground text-sm flex justify-center items-center gap-2">
+                            <BedDouble className="h-5 w-5" />
                             <span>Accommodation</span>
                         </TabsTrigger>
-                        <TabsTrigger value="transportation" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground text-sm">
-                            <Bus className="mr-2 h-5 w-5" />
+                        <TabsTrigger value="transportation" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground text-sm flex justify-center items-center gap-2">
+                            <Bus className="h-5 w-5" />
                             <span>Transport</span>
                         </TabsTrigger>
-                        <TabsTrigger value="visa" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground text-sm">
-                            <FileText className="mr-2 h-5 w-5" />
+                        <TabsTrigger value="visa" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground text-sm flex justify-center items-center gap-2">
+                            <FileText className="h-5 w-5" />
                             <span>Visa</span>
                         </TabsTrigger>
                     </TabsList>
