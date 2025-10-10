@@ -21,7 +21,7 @@ export const Icons = {
       alt="Sadid Travels Icon"
       width={60}
       height={60}
-      className={cn("h-8 w-auto", className)}
+      className={cn("h-20 w-auto", className)}
       priority
       {...props}
     />
