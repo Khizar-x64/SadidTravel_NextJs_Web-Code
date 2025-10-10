@@ -23,13 +23,30 @@ export type SiteConfig = {
 
 export type UmrahPackageDetail = {
   packageId: string;
-  makkahHotel: string;
-  madinahHotel: string;
-  transportation: string;
-  sightseeing: string;
-  visa: string;
+  packageCategory: string;
+  packageInclusions: {
+    makkahAccommodation: string;
+    madinahAccommodation: string;
+    transportation: string;
+    sightseeing: string;
+    visa: string;
+  };
   whatToExpect: string[];
+  hotelDetailsMakkah: {
+    name: string;
+    description: string;
+  };
+  hotelDetailsMadinah: {
+    name: string;
+    description: string;
+  };
+  transportationServices: string;
+  visaInformation: {
+    title: string;
+    description: string;
+  };
 };
+
 
 export type Package = {
   id: string;
