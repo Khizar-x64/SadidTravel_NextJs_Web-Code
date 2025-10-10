@@ -9,6 +9,7 @@ import { packages, destinations } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import TestimonialsSection from '@/components/testimonials';
 import ContactPopup from '@/components/contact-popup';
+import WhySadidSection from '@/components/why-sadid-section';
 import PartnersSection from '@/components/partners';
 import { DestinationHighlightCard } from '@/components/destination-highlight-card';
 
@@ -156,8 +157,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- Testimonials & Partners --- */}
+      {/* --- Testimonials --- */}
       <TestimonialsSection />
+
+      {/* --- What Makes Us Different --- */}
+      <WhySadidSection />
+      
+      {/* --- Partners --- */}
       <PartnersSection />
     </div>
   );
