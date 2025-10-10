@@ -53,14 +53,32 @@ const getUmrahDetailsByCategory = (category?: string): UmrahPackageDetail | unde
   return undefined;
 }
 
+const umrahImagePool = [
+    {
+        id: 'umrah-random-1',
+        imageUrl: 'https://cdn.pixabay.com/photo/2017/04/26/15/04/religious-2262785_1280.jpg',
+        description: 'Pilgrims near the Kaaba',
+        imageHint: 'pilgrims Kaaba'
+    },
+    {
+        id: 'umrah-random-2',
+        imageUrl: 'https://cdn.pixabay.com/photo/2015/11/19/07/20/mosque-1050478_1280.jpg',
+        description: 'Grand mosque interior',
+        imageHint: 'mosque interior'
+    }
+];
 
-export const umrahPackages: Package[] = umrahPackagesData.map(pkg => ({
-    ...pkg,
-    image: findImage(pkg.imageId || ''),
-    includes: [],
-    itinerary: [],
-    details: getUmrahDetailsByCategory(pkg.category)
-}));
+export const umrahPackages: Package[] = umrahPackagesData.map((pkg, index) => {
+    const randomImage = umrahImagePool[Math.floor(Math.random() * umrahImagePool.length)];
+    return {
+        ...pkg,
+        image: randomImage,
+        includes: [],
+        itinerary: [],
+        details: getUmrahDetailsByCategory(pkg.category)
+    }
+});
+
 
 export const testimonials: Testimonial[] = testimonialsData.map(t => ({
   ...t,
