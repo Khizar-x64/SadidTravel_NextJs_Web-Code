@@ -83,8 +83,8 @@ export function Footer() {
             <h3 className="font-headline font-semibold">Accreditation</h3>
             <div className="mt-4 space-y-4">
               {accreditations.map((acc) => (
-                <Link key={acc.name} href={acc.url} target="_blank" rel="noopener noreferrer" className="block">
-                  <div className="relative h-14 w-28 brightness-0 invert">
+                <Link key={acc.name} href={acc.url} target="_blank" rel="noopener noreferrer" className="block bg-white p-2 rounded-md">
+                  <div className="relative h-14 w-28">
                     <Image
                       src={acc.logo}
                       alt={`${acc.name} logo`}
