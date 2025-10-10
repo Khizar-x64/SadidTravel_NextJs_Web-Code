@@ -17,7 +17,7 @@ export function Footer() {
 
   const accreditations = [
     { name: "Ministry of Hajj and Umrah", logo: "/logos/hajj-ministry.png", url: "https://www.haj.gov.sa/" },
-    { name: "IATA", logo: "/logos/iata.png", url: "https://www.iata.org/" },
+    { name: "IATA", logo: "https://www.iata.org/contentassets/d7c518ebc5e34837a3c743867f0f0300/iata-logo-blue.svg", url: "https://www.iata.org/" },
     { name: "IATAN", logo: "/logos/iatan.png", url: "https://www.iatan.org/" },
   ];
 
@@ -84,7 +84,7 @@ export function Footer() {
             <div className="mt-4 space-y-4">
               {accreditations.map((acc) => (
                 <Link key={acc.name} href={acc.url} target="_blank" rel="noopener noreferrer" className="block">
-                  <div className="relative h-14 w-28">
+                  <div className="relative h-14 w-28 brightness-0 invert">
                     <Image
                       src={acc.logo}
                       alt={`${acc.name} logo`}
