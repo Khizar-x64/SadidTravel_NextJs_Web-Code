@@ -11,6 +11,7 @@ import TestimonialsSection from '@/components/testimonials';
 import ContactPopup from '@/components/contact-popup';
 import PartnersSection from '@/components/partners';
 import { DestinationHighlightCard } from '@/components/destination-highlight-card';
+import WhySadidSection from '@/components/why-sadid-section';
 
 const heroImage = PlaceHolderImages.find((p) => p.id === 'kaaba-hero');
 const featuredPackages = packages.slice(0, 3);
@@ -158,6 +159,8 @@ export default function Home() {
 
       {/* --- Testimonials --- */}
       <TestimonialsSection />
+      
+      <WhySadidSection />
       
       {/* --- Partners --- */}
       <PartnersSection />
