@@ -28,10 +28,7 @@ export default function TestimonialsSection() {
                      <div className="bg-accent/20 p-3 rounded-full">
                         <MessageSquare className="h-6 w-6 text-accent" />
                      </div>
-                     <div>
-                        <CardTitle className="font-bold text-primary-foreground">{testimonial.name}</CardTitle>
-                        <CardDescription className="text-primary-foreground/80">{testimonial.location}</CardDescription>
-                     </div>
+                     <CardTitle className="font-bold text-primary-foreground">{testimonial.name}</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent className="flex-grow">
