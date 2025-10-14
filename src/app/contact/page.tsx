@@ -90,7 +90,7 @@ export default function ContactPage() {
                      <div className="bg-primary/10 p-3 rounded-full">
                       <MapPin className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle className="text-xl font-headline text-secondary-foreground">Visit Our Office</CardTitle>
+                    <CardTitle className="text-xl font-headline text-secondary-foreground">Our Office Location</CardTitle>
                   </CardHeader>
                   <CardContent className="p-6 space-y-2">
                      <p className="text-muted-foreground">720 Marble Way, <br/>Boca Raton, FL 33432, USA</p>
