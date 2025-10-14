@@ -60,7 +60,7 @@ export default function RefundPage() {
                 <p>If your visa application is rejected by the embassy for reasons beyond our control, the cancellation policy will apply based on the date of cancellation. We are not responsible for visa rejections.</p>
 
                 <h2>6. Contact Us</h2>
-                <p>For any questions regarding our refund policy, please contact us at sadidtravelsllc@gmail.com.</p>
+                <p>For any questions regarding our refund policy, please contact us at info@sadidtravels.com.</p>
             </div>
         </div>
       </section>

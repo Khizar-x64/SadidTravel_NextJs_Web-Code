@@ -22,7 +22,7 @@ export async function POST(request: Request) {
       // For testing, they provide a default 'onboarding@resend.dev' address.
       // For production, you should use your own verified domain (e.g., 'noreply@sadidtravels.com').
       from: 'Sadid Travels Inquiry <onboarding@resend.dev>',
-      to: ['sadidtravelsllc@gmail.com'], // Your destination email
+      to: ['info@sadidtravels.com'], // Your destination email
       subject: `New Inquiry from ${name} - ${category}`,
       reply_to: email, // Set the user's email as the reply-to address
       html: `

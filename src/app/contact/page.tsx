@@ -79,8 +79,8 @@ export default function ContactPage() {
                   </CardHeader>
                   <CardContent className="p-6 space-y-2">
                     <p className="text-muted-foreground">For detailed inquiries and bookings.</p>
-                    <a href="mailto:sadidtravelsllc@gmail.com" className="text-lg font-semibold text-primary hover:underline break-all">
-                      sadidtravelsllc@gmail.com
+                    <a href="mailto:info@sadidtravels.com" className="text-lg font-semibold text-primary hover:underline break-all">
+                      info@sadidtravels.com
                     </a>
                   </CardContent>
                 </Card>

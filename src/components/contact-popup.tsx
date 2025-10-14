@@ -44,10 +44,10 @@ export default function ContactPopup() {
             <div className="flex items-center">
               <Mail className="h-5 w-5 mr-3 text-primary" />
               <a
-                href="mailto:sadidtravelsllc@gmail.com"
+                href="mailto:info@sadidtravels.com"
                 className="hover:text-primary"
               >
-                sadidtravelsllc@gmail.com
+                info@sadidtravels.com
               </a>
             </div>
             <div className="flex items-center">

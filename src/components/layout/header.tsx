@@ -42,9 +42,9 @@ export function Header() {
                 <span className="hidden sm:inline">+1 754-399-2498</span>
               </a>
               <span className="hidden sm:inline">|</span>
-              <a href="mailto:sadidtravelsllc@gmail.com" className="flex items-center gap-2 hover:text-white/80 transition-colors">
+              <a href="mailto:info@sadidtravels.com" className="flex items-center gap-2 hover:text-white/80 transition-colors">
                 <Mail className="h-4 w-4" />
-                <span className="hidden sm:inline">sadidtravelsllc@gmail.com</span>
+                <span className="hidden sm:inline">info@sadidtravels.com</span>
               </a>
            </div>
            <div className="flex items-center gap-2">
