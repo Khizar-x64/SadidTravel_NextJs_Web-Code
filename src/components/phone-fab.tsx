@@ -17,7 +17,7 @@ export default function PhoneFAB() {
     return (
         <Link
             href="tel:+17543992498"
-            className="text-white rounded-full h-16 w-16 flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300 animate-vibrate"
+            className="text-white rounded-full h-16 w-16 flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300"
             aria-label="Call Us"
             style={{ animationDelay: '0.2s' }}
         >
