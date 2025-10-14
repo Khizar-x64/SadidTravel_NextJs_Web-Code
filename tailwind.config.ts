@@ -79,12 +79,17 @@ const config = {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        "wave": {
+          "0%, 100%": { transform: "scale(1)", boxShadow: "0 0 0 0 rgba(255, 255, 255, 0.7)" },
+          "50%": { transform: "scale(1.1)", boxShadow: "0 0 10px 5px rgba(255, 255, 255, 0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "slide-up-and-fade": "slide-up-and-fade 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both",
         "fade-in": "fade-in 1s ease-out both",
+        "wave": "wave 2s infinite",
       },
     },
   },
