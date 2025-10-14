@@ -102,6 +102,7 @@ export type Destination = {
     name: string;
     short_description: string;
     long_description: string;
+    key_sites: string;
     image: {
         id: string;
         imageUrl: string;
