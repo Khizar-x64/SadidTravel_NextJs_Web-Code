@@ -119,7 +119,7 @@ export default function DestinationDetailPage({ params }: DestinationDetailPageP
           {/* Left Column: Details */}
           <div className="lg:col-span-2">
             <Tabs defaultValue="overview" className="w-full">
-              <TabsList className="w-full h-auto p-1 rounded-lg bg-secondary grid grid-cols-2 gap-1">
+              <TabsList className="w-full h-auto p-1 rounded-lg bg-secondary grid grid-cols-1 sm:grid-cols-2 gap-1">
                 <TabsTrigger value="overview" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground text-sm flex items-center justify-center gap-2 py-2">
                     <BookOpenText className="h-5 w-5" />
                     <span>Historical Overview</span>
