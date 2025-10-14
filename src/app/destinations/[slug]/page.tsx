@@ -35,25 +35,46 @@ export function generateMetadata({ params }: DestinationDetailPageProps) {
 }
 
 const formatContent = (text: string) => {
-  return text.split('\n').map((paragraph, index) => {
-    if (paragraph.trim() === '') return null;
-    if (paragraph.startsWith('### ')) {
-      return (
-        <h3 key={index} className="text-xl font-bold mt-6 mb-3 font-headline text-accent">
-          {paragraph.substring(4)}
-        </h3>
-      );
+    // Group list items for proper <ul> wrapping
+    const elements = [];
+    const paragraphs = text.split('\n').filter(p => p.trim() !== '');
+    let listItems: JSX.Element[] = [];
+
+    const processParagraph = (paragraph: string, index: number) => {
+        const bolded = paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        if (bolded.trim().startsWith('* ')) {
+            return (
+                <li key={index} dangerouslySetInnerHTML={{ __html: bolded.substring(2) }} />
+            );
+        }
+        if (bolded.startsWith('### ')) {
+            return (
+                <h3 key={index} className="text-xl font-bold mt-6 mb-3 font-headline text-accent" dangerouslySetInnerHTML={{ __html: bolded.substring(4) }} />
+            );
+        }
+        return <p key={index} className="mb-4" dangerouslySetInnerHTML={{ __html: bolded }} />;
+    };
+
+    paragraphs.forEach((p, i) => {
+        const processed = processParagraph(p, i);
+        if (processed.type === 'li') {
+            listItems.push(processed);
+        } else {
+            if (listItems.length > 0) {
+                elements.push(<ul key={`ul-${i - listItems.length}`} className="list-disc ml-5 mb-4 space-y-2">{listItems}</ul>);
+                listItems = [];
+            }
+            elements.push(processed);
+        }
+    });
+
+    if (listItems.length > 0) {
+        elements.push(<ul key="ul-last" className="list-disc ml-5 mb-4 space-y-2">{listItems}</ul>);
     }
-    if (paragraph.trim().startsWith('* ')) {
-      return (
-        <li key={index} className="list-disc ml-5 mb-2">
-          {paragraph.substring(2)}
-        </li>
-      );
-    }
-    return <p key={index} className="mb-4">{paragraph}</p>;
-  }).filter(Boolean);
+
+    return elements;
 };
+
 
 export default function DestinationDetailPage({ params }: DestinationDetailPageProps) {
   const dest = destinations.find((d) => d.slug === params.slug);
