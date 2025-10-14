@@ -79,10 +79,12 @@ const config = {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
-        "wave": {
-          '0%, 100%': { transform: 'rotate(0deg)' },
-          '25%': { transform: 'rotate(-15deg)' },
-          '75%': { transform: 'rotate(15deg)' },
+        "vibrate": {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '20%': { transform: 'translateX(-2px)' },
+          '40%': { transform: 'translateX(2px)' },
+          '60%': { transform: 'translateX(-2px)' },
+          '80%': { transform: 'translateX(2px)' },
         }
       },
       animation: {
@@ -90,7 +92,7 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "slide-up-and-fade": "slide-up-and-fade 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both",
         "fade-in": "fade-in 1s ease-out both",
-        "wave": "wave 1.5s infinite",
+        "vibrate": "vibrate 0.5s ease-in-out infinite",
       },
     },
   },
