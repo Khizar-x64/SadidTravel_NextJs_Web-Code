@@ -13,7 +13,7 @@ interface PackageCardProps {
 const IconText = ({ icon, text }: { icon: React.ReactNode, text: string | undefined }) => {
     if (!text) return null;
     return (
-        <div className="flex items-center text-sm text-primary-foreground/80 gap-3">
+        <div className="flex items-center text-sm text-muted-foreground gap-3">
             {icon}
             <span className="truncate">{text}</span>
         </div>
@@ -30,7 +30,7 @@ export function PackageCard({ pkg }: PackageCardProps) {
 
   return (
     <Link href={`/packages/${pkg.slug}`} className="group block h-full">
-      <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-transparent border-0 rounded-xl">
+      <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-transparent border rounded-xl">
           <div className="flex flex-col md:flex-row h-full">
               {/* Image Section */}
               <div className="w-full md:w-2/5 h-64 md:h-auto relative">
@@ -47,10 +47,10 @@ export function PackageCard({ pkg }: PackageCardProps) {
               </div>
 
               {/* Content Section */}
-              <div className="w-full md:w-3/5 p-6 flex flex-col justify-between bg-primary rounded-b-xl md:rounded-r-xl md:rounded-l-none relative">
-                  <div>
-                    <h3 className="font-headline text-xl font-bold text-primary-foreground group-hover:text-accent transition-colors pr-12">{pkg.title}</h3>
-                    <p className="text-sm text-primary-foreground/80 mt-2 line-clamp-2">{pkg.description}</p>
+              <div className="w-full md:w-3/5 p-6 flex flex-col justify-between bg-card rounded-b-xl md:rounded-r-xl md:rounded-l-none relative">
+                  <div className="flex-grow">
+                    <h3 className="font-headline text-xl font-bold text-primary group-hover:text-accent transition-colors pr-12">{pkg.title}</h3>
+                    <p className="text-sm text-muted-foreground mt-2 line-clamp-2">{pkg.description}</p>
                   </div>
                   <div className="space-y-2 mt-4">
                       <IconText icon={<Clock className="h-5 w-5 text-accent flex-shrink-0"/>} text={pkg.duration} />
