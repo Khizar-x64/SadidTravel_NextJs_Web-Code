@@ -4,7 +4,6 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import {
   Card,
-  CardContent,
 } from "@/components/ui/card";
 import Link from "next/link";
 import { ArrowRight, Clock, Plus } from "lucide-react";
@@ -32,9 +31,9 @@ const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
               </div>
 
               {/* Content Section */}
-              <div className="w-full md:w-3/5 p-4 flex flex-col justify-between relative">
-                  <div>
-                      <h3 className="font-headline text-lg font-bold text-primary group-hover:text-accent transition-colors pr-10">{pkg.title}</h3>
+              <div className="w-full md:w-3/5 p-4 flex items-start justify-between gap-4">
+                  <div className="flex-grow">
+                      <h3 className="font-headline text-lg font-bold text-primary group-hover:text-accent transition-colors">{pkg.title}</h3>
                       <p className="text-sm text-muted-foreground mt-1 line-clamp-2">{pkg.description}</p>
                       <div className="mt-3 space-y-2 text-sm">
                           <div className="flex items-center">
@@ -43,7 +42,7 @@ const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
                           </div>
                       </div>
                   </div>
-                   <div className="absolute top-4 right-4 h-10 w-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors" aria-label="View Details">
+                   <div className="flex-shrink-0 h-10 w-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors" aria-label="View Details">
                       <Plus className="h-6 w-6" />
                   </div>
               </div>
