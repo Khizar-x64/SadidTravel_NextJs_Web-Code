@@ -5,54 +5,49 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowRight, Clock } from "lucide-react";
+import { ArrowRight, Clock, Plus } from "lucide-react";
 
 const pageHeaderImage = PlaceHolderImages.find(p => p.id === 'kaaba-hero');
 
 const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
   return (
     <Link href={`/umrah/${pkg.slug}`} className="group block h-full">
-      <Card className="flex flex-col h-full overflow-hidden shadow-lg bg-primary text-primary-foreground transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
-        <div className="relative h-56 w-full">
-          <Image
-            src={pkg.image.imageUrl}
-            alt={pkg.image.description}
-            fill
-            className="object-cover"
-            data-ai-hint={pkg.image.imageHint}
-          />
-          <div className="absolute top-2 left-2 bg-accent text-accent-foreground text-xs font-bold px-2 py-1 rounded-full">{pkg.category}</div>
-        </div>
-        <CardHeader>
-          <CardTitle className="font-headline text-2xl leading-tight group-hover:text-accent transition-colors">
-            {pkg.title}
-          </CardTitle>
-          <CardDescription className="flex items-center pt-2 text-primary-foreground/80">
-            <Clock className="h-4 w-4 mr-2" />
-            {pkg.duration}
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="flex-grow">
-          <p className="text-primary-foreground/80 line-clamp-3">
-            {pkg.description}
-          </p>
-        </CardContent>
-        <CardFooter className="flex justify-between items-center bg-black/20 p-4">
-          <div>
-            <p className="text-sm text-primary-foreground/80">Starting from</p>
-            <p className="text-2xl font-bold text-white">${pkg.price}</p>
+      <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-white dark:bg-card h-full">
+          <div className="flex flex-col md:flex-row h-full">
+              {/* Image Section */}
+              <div className="w-full md:w-2/5 h-48 md:h-auto relative">
+                  <Image
+                  src={pkg.image.imageUrl}
+                  alt={pkg.image.description}
+                  fill
+                  className="object-cover"
+                  data-ai-hint={pkg.image.imageHint}
+                  />
+                  <div className="absolute top-2 left-2 bg-accent text-accent-foreground text-xs font-bold px-2 py-1 rounded-full">{pkg.category}</div>
+                  <div className="absolute bottom-0 left-0 bg-yellow-400 text-black font-bold py-1 px-3 text-lg">
+                      ${pkg.price}
+                  </div>
+              </div>
+
+              {/* Content Section */}
+              <div className="w-full md:w-3/5 p-4 flex flex-col justify-between relative">
+                  <div>
+                      <h3 className="font-headline text-lg font-bold text-primary group-hover:text-accent transition-colors pr-10">{pkg.title}</h3>
+                      <p className="text-sm text-muted-foreground mt-1 line-clamp-2">{pkg.description}</p>
+                      <div className="mt-3 space-y-2 text-sm">
+                          <div className="flex items-center">
+                              <Clock className="h-4 w-4 mr-2 text-green-500 flex-shrink-0" />
+                              <span>{pkg.duration}</span>
+                          </div>
+                      </div>
+                  </div>
+                   <div className="absolute top-4 right-4 h-10 w-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors" aria-label="View Details">
+                      <Plus className="h-6 w-6" />
+                  </div>
+              </div>
           </div>
-          <div className="font-semibold text-accent flex items-center">
-            View Details <ArrowRight className="ml-2 h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1" />
-          </div>
-        </CardFooter>
       </Card>
     </Link>
   );
@@ -102,7 +97,7 @@ export default function UmrahPackagesPage() {
           <section key={category} className="py-12 md:py-16 bg-background" style={commitmentSectionStyle}>
             <div className="container mx-auto px-4">
               <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mb-8 text-center">{category}</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {packagesInCategory.map((pkg) => (
                   <UmrahPackageCard key={pkg.id} pkg={pkg} />
                 ))}
