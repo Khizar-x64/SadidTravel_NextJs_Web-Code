@@ -26,9 +26,9 @@ const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
   return (
     <Link href={`/umrah/${pkg.slug}`} className="group block h-full">
       <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-primary h-full">
-          <div className="flex flex-col md:flex-row h-[280px] md:h-auto">
+          <div className="flex flex-col md:flex-row h-full">
               {/* Image Section */}
-              <div className="w-full md:w-2/5 h-64 md:h-full relative">
+              <div className="w-full md:w-2/5 h-64 md:h-[280px] relative">
                   <Image
                   src={pkg.image.imageUrl}
                   alt={pkg.image.description}
@@ -123,4 +123,3 @@ export default function UmrahPackagesPage() {
     </div>
   );
 }
-
