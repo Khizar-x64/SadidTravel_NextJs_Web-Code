@@ -6,8 +6,8 @@ const SadidLogoIcon = ({ className, ...props }: React.ComponentProps<"svg">) => 
     <Image
         src="/logos/logo.svg"
         alt="Sadid Travels Icon"
-        width={64}
-        height={64}
+        width={70}
+        height={70}
         className={cn("h-16 w-16", className)}
         {...props}
     />
