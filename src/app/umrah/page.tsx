@@ -6,17 +6,29 @@ import {
   Card,
 } from "@/components/ui/card";
 import Link from "next/link";
-import { ArrowRight, Clock, Plus } from "lucide-react";
+import { ArrowRight, Clock, Plus, Hotel, Bus, FileText } from "lucide-react";
 
 const pageHeaderImage = PlaceHolderImages.find(p => p.id === 'kaaba-hero');
 
+const IconText = ({ icon, text }: { icon: React.ReactNode, text: string | undefined }) => {
+    if (!text) return null;
+    return (
+        <div className="flex items-center text-sm text-muted-foreground">
+            {icon}
+            <span className="truncate">{text}</span>
+        </div>
+    );
+};
+
 const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
+  const inclusions = pkg.details?.packageInclusions;
+
   return (
     <Link href={`/umrah/${pkg.slug}`} className="group block h-full">
       <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-white dark:bg-card h-full">
           <div className="flex flex-col md:flex-row h-full">
               {/* Image Section */}
-              <div className="w-full md:w-2/5 h-56 md:h-auto relative">
+              <div className="w-full md:w-2/5 h-64 md:h-auto relative">
                   <Image
                   src={pkg.image.imageUrl}
                   alt={pkg.image.description}
@@ -25,25 +37,27 @@ const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
                   data-ai-hint={pkg.image.imageHint}
                   />
                   <div className="absolute top-2 left-2 bg-accent text-accent-foreground text-xs font-bold px-2 py-1 rounded-full">{pkg.category}</div>
-                  <div className="absolute bottom-0 left-0 bg-yellow-400 text-black font-bold py-1 px-3 text-lg">
+                  <div className="absolute bottom-2 left-2 bg-yellow-400 text-black font-bold py-1 px-3 text-lg rounded-sm">
                       ${pkg.price}
                   </div>
               </div>
 
               {/* Content Section */}
-              <div className="w-full md:w-3/5 p-6 flex flex-col justify-between">
-                  <div>
-                      <h3 className="font-headline text-xl font-bold text-primary group-hover:text-accent transition-colors">{pkg.title}</h3>
-                      <p className="text-sm text-muted-foreground mt-2 line-clamp-3">{pkg.description}</p>
+              <div className="w-full md:w-3/5 p-4 flex flex-col justify-between">
+                  <div className="flex justify-between items-start">
+                    <div className="flex-grow pr-4">
+                        <h3 className="font-headline text-xl font-bold text-primary group-hover:text-accent transition-colors">{pkg.title}</h3>
+                        <p className="text-sm text-muted-foreground mt-2 line-clamp-2">{pkg.description}</p>
+                    </div>
+                    <div className="flex-shrink-0 h-10 w-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors" aria-label="View Details">
+                      <Plus className="h-6 w-6" />
+                    </div>
                   </div>
-                  <div className="flex items-center justify-between mt-4">
-                      <div className="flex items-center text-sm">
-                          <Clock className="h-4 w-4 mr-2 text-green-500 flex-shrink-0" />
-                          <span>{pkg.duration}</span>
-                      </div>
-                      <div className="flex-shrink-0 h-10 w-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors" aria-label="View Details">
-                        <Plus className="h-6 w-6" />
-                      </div>
+                  <div className="space-y-2 mt-4">
+                      <IconText icon={<Clock className="h-4 w-4 mr-2 text-primary flex-shrink-0"/>} text={pkg.duration} />
+                      <IconText icon={<Hotel className="h-4 w-4 mr-2 text-primary flex-shrink-0"/>} text={inclusions?.makkahAccommodation.split(' with')[0]} />
+                      <IconText icon={<Bus className="h-4 w-4 mr-2 text-primary flex-shrink-0"/>} text={inclusions?.transportation.split(' from')[0]} />
+                      <IconText icon={<FileText className="h-4 w-4 mr-2 text-primary flex-shrink-0"/>} text={inclusions?.visa} />
                   </div>
               </div>
           </div>
