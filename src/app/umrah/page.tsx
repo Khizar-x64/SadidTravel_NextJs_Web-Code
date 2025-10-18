@@ -33,7 +33,7 @@ const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
                     src={pkg.image.imageUrl}
                     alt={pkg.image.description}
                     fill
-                    className="object-cover rounded-l-xl"
+                    className="object-cover rounded-t-xl md:rounded-l-xl md:rounded-r-none"
                     data-ai-hint={pkg.image.imageHint}
                   />
                   <div className="absolute top-4 left-4 bg-accent text-accent-foreground text-xs font-bold px-3 py-1.5 rounded-full">{pkg.category}</div>
@@ -43,20 +43,22 @@ const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
               </div>
 
               {/* Content Section */}
-              <div className="w-full md:w-3/5 p-6 flex flex-col justify-between bg-primary rounded-r-xl relative">
-                  <div>
-                      <h3 className="font-headline text-xl font-bold text-primary-foreground group-hover:text-accent transition-colors pr-12">{pkg.title}</h3>
-                      <p className="text-sm text-primary-foreground/80 mt-2 line-clamp-2">{pkg.description}</p>
-                  </div>
-                  <div className="space-y-2 mt-4">
-                      <IconText icon={<Clock className="h-5 w-5 text-accent flex-shrink-0"/>} text={pkg.duration} />
-                      <IconText icon={<Hotel className="h-5 w-5 text-accent flex-shrink-0"/>} text={inclusions?.makkahAccommodation.split(' with')[0]} />
-                      <IconText icon={<Bus className="h-5 w-5 text-accent flex-shrink-0"/>} text={inclusions?.transportation.split(' from')[0]} />
-                      <IconText icon={<FileText className="h-5 w-5 text-accent flex-shrink-0"/>} text={inclusions?.visa} />
-                  </div>
-                  <div className="absolute top-4 right-4 h-10 w-10 bg-accent text-accent-foreground rounded-full flex items-center justify-center group-hover:bg-accent/90 transition-colors" aria-label="View Details">
-                      <Plus className="h-6 w-6" />
-                  </div>
+              <div className="w-full md:w-3/5 p-6 flex flex-col justify-between bg-primary rounded-b-xl md:rounded-r-xl md:rounded-l-none relative">
+                <div className="flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 className="font-headline text-xl font-bold text-primary-foreground group-hover:text-accent transition-colors pr-12">{pkg.title}</h3>
+                        <p className="text-sm text-primary-foreground/80 mt-2 line-clamp-2">{pkg.description}</p>
+                    </div>
+                    <div className="space-y-2 mt-4">
+                        <IconText icon={<Clock className="h-5 w-5 text-accent flex-shrink-0"/>} text={pkg.duration} />
+                        <IconText icon={<Hotel className="h-5 w-5 text-accent flex-shrink-0"/>} text={inclusions?.makkahAccommodation.split(' with')[0]} />
+                        <IconText icon={<Bus className="h-5 w-5 text-accent flex-shrink-0"/>} text={inclusions?.transportation.split(' from')[0]} />
+                        <IconText icon={<FileText className="h-5 w-5 text-accent flex-shrink-0"/>} text={inclusions?.visa} />
+                    </div>
+                </div>
+                <div className="absolute top-4 right-4 h-10 w-10 bg-accent text-accent-foreground rounded-full flex items-center justify-center group-hover:bg-accent/90 transition-colors" aria-label="View Details">
+                    <Plus className="h-6 w-6" />
+                </div>
               </div>
           </div>
       </Card>

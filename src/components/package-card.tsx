@@ -38,7 +38,7 @@ export function PackageCard({ pkg }: PackageCardProps) {
                     src={pkg.image.imageUrl}
                     alt={pkg.image.description}
                     fill
-                    className="object-cover rounded-l-xl"
+                    className="object-cover rounded-t-xl md:rounded-l-xl md:rounded-r-none"
                     data-ai-hint={pkg.image.imageHint}
                   />
                   <div className="absolute top-4 left-4 bg-yellow-400 text-black font-bold py-1 px-3 text-lg rounded-sm">
@@ -47,7 +47,7 @@ export function PackageCard({ pkg }: PackageCardProps) {
               </div>
 
               {/* Content Section */}
-              <div className="w-full md:w-3/5 p-6 flex flex-col justify-between bg-primary rounded-r-xl relative">
+              <div className="w-full md:w-3/5 p-6 flex flex-col justify-between bg-primary rounded-b-xl md:rounded-r-xl md:rounded-l-none relative">
                   <div>
                     <h3 className="font-headline text-xl font-bold text-primary-foreground group-hover:text-accent transition-colors pr-12">{pkg.title}</h3>
                     <p className="text-sm text-primary-foreground/80 mt-2 line-clamp-2">{pkg.description}</p>
