@@ -1,33 +1,15 @@
-
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 const SadidLogoIcon = ({ className, ...props }: React.ComponentProps<"svg">) => (
-  <svg
-    width="50"
-    height="50"
-    viewBox="0 0 50 50"
-    className={cn("h-12 w-12", className)}
-    {...props}
-  >
-    <rect width="50" height="50" rx="10" fill="hsl(var(--primary))" />
-    <path
-      d="M25 10C16.716 10 10 16.716 10 25C10 33.284 16.716 40 25 40C33.284 40 40 33.284 40 25"
-      stroke="hsl(var(--accent))"
-      strokeWidth="4"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      fill="none"
+    <Image
+        src="/logos/logo.svg"
+        alt="Sadid Travels Icon"
+        width={50}
+        height={50}
+        className={cn("h-12 w-12", className)}
+        {...props}
     />
-    <path
-      d="M25 10C29.142 10 32.5 13.358 32.5 17.5"
-      stroke="hsl(var(--accent))"
-      strokeWidth="4"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      fill="none"
-    />
-  </svg>
 );
 
 
