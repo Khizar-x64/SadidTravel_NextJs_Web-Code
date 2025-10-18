@@ -19,9 +19,9 @@ export const Icons = {
     <Image
       src={src || "/logos/logo.svg"}
       alt="Sadid Travels Icon"
-      width={60}
-      height={60}
-      className={cn("h-20 w-auto", className)}
+      width={50}
+      height={50}
+      className={cn("h-12 w-12", className)}
       priority
       {...props}
     />
