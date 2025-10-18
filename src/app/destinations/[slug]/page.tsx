@@ -148,7 +148,7 @@ export default function DestinationDetailPage({ params }: DestinationDetailPageP
                  <h2 className="text-2xl md:text-3xl font-headline font-bold text-primary mb-6 flex items-center">
                     <PackageIcon className="mr-3 h-7 w-7" /> Suggested Packages
                  </h2>
-                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                 <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
                     {relatedPackages.map(pkg => (
                       <PackageCard key={pkg.id} pkg={pkg} />
                     ))}
