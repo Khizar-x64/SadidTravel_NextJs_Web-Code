@@ -30,37 +30,37 @@ export function PackageCard({ pkg }: PackageCardProps) {
 
   return (
     <Link href={`/packages/${pkg.slug}`} className="group block h-full">
-      <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-transparent border rounded-xl">
-          <div className="flex flex-col md:flex-row h-full">
-              {/* Image Section */}
-              <div className="w-full md:w-2/5 h-64 md:h-auto relative">
-                  <Image
-                    src={pkg.image.imageUrl}
-                    alt={pkg.image.description}
-                    fill
-                    className="object-cover rounded-t-xl md:rounded-l-xl md:rounded-r-none"
-                    data-ai-hint={pkg.image.imageHint}
-                  />
-                  <div className="absolute top-4 left-4 bg-yellow-400 text-black font-bold py-1 px-3 text-lg rounded-sm">
-                    ${pkg.price}
-                  </div>
+      <Card className="flex flex-col md:flex-row overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-transparent border rounded-xl h-full">
+          {/* Image Section */}
+          <div className="w-full md:w-2/5 h-64 md:h-auto relative">
+              <Image
+                src={pkg.image.imageUrl}
+                alt={pkg.image.description}
+                fill
+                className="object-cover rounded-t-xl md:rounded-l-xl md:rounded-tr-none"
+                data-ai-hint={pkg.image.imageHint}
+              />
+              <div className="absolute top-4 left-4 bg-yellow-400 text-black font-bold py-1 px-3 text-lg rounded-sm">
+                ${pkg.price}
               </div>
+          </div>
 
-              {/* Content Section */}
-              <div className="w-full md:w-3/5 p-6 flex flex-col justify-between bg-card rounded-b-xl md:rounded-r-xl md:rounded-l-none relative">
-                  <div className="flex-grow">
-                    <h3 className="font-headline text-xl font-bold text-primary group-hover:text-accent transition-colors pr-12">{pkg.title}</h3>
-                    <p className="text-sm text-muted-foreground mt-2 line-clamp-2">{pkg.description}</p>
-                  </div>
-                  <div className="space-y-2 mt-4">
-                      <IconText icon={<Clock className="h-5 w-5 text-accent flex-shrink-0"/>} text={pkg.duration} />
-                      {accommodation && <IconText icon={<Hotel className="h-5 w-5 text-accent flex-shrink-0"/>} text={accommodation} />}
-                      {transport && <IconText icon={<Bus className="h-5 w-5 text-accent flex-shrink-0"/>} text={transport} />}
-                      {visa && <IconText icon={<FileText className="h-5 w-5 text-accent flex-shrink-0"/>} text={visa} />}
-                  </div>
-                   <div className="absolute top-4 right-4 h-10 w-10 bg-accent text-accent-foreground rounded-full flex items-center justify-center group-hover:bg-accent/90 transition-colors" aria-label="View Details">
-                      <Plus className="h-6 w-6" />
-                  </div>
+          {/* Content Section */}
+          <div className="w-full md:w-3/5 p-6 flex flex-col justify-between bg-card rounded-b-xl md:rounded-r-xl md:rounded-bl-none">
+              <div className="flex-grow flex flex-col">
+                <div className="flex justify-between items-start">
+                    <h3 className="font-headline text-xl font-bold text-primary group-hover:text-accent transition-colors pr-4">{pkg.title}</h3>
+                    <div className="h-10 w-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-accent transition-colors" aria-label="View Details">
+                        <Plus className="h-6 w-6" />
+                    </div>
+                </div>
+                <p className="text-sm text-muted-foreground mt-2 line-clamp-2 flex-grow">{pkg.description}</p>
+              </div>
+              <div className="space-y-2 mt-4">
+                  <IconText icon={<Clock className="h-5 w-5 text-primary flex-shrink-0"/>} text={pkg.duration} />
+                  {accommodation && <IconText icon={<Hotel className="h-5 w-5 text-primary flex-shrink-0"/>} text={accommodation} />}
+                  {transport && <IconText icon={<Bus className="h-5 w-5 text-primary flex-shrink-0"/>} text={transport} />}
+                  {visa && <IconText icon={<FileText className="h-5 w-5 text-primary flex-shrink-0"/>} text={visa} />}
               </div>
           </div>
       </Card>
