@@ -16,7 +16,7 @@ const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
       <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-white dark:bg-card h-full">
           <div className="flex flex-col md:flex-row h-full">
               {/* Image Section */}
-              <div className="w-full md:w-2/5 h-48 md:h-auto relative">
+              <div className="w-full md:w-2/5 h-56 md:h-auto relative">
                   <Image
                   src={pkg.image.imageUrl}
                   alt={pkg.image.description}
@@ -31,19 +31,19 @@ const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
               </div>
 
               {/* Content Section */}
-              <div className="w-full md:w-3/5 p-4 flex items-start justify-between gap-4">
-                  <div className="flex-grow">
-                      <h3 className="font-headline text-lg font-bold text-primary group-hover:text-accent transition-colors">{pkg.title}</h3>
-                      <p className="text-sm text-muted-foreground mt-1 line-clamp-2">{pkg.description}</p>
-                      <div className="mt-3 space-y-2 text-sm">
-                          <div className="flex items-center">
-                              <Clock className="h-4 w-4 mr-2 text-green-500 flex-shrink-0" />
-                              <span>{pkg.duration}</span>
-                          </div>
-                      </div>
+              <div className="w-full md:w-3/5 p-6 flex flex-col justify-between">
+                  <div>
+                      <h3 className="font-headline text-xl font-bold text-primary group-hover:text-accent transition-colors">{pkg.title}</h3>
+                      <p className="text-sm text-muted-foreground mt-2 line-clamp-3">{pkg.description}</p>
                   </div>
-                   <div className="flex-shrink-0 h-10 w-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors" aria-label="View Details">
-                      <Plus className="h-6 w-6" />
+                  <div className="flex items-center justify-between mt-4">
+                      <div className="flex items-center text-sm">
+                          <Clock className="h-4 w-4 mr-2 text-green-500 flex-shrink-0" />
+                          <span>{pkg.duration}</span>
+                      </div>
+                      <div className="flex-shrink-0 h-10 w-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors" aria-label="View Details">
+                        <Plus className="h-6 w-6" />
+                      </div>
                   </div>
               </div>
           </div>
