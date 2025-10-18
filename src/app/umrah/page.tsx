@@ -13,7 +13,7 @@ const pageHeaderImage = PlaceHolderImages.find(p => p.id === 'kaaba-hero');
 const IconText = ({ icon, text }: { icon: React.ReactNode, text: string | undefined }) => {
     if (!text) return null;
     return (
-        <div className="flex items-center text-sm text-muted-foreground">
+        <div className="flex items-center text-sm text-primary-foreground/80">
             {icon}
             <span className="truncate">{text}</span>
         </div>
@@ -25,10 +25,10 @@ const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
 
   return (
     <Link href={`/umrah/${pkg.slug}`} className="group block h-full">
-      <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-white dark:bg-card h-full">
-          <div className="flex flex-col md:flex-row h-full">
+      <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-primary h-full">
+          <div className="flex flex-col md:flex-row h-[280px] md:h-auto">
               {/* Image Section */}
-              <div className="w-full md:w-2/5 h-64 md:h-auto relative">
+              <div className="w-full md:w-2/5 h-64 md:h-full relative">
                   <Image
                   src={pkg.image.imageUrl}
                   alt={pkg.image.description}
@@ -46,18 +46,18 @@ const UmrahPackageCard = ({ pkg }: { pkg: any }) => {
               <div className="w-full md:w-3/5 p-4 flex flex-col justify-between">
                   <div className="flex justify-between items-start">
                     <div className="flex-grow pr-4">
-                        <h3 className="font-headline text-xl font-bold text-primary group-hover:text-accent transition-colors">{pkg.title}</h3>
-                        <p className="text-sm text-muted-foreground mt-2 line-clamp-2">{pkg.description}</p>
+                        <h3 className="font-headline text-xl font-bold text-primary-foreground group-hover:text-accent transition-colors">{pkg.title}</h3>
+                        <p className="text-sm text-primary-foreground/80 mt-2 line-clamp-2">{pkg.description}</p>
                     </div>
-                    <div className="flex-shrink-0 h-10 w-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors" aria-label="View Details">
+                    <div className="flex-shrink-0 h-10 w-10 bg-accent text-accent-foreground rounded-full flex items-center justify-center hover:bg-accent/90 transition-colors" aria-label="View Details">
                       <Plus className="h-6 w-6" />
                     </div>
                   </div>
                   <div className="space-y-2 mt-4">
-                      <IconText icon={<Clock className="h-4 w-4 mr-2 text-primary flex-shrink-0"/>} text={pkg.duration} />
-                      <IconText icon={<Hotel className="h-4 w-4 mr-2 text-primary flex-shrink-0"/>} text={inclusions?.makkahAccommodation.split(' with')[0]} />
-                      <IconText icon={<Bus className="h-4 w-4 mr-2 text-primary flex-shrink-0"/>} text={inclusions?.transportation.split(' from')[0]} />
-                      <IconText icon={<FileText className="h-4 w-4 mr-2 text-primary flex-shrink-0"/>} text={inclusions?.visa} />
+                      <IconText icon={<Clock className="h-4 w-4 mr-2 text-accent flex-shrink-0"/>} text={pkg.duration} />
+                      <IconText icon={<Hotel className="h-4 w-4 mr-2 text-accent flex-shrink-0"/>} text={inclusions?.makkahAccommodation.split(' with')[0]} />
+                      <IconText icon={<Bus className="h-4 w-4 mr-2 text-accent flex-shrink-0"/>} text={inclusions?.transportation.split(' from')[0]} />
+                      <IconText icon={<FileText className="h-4 w-4 mr-2 text-accent flex-shrink-0"/>} text={inclusions?.visa} />
                   </div>
               </div>
           </div>
@@ -123,3 +123,4 @@ export default function UmrahPackagesPage() {
     </div>
   );
 }
+
